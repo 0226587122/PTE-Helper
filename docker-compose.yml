@@ -1,0 +1,65 @@
+services:
+  db:
+    image: mysql:8.0
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --sql-require-primary-key=ON
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: pte
+      MYSQL_USER: pte
+      MYSQL_PASSWORD: pte
+    ports:
+      - "${MYSQL_HOST_PORT:-3318}:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./docker/mysql-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      target: dev
+    environment:
+      ENVIRONMENT: development
+      DATABASE_URL: mysql://pte:pte@db:3306/pte
+      TEST_DATABASE_URL: mysql://pte:pte@db:3306/pte_test
+      JWT_SECRET: ${JWT_SECRET:-local-development-secret}
+      COOKIE_SECURE: "false"
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-5}
+      QUESTIONS_PER_SET: ${QUESTIONS_PER_SET:-15}
+      MIN_ACTIVE_PER_TYPE: ${MIN_ACTIVE_PER_TYPE:-30}
+      RECENT_SETS_EXCLUDED: ${RECENT_SETS_EXCLUDED:-3}
+    volumes:
+      - ./backend:/app/backend
+      - ./seed:/app/seed
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    image: node:22-bookworm-slim
+    working_dir: /app/frontend
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    environment:
+      VITE_API_PROXY: http://api:8000
+    volumes:
+      - ./frontend:/app/frontend
+      - web-node-modules:/app/frontend/node_modules
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+
+volumes:
+  db-data:
+  web-node-modules:
