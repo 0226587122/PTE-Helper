@@ -1,0 +1,623 @@
+{
+  "version": 1,
+  "notes": "Original group discussions (batch 1 of 3) for Summarize Group Discussion. Discussions 11 to 15 are backup questions. The body is the turns joined as 'Speaker: text' lines.",
+  "sources": [
+    {
+      "source_key": "dis-phones-lectures",
+      "kind": "discussion",
+      "title": "Phones in lectures",
+      "body": "Priya: I think phones should be banned in lectures. When students scroll through social media, they miss key points, and it distracts the people sitting behind them as well.\nTom: A complete ban seems unrealistic to me. Many students use their phones to take photos of slides or look up terms they don't understand. Some also need them for accessibility apps.\nPriya: Photos of slides are available online anyway, so that isn't a strong reason. I've seen whole rows of students watching videos during a lecture. Even if only a few people need their phones, the distraction affects everyone who can see the screens.\nMei: Maybe the answer is clearer expectations rather than a ban. Lecturers could ask students to keep phones face down unless they're using them for the class, and design short activities that keep people engaged.\nPriya: That could work, as long as the rules are applied consistently. Otherwise students will just ignore them.",
+      "turns": [
+        {
+          "speaker": "Priya",
+          "text": "I think phones should be banned in lectures. When students scroll through social media, they miss key points, and it distracts the people sitting behind them as well."
+        },
+        {
+          "speaker": "Tom",
+          "text": "A complete ban seems unrealistic to me. Many students use their phones to take photos of slides or look up terms they don't understand. Some also need them for accessibility apps."
+        },
+        {
+          "speaker": "Priya",
+          "text": "Photos of slides are available online anyway, so that isn't a strong reason. I've seen whole rows of students watching videos during a lecture. Even if only a few people need their phones, the distraction affects everyone who can see the screens."
+        },
+        {
+          "speaker": "Mei",
+          "text": "Maybe the answer is clearer expectations rather than a ban. Lecturers could ask students to keep phones face down unless they're using them for the class, and design short activities that keep people engaged."
+        },
+        {
+          "speaker": "Priya",
+          "text": "That could work, as long as the rules are applied consistently. Otherwise students will just ignore them."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-group-assignments",
+      "kind": "discussion",
+      "title": "Compulsory group assignments",
+      "body": "Liam: I don't think group assignments should be compulsory in every course. Too often one or two people do most of the work, and everyone gets the same grade.\nAisha: I understand that frustration, but employers expect graduates to work in teams. If we never practise, we'll struggle when we start our careers.\nLiam: Teamwork at work is different, though. Colleagues are paid, managers deal with people who don't contribute, and your job doesn't depend on one assignment. At university, one lazy group member can lower your grade in a course you care about.\nHemi: I agree with both of you in a way. Group work is valuable, but it needs better design. Each member could submit a short reflection on their contribution, and part of the mark could be individual.\nLiam: If individual effort were recognised, I'd feel much more positive about it.",
+      "turns": [
+        {
+          "speaker": "Liam",
+          "text": "I don't think group assignments should be compulsory in every course. Too often one or two people do most of the work, and everyone gets the same grade."
+        },
+        {
+          "speaker": "Aisha",
+          "text": "I understand that frustration, but employers expect graduates to work in teams. If we never practise, we'll struggle when we start our careers."
+        },
+        {
+          "speaker": "Liam",
+          "text": "Teamwork at work is different, though. Colleagues are paid, managers deal with people who don't contribute, and your job doesn't depend on one assignment. At university, one lazy group member can lower your grade in a course you care about."
+        },
+        {
+          "speaker": "Hemi",
+          "text": "I agree with both of you in a way. Group work is valuable, but it needs better design. Each member could submit a short reflection on their contribution, and part of the mark could be individual."
+        },
+        {
+          "speaker": "Liam",
+          "text": "If individual effort were recognised, I'd feel much more positive about it."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-library-24-hours",
+      "kind": "discussion",
+      "title": "Opening the library 24 hours",
+      "body": "Sofia: The library should stay open twenty-four hours during exam periods. Many students work part time and can only study late at night, and some don't have a quiet space at home.\nDaniel: It sounds helpful, but it would be expensive. The university would need security staff overnight, and I'm not sure many people would actually use it at three in the morning.\nSofia: Other universities already open their libraries overnight during exams, and they report steady use. Students who share crowded flats or have young children often find late evening is the only quiet time they have. Safety is also better in a staffed library than in an empty flat.\nNgaio: We could collect data first. The library could trial longer hours for one exam period and count how many people come in after midnight. If demand is high, the cost might be justified.\nSofia: A trial makes sense. I'm confident the numbers would show there's a real need.",
+      "turns": [
+        {
+          "speaker": "Sofia",
+          "text": "The library should stay open twenty-four hours during exam periods. Many students work part time and can only study late at night, and some don't have a quiet space at home."
+        },
+        {
+          "speaker": "Daniel",
+          "text": "It sounds helpful, but it would be expensive. The university would need security staff overnight, and I'm not sure many people would actually use it at three in the morning."
+        },
+        {
+          "speaker": "Sofia",
+          "text": "Other universities already open their libraries overnight during exams, and they report steady use. Students who share crowded flats or have young children often find late evening is the only quiet time they have. Safety is also better in a staffed library than in an empty flat."
+        },
+        {
+          "speaker": "Ngaio",
+          "text": "We could collect data first. The library could trial longer hours for one exam period and count how many people come in after midnight. If demand is high, the cost might be justified."
+        },
+        {
+          "speaker": "Sofia",
+          "text": "A trial makes sense. I'm confident the numbers would show there's a real need."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-free-transport-students",
+      "kind": "discussion",
+      "title": "Free public transport for students",
+      "body": "Jack: Public transport should be free for all tertiary students. Rent is already so high that many students can't afford bus fares on top of everything else, so they skip classes.\nGrace: I'd support cheaper fares, but completely free travel has to be paid for by someone. Taxpayers or the university would cover it, which might mean fees go up.\nJack: But missing classes because of transport costs affects students' results, and dropping out costs the government far more in the long run. Students are also more likely to keep using public transport after graduating if they build the habit now.\nArjun: It could also reduce traffic and parking problems around campus, which saves money elsewhere. Some cities offer free travel only during term time, which could be a good compromise.\nGrace: A term-time scheme sounds more realistic, and it would still help students most when they need it.",
+      "turns": [
+        {
+          "speaker": "Jack",
+          "text": "Public transport should be free for all tertiary students. Rent is already so high that many students can't afford bus fares on top of everything else, so they skip classes."
+        },
+        {
+          "speaker": "Grace",
+          "text": "I'd support cheaper fares, but completely free travel has to be paid for by someone. Taxpayers or the university would cover it, which might mean fees go up."
+        },
+        {
+          "speaker": "Jack",
+          "text": "But missing classes because of transport costs affects students' results, and dropping out costs the government far more in the long run. Students are also more likely to keep using public transport after graduating if they build the habit now."
+        },
+        {
+          "speaker": "Arjun",
+          "text": "It could also reduce traffic and parking problems around campus, which saves money elsewhere. Some cities offer free travel only during term time, which could be a good compromise."
+        },
+        {
+          "speaker": "Grace",
+          "text": "A term-time scheme sounds more realistic, and it would still help students most when they need it."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-digital-textbooks",
+      "kind": "discussion",
+      "title": "Digital or printed textbooks",
+      "body": "Chloe: Courses should switch completely to digital textbooks. They're usually cheaper, they're searchable, and students don't have to carry heavy books around campus.\nRawiri: Digital books aren't always cheaper, though. Some publishers sell access codes that expire after a year, so you can't resell them. And not everyone has a reliable laptop.\nChloe: Those problems could be solved. The university could negotiate licences so access codes don't expire, and it already lends laptops to students who need them. Digital books also update faster, which matters in fields like computing and medicine where information changes quickly.\nHannah: I also find it harder to concentrate on a screen for long periods. Perhaps courses could offer both formats and let students choose, with printed copies available in the library.\nChloe: Offering a choice is fair, as long as the digital version isn't more expensive.",
+      "turns": [
+        {
+          "speaker": "Chloe",
+          "text": "Courses should switch completely to digital textbooks. They're usually cheaper, they're searchable, and students don't have to carry heavy books around campus."
+        },
+        {
+          "speaker": "Rawiri",
+          "text": "Digital books aren't always cheaper, though. Some publishers sell access codes that expire after a year, so you can't resell them. And not everyone has a reliable laptop."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "Those problems could be solved. The university could negotiate licences so access codes don't expire, and it already lends laptops to students who need them. Digital books also update faster, which matters in fields like computing and medicine where information changes quickly."
+        },
+        {
+          "speaker": "Hannah",
+          "text": "I also find it harder to concentrate on a screen for long periods. Perhaps courses could offer both formats and let students choose, with printed copies available in the library."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "Offering a choice is fair, as long as the digital version isn't more expensive."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-required-internships",
+      "kind": "discussion",
+      "title": "Required internships",
+      "body": "Ethan: Every degree should include a required internship. Students gain real experience, build contacts and find out whether they actually enjoy working in their field.\nFatima: The problem is that many internships are unpaid. Students who need to earn money can't afford to work for free for several months, so a requirement could be unfair.\nEthan: Many companies do pay interns, especially in engineering and business. If internships were compulsory, universities could put pressure on employers to pay fairly, because they would be supplying a large number of students every year.\nOliver: Universities would also need enough placements for everyone, which is difficult in some fields. Alternatives like industry projects done on campus could give similar experience.\nFatima: I'd support it if internships were paid or if there were real alternatives for students who can't take them.",
+      "turns": [
+        {
+          "speaker": "Ethan",
+          "text": "Every degree should include a required internship. Students gain real experience, build contacts and find out whether they actually enjoy working in their field."
+        },
+        {
+          "speaker": "Fatima",
+          "text": "The problem is that many internships are unpaid. Students who need to earn money can't afford to work for free for several months, so a requirement could be unfair."
+        },
+        {
+          "speaker": "Ethan",
+          "text": "Many companies do pay interns, especially in engineering and business. If internships were compulsory, universities could put pressure on employers to pay fairly, because they would be supplying a large number of students every year."
+        },
+        {
+          "speaker": "Oliver",
+          "text": "Universities would also need enough placements for everyone, which is difficult in some fields. Alternatives like industry projects done on campus could give similar experience."
+        },
+        {
+          "speaker": "Fatima",
+          "text": "I'd support it if internships were paid or if there were real alternatives for students who can't take them."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-ai-essays",
+      "kind": "discussion",
+      "title": "AI tools for assignments",
+      "body": "Nina: I think students should be allowed to use AI tools for assignments, because they'll use them at work anyway. The important thing is to be honest about how they were used.\nKenji: My worry is that students won't develop their own writing and thinking skills. If an AI drafts the essay, what is the assessment actually measuring?\nNina: Students still have to decide what to ask, check whether the output is accurate and rewrite it in their own voice. Those are real skills. Banning the tools only encourages people to use them secretly, which is worse for everyone.\nTama: Assessments may need to change. Lecturers could include more in-class writing, oral presentations or tasks that ask students to critique an AI-generated answer.\nNina: I like that idea. It would teach people to use the tools critically instead of just banning them.",
+      "turns": [
+        {
+          "speaker": "Nina",
+          "text": "I think students should be allowed to use AI tools for assignments, because they'll use them at work anyway. The important thing is to be honest about how they were used."
+        },
+        {
+          "speaker": "Kenji",
+          "text": "My worry is that students won't develop their own writing and thinking skills. If an AI drafts the essay, what is the assessment actually measuring?"
+        },
+        {
+          "speaker": "Nina",
+          "text": "Students still have to decide what to ask, check whether the output is accurate and rewrite it in their own voice. Those are real skills. Banning the tools only encourages people to use them secretly, which is worse for everyone."
+        },
+        {
+          "speaker": "Tama",
+          "text": "Assessments may need to change. Lecturers could include more in-class writing, oral presentations or tasks that ask students to critique an AI-generated answer."
+        },
+        {
+          "speaker": "Nina",
+          "text": "I like that idea. It would teach people to use the tools critically instead of just banning them."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-meat-free-days",
+      "kind": "discussion",
+      "title": "Meat-free days on campus",
+      "body": "Isla: Campus cafés should have two meat-free days each week. It would lower the university's carbon footprint and introduce people to plant-based meals they might enjoy.\nMarcus: I'm not against vegetarian food, but forcing it on people feels wrong. Students should be able to choose what they eat, especially when they're paying for it.\nIsla: It's only two days a week, and students could still bring their own lunch. Universities already make choices about what's sold on campus, such as limiting sugary drinks, so this isn't very different.\nLeilani: Rather than banning meat, cafés could make plant-based meals cheaper and more appealing, and display the carbon impact of each dish. People often change their choices when they have better information.\nMarcus: That approach sounds much fairer, and I'd probably try more vegetarian options if they were cheaper.",
+      "turns": [
+        {
+          "speaker": "Isla",
+          "text": "Campus cafés should have two meat-free days each week. It would lower the university's carbon footprint and introduce people to plant-based meals they might enjoy."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "I'm not against vegetarian food, but forcing it on people feels wrong. Students should be able to choose what they eat, especially when they're paying for it."
+        },
+        {
+          "speaker": "Isla",
+          "text": "It's only two days a week, and students could still bring their own lunch. Universities already make choices about what's sold on campus, such as limiting sugary drinks, so this isn't very different."
+        },
+        {
+          "speaker": "Leilani",
+          "text": "Rather than banning meat, cafés could make plant-based meals cheaper and more appealing, and display the carbon impact of each dish. People often change their choices when they have better information."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "That approach sounds much fairer, and I'd probably try more vegetarian options if they were cheaper."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-student-housing",
+      "kind": "discussion",
+      "title": "Student housing shortage",
+      "body": "Ruby: The student housing shortage is the biggest problem at our university. Some first-year students are living in motels or travelling two hours each day.\nSamuel: The university should build more halls of residence, but that takes years. In the meantime, it could work with local homeowners who have spare rooms.\nRuby: It's affecting study too. Students who travel long distances miss early classes, and those in temporary accommodation find it hard to concentrate. Some international students have even deferred their studies because they couldn't find anywhere to live.\nAnika: Homestays can work well, but there must be clear standards and support if problems arise. The city council could also speed up approval for new student apartments near campus.\nRuby: I agree we need both short-term and long-term solutions, because students can't wait years for new buildings.",
+      "turns": [
+        {
+          "speaker": "Ruby",
+          "text": "The student housing shortage is the biggest problem at our university. Some first-year students are living in motels or travelling two hours each day."
+        },
+        {
+          "speaker": "Samuel",
+          "text": "The university should build more halls of residence, but that takes years. In the meantime, it could work with local homeowners who have spare rooms."
+        },
+        {
+          "speaker": "Ruby",
+          "text": "It's affecting study too. Students who travel long distances miss early classes, and those in temporary accommodation find it hard to concentrate. Some international students have even deferred their studies because they couldn't find anywhere to live."
+        },
+        {
+          "speaker": "Anika",
+          "text": "Homestays can work well, but there must be clear standards and support if problems arise. The city council could also speed up approval for new student apartments near campus."
+        },
+        {
+          "speaker": "Ruby",
+          "text": "I agree we need both short-term and long-term solutions, because students can't wait years for new buildings."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-exams-projects",
+      "kind": "discussion",
+      "title": "Replacing exams with projects",
+      "body": "Lucas: Final exams should be replaced with projects. Exams mostly test how well you memorise information under pressure, not how well you can apply it.\nAmara: Projects are useful, but they're easier to cheat on, especially now that AI tools are common. Exams at least show what a student can do alone.\nLucas: Cheating is possible in exams too, and projects can be designed so that each student works on something personal. Projects also let students show deeper understanding, because they have time to research and revise their ideas.\nWiremu: Perhaps a mix is best. A project could count for most of the grade, followed by a short oral exam where students explain their project and answer questions about it.\nAmara: An oral follow-up would address my concern about cheating, so I could support that.",
+      "turns": [
+        {
+          "speaker": "Lucas",
+          "text": "Final exams should be replaced with projects. Exams mostly test how well you memorise information under pressure, not how well you can apply it."
+        },
+        {
+          "speaker": "Amara",
+          "text": "Projects are useful, but they're easier to cheat on, especially now that AI tools are common. Exams at least show what a student can do alone."
+        },
+        {
+          "speaker": "Lucas",
+          "text": "Cheating is possible in exams too, and projects can be designed so that each student works on something personal. Projects also let students show deeper understanding, because they have time to research and revise their ideas."
+        },
+        {
+          "speaker": "Wiremu",
+          "text": "Perhaps a mix is best. A project could count for most of the grade, followed by a short oral exam where students explain their project and answer questions about it."
+        },
+        {
+          "speaker": "Amara",
+          "text": "An oral follow-up would address my concern about cheating, so I could support that."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-gap-year",
+      "kind": "discussion",
+      "title": "Taking a gap year",
+      "body": "Zoe: I think school leavers should take a gap year before university. It gives them time to work, travel and decide what they really want to study.\nHenry: That's fine for people who can afford to travel, but for many students a gap year just delays their career. Some people also lose the habit of studying.\nZoe: It doesn't have to be expensive, though. Many people work for part of the year to save money. Research suggests students who take a planned gap year often perform better at university, because they are more motivated and certain about their choice.\nMahina: A gap year doesn't have to involve expensive travel. Working locally or volunteering can build maturity and savings. Universities could make deferring a place easier.\nHenry: If it's planned with a clear purpose, I can see the benefits.",
+      "turns": [
+        {
+          "speaker": "Zoe",
+          "text": "I think school leavers should take a gap year before university. It gives them time to work, travel and decide what they really want to study."
+        },
+        {
+          "speaker": "Henry",
+          "text": "That's fine for people who can afford to travel, but for many students a gap year just delays their career. Some people also lose the habit of studying."
+        },
+        {
+          "speaker": "Zoe",
+          "text": "It doesn't have to be expensive, though. Many people work for part of the year to save money. Research suggests students who take a planned gap year often perform better at university, because they are more motivated and certain about their choice."
+        },
+        {
+          "speaker": "Mahina",
+          "text": "A gap year doesn't have to involve expensive travel. Working locally or volunteering can build maturity and savings. Universities could make deferring a place easier."
+        },
+        {
+          "speaker": "Henry",
+          "text": "If it's planned with a clear purpose, I can see the benefits."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-record-lectures",
+      "kind": "discussion",
+      "title": "Recording every lecture",
+      "body": "Ava: All lectures should be recorded. Students who are sick, working or caring for family members can catch up, and everyone can review difficult topics before exams.\nNoah: Recordings are helpful, but attendance drops when everything is online. Some lecturers also feel uncomfortable being recorded, especially during open discussions.\nAva: Attendance often drops for other reasons, like timetable clashes. Recordings actually help students who attend, because they can rewatch parts they didn't understand. Lecturers could also be given training so they feel more comfortable.\nKiri: Maybe lecturers could record the main presentation but pause the recording for discussions. And tutorials could stay in person to encourage students to come to campus.\nNoah: That seems like a reasonable balance between flexibility and keeping people engaged.",
+      "turns": [
+        {
+          "speaker": "Ava",
+          "text": "All lectures should be recorded. Students who are sick, working or caring for family members can catch up, and everyone can review difficult topics before exams."
+        },
+        {
+          "speaker": "Noah",
+          "text": "Recordings are helpful, but attendance drops when everything is online. Some lecturers also feel uncomfortable being recorded, especially during open discussions."
+        },
+        {
+          "speaker": "Ava",
+          "text": "Attendance often drops for other reasons, like timetable clashes. Recordings actually help students who attend, because they can rewatch parts they didn't understand. Lecturers could also be given training so they feel more comfortable."
+        },
+        {
+          "speaker": "Kiri",
+          "text": "Maybe lecturers could record the main presentation but pause the recording for discussions. And tutorials could stay in person to encourage students to come to campus."
+        },
+        {
+          "speaker": "Noah",
+          "text": "That seems like a reasonable balance between flexibility and keeping people engaged."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-english-requirement",
+      "kind": "discussion",
+      "title": "Language requirements for graduates",
+      "body": "Diego: Universities should require all graduates to pass an advanced English test, even if they have already completed their degree in English. Employers expect strong communication skills.\nLily: A separate test seems unnecessary. If students have passed their courses, they have already shown they can study in English. An extra exam would add stress and cost.\nDiego: Passing a course doesn't always mean strong communication. Some students rely on friends or tools to edit their work, and group work can hide weaknesses. A final test would give employers a clear, independent measure of ability.\nYusuf: The real issue might be support rather than testing. Universities could offer free writing and speaking workshops throughout the degree, so students improve steadily.\nDiego: More support would definitely help. I just want to make sure graduates are confident communicators.",
+      "turns": [
+        {
+          "speaker": "Diego",
+          "text": "Universities should require all graduates to pass an advanced English test, even if they have already completed their degree in English. Employers expect strong communication skills."
+        },
+        {
+          "speaker": "Lily",
+          "text": "A separate test seems unnecessary. If students have passed their courses, they have already shown they can study in English. An extra exam would add stress and cost."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Passing a course doesn't always mean strong communication. Some students rely on friends or tools to edit their work, and group work can hide weaknesses. A final test would give employers a clear, independent measure of ability."
+        },
+        {
+          "speaker": "Yusuf",
+          "text": "The real issue might be support rather than testing. Universities could offer free writing and speaking workshops throughout the degree, so students improve steadily."
+        },
+        {
+          "speaker": "Diego",
+          "text": "More support would definitely help. I just want to make sure graduates are confident communicators."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-plastic-free-campus",
+      "kind": "discussion",
+      "title": "A plastic-free campus",
+      "body": "Maya: Our campus should ban single-use plastics completely, including bottles, cutlery and food containers. Other universities have done it successfully.\nBen: I support reducing plastic, but some alternatives are more expensive, and those costs will be passed on to students. Compostable containers also need proper composting facilities.\nMaya: The costs have fallen as more organisations switch. And reusable options can save students money over time. If we wait for perfect facilities, nothing will change, so a firm deadline would push the university to prepare properly.\nTui: We could start with the easiest changes, like installing more water refill stations and offering a discount for reusable cups, then move towards a full ban once systems are ready.\nMaya: A step-by-step plan is fine, as long as there's a clear deadline for the ban.",
+      "turns": [
+        {
+          "speaker": "Maya",
+          "text": "Our campus should ban single-use plastics completely, including bottles, cutlery and food containers. Other universities have done it successfully."
+        },
+        {
+          "speaker": "Ben",
+          "text": "I support reducing plastic, but some alternatives are more expensive, and those costs will be passed on to students. Compostable containers also need proper composting facilities."
+        },
+        {
+          "speaker": "Maya",
+          "text": "The costs have fallen as more organisations switch. And reusable options can save students money over time. If we wait for perfect facilities, nothing will change, so a firm deadline would push the university to prepare properly."
+        },
+        {
+          "speaker": "Tui",
+          "text": "We could start with the easiest changes, like installing more water refill stations and offering a discount for reusable cups, then move towards a full ban once systems are ready."
+        },
+        {
+          "speaker": "Maya",
+          "text": "A step-by-step plan is fine, as long as there's a clear deadline for the ban."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-attendance-marks",
+      "kind": "discussion",
+      "title": "Marks for attendance",
+      "body": "Harper: Some courses give marks just for attending tutorials. I think that's a good idea because it motivates students to come regularly, and regular attendance improves results.\nRavi: I disagree. Marks should reflect what students have learned, not whether they were physically present. Some people learn well independently.\nHarper: But students who attend regularly do better on average, and attendance marks help students who struggle with motivation. It's only a small percentage of the grade, so it doesn't really affect independent learners.\nEleanor: Perhaps marks could be given for participation rather than attendance, such as completing short tutorial tasks. That rewards engagement without simply counting heads.\nRavi: Participation tasks would be much better, because they show actual learning.",
+      "turns": [
+        {
+          "speaker": "Harper",
+          "text": "Some courses give marks just for attending tutorials. I think that's a good idea because it motivates students to come regularly, and regular attendance improves results."
+        },
+        {
+          "speaker": "Ravi",
+          "text": "I disagree. Marks should reflect what students have learned, not whether they were physically present. Some people learn well independently."
+        },
+        {
+          "speaker": "Harper",
+          "text": "But students who attend regularly do better on average, and attendance marks help students who struggle with motivation. It's only a small percentage of the grade, so it doesn't really affect independent learners."
+        },
+        {
+          "speaker": "Eleanor",
+          "text": "Perhaps marks could be given for participation rather than attendance, such as completing short tutorial tasks. That rewards engagement without simply counting heads."
+        },
+        {
+          "speaker": "Ravi",
+          "text": "Participation tasks would be much better, because they show actual learning."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "SGD",
+      "source_key": "dis-phones-lectures",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Priya wants to ban phones in lectures",
+          "Tom says phones are useful for slides and accessibility",
+          "Mei suggests clear expectations and engaging activities"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-group-assignments",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Liam says some members do most of the work",
+          "Aisha says employers expect teamwork",
+          "Hemi suggests individual reflections and marks"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-library-24-hours",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Sofia wants library open twenty-four hours for exams",
+          "Daniel worries about security costs and demand",
+          "Ngaio suggests a trial to collect data"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-free-transport-students",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Jack wants free public transport for students",
+          "Grace says someone must pay and fees may rise",
+          "Arjun suggests term-time free travel reducing traffic"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-digital-textbooks",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Chloe wants digital textbooks that are cheaper",
+          "Rawiri says access codes expire and laptops unreliable",
+          "Hannah suggests offering both formats"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-required-internships",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Ethan wants required internships for experience",
+          "Fatima says unpaid internships are unfair",
+          "Oliver suggests on-campus industry projects as alternatives"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-ai-essays",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "Nina allows AI tools with honesty",
+          "Kenji worries students will not develop skills",
+          "Tama suggests changing assessments to in-class and oral tasks"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-meat-free-days",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Isla wants meat-free days to lower carbon",
+          "Marcus says students should choose their food",
+          "Leilani suggests cheaper plant-based meals and carbon labels"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-student-housing",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Ruby says housing shortage is the biggest problem",
+          "Samuel suggests building halls and using spare rooms",
+          "Anika wants homestay standards and faster council approval"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-exams-projects",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Lucas wants projects instead of exams",
+          "Amara worries projects are easier to cheat on",
+          "Wiremu suggests projects with an oral exam"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-gap-year",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Zoe supports a gap year to work and travel",
+          "Henry says it delays careers and costs money",
+          "Mahina suggests working or volunteering locally and easier deferral"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-record-lectures",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Ava wants all lectures recorded",
+          "Noah worries attendance drops and lecturers uncomfortable",
+          "Kiri suggests pausing recordings and in-person tutorials"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-english-requirement",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "Diego wants an advanced English test for graduates",
+          "Lily says passing courses already shows ability",
+          "Yusuf suggests free writing and speaking workshops"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-plastic-free-campus",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Maya wants a ban on single-use plastics",
+          "Ben worries about costs and composting facilities",
+          "Tui suggests refill stations and gradual change"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-attendance-marks",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Harper supports marks for attendance",
+          "Ravi says marks should reflect learning",
+          "Eleanor suggests marks for participation tasks"
+        ]
+      }
+    }
+  ]
+}

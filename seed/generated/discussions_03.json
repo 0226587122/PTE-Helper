@@ -1,0 +1,623 @@
+{
+  "version": 1,
+  "notes": "Original group discussions (batch 3 of 3) for Summarize Group Discussion. Discussions 11 to 15 are backup questions. The body is the turns joined as 'Speaker: text' lines.",
+  "sources": [
+    {
+      "source_key": "dis-paid-research-participation",
+      "kind": "discussion",
+      "title": "Paying research participants",
+      "body": "Hannah: Psychology students are often required to take part in research studies for course credit. I think participants should be paid instead, because their time has value.\nKieran: Payment could attract people only interested in money, who might not take the tasks seriously. Course credit also helps students understand how research works.\nHannah: Many other universities pay participants, and the research quality hasn't fallen. Making participation compulsory for course credit also puts pressure on students, who may feel they cannot say no.\nAditi: Students could choose between credit and a small payment. Researchers could include simple attention checks to make sure participants are engaged either way.\nKieran: Offering a choice with attention checks addresses my concern about data quality.",
+      "turns": [
+        {
+          "speaker": "Hannah",
+          "text": "Psychology students are often required to take part in research studies for course credit. I think participants should be paid instead, because their time has value."
+        },
+        {
+          "speaker": "Kieran",
+          "text": "Payment could attract people only interested in money, who might not take the tasks seriously. Course credit also helps students understand how research works."
+        },
+        {
+          "speaker": "Hannah",
+          "text": "Many other universities pay participants, and the research quality hasn't fallen. Making participation compulsory for course credit also puts pressure on students, who may feel they cannot say no."
+        },
+        {
+          "speaker": "Aditi",
+          "text": "Students could choose between credit and a small payment. Researchers could include simple attention checks to make sure participants are engaged either way."
+        },
+        {
+          "speaker": "Kieran",
+          "text": "Offering a choice with attention checks addresses my concern about data quality."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-student-union-fees",
+      "kind": "discussion",
+      "title": "Student union fees",
+      "body": "Josh: Student union fees should be optional. Many students, especially part-time and online students, never use the clubs, events or services the fees pay for.\nTalia: But the fees also fund advocacy, advice services and support for students in financial trouble. If fees were optional, those services might disappear.\nJosh: Many students pay the fees but never find out what services exist. Online students in particular receive very little for their money. If the services are valuable, the union should be able to persuade students to pay voluntarily.\nRangi: Maybe fees could be lower for part-time and online students, and the union could publish exactly how the money is spent so everyone can see the value.\nJosh: Reduced fees and clearer reporting would make me feel the system is much fairer.",
+      "turns": [
+        {
+          "speaker": "Josh",
+          "text": "Student union fees should be optional. Many students, especially part-time and online students, never use the clubs, events or services the fees pay for."
+        },
+        {
+          "speaker": "Talia",
+          "text": "But the fees also fund advocacy, advice services and support for students in financial trouble. If fees were optional, those services might disappear."
+        },
+        {
+          "speaker": "Josh",
+          "text": "Many students pay the fees but never find out what services exist. Online students in particular receive very little for their money. If the services are valuable, the union should be able to persuade students to pay voluntarily."
+        },
+        {
+          "speaker": "Rangi",
+          "text": "Maybe fees could be lower for part-time and online students, and the union could publish exactly how the money is spent so everyone can see the value."
+        },
+        {
+          "speaker": "Josh",
+          "text": "Reduced fees and clearer reporting would make me feel the system is much fairer."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-cafe-prices",
+      "kind": "discussion",
+      "title": "Café prices on campus",
+      "body": "Emma: Food prices at the campus cafés are much higher than in nearby shops. Students on tight budgets end up skipping meals.\nCallum: The cafés have high costs, including rent paid to the university and staff wages. If prices were forced down, some cafés might close.\nEmma: Other universities have kept prices low by running cafés as non-profit services. Students spend a lot of time on campus, and hungry students find it hard to concentrate in lectures.\nParisa: The university could reduce rent in exchange for a range of low-cost meals. Adding microwaves and free hot water would also help students who bring food from home.\nCallum: Lower rent for affordable meals seems like a practical compromise that works for everyone.",
+      "turns": [
+        {
+          "speaker": "Emma",
+          "text": "Food prices at the campus cafés are much higher than in nearby shops. Students on tight budgets end up skipping meals."
+        },
+        {
+          "speaker": "Callum",
+          "text": "The cafés have high costs, including rent paid to the university and staff wages. If prices were forced down, some cafés might close."
+        },
+        {
+          "speaker": "Emma",
+          "text": "Other universities have kept prices low by running cafés as non-profit services. Students spend a lot of time on campus, and hungry students find it hard to concentrate in lectures."
+        },
+        {
+          "speaker": "Parisa",
+          "text": "The university could reduce rent in exchange for a range of low-cost meals. Adding microwaves and free hot water would also help students who bring food from home."
+        },
+        {
+          "speaker": "Callum",
+          "text": "Lower rent for affordable meals seems like a practical compromise that works for everyone."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-reusable-cups",
+      "kind": "discussion",
+      "title": "A reusable cup scheme",
+      "body": "Lucy: I propose a campus-wide reusable cup scheme. You pay a small deposit, get a cup, return it to any café, and get your deposit back.\nMateo: Similar schemes have failed elsewhere because people forget to return cups. Washing and collecting them also costs money.\nLucy: Some universities have made similar schemes work by linking cups to student ID cards, so they can track returns. The deposit also gives people a strong reason to bring cups back.\nHine: Charging an extra fee for disposable cups would encourage people to use the scheme. Collection points in lecture buildings would make returns more convenient too.\nMateo: If returns are easy and disposable cups cost more, it has a better chance of working.",
+      "turns": [
+        {
+          "speaker": "Lucy",
+          "text": "I propose a campus-wide reusable cup scheme. You pay a small deposit, get a cup, return it to any café, and get your deposit back."
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Similar schemes have failed elsewhere because people forget to return cups. Washing and collecting them also costs money."
+        },
+        {
+          "speaker": "Lucy",
+          "text": "Some universities have made similar schemes work by linking cups to student ID cards, so they can track returns. The deposit also gives people a strong reason to bring cups back."
+        },
+        {
+          "speaker": "Hine",
+          "text": "Charging an extra fee for disposable cups would encourage people to use the scheme. Collection points in lecture buildings would make returns more convenient too."
+        },
+        {
+          "speaker": "Mateo",
+          "text": "If returns are easy and disposable cups cost more, it has a better chance of working."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-micro-credentials",
+      "kind": "discussion",
+      "title": "Short courses and micro-credentials",
+      "body": "Aaron: Universities should offer more micro-credentials, which are short courses in specific skills. People changing careers can't always commit to a three-year degree.\nNadia: Employers may not understand what these short courses are worth. A degree shows broader knowledge and critical thinking that a short course can't provide.\nAaron: Many employers now care more about specific skills than degrees. Short courses let people update their skills quickly as industries change, and they're much cheaper than a full degree.\nTamati: Micro-credentials could be designed with industry input, so employers trust them. They could also count towards a full degree later if students want to continue.\nNadia: If they can build towards a degree and employers help design them, that sounds valuable.",
+      "turns": [
+        {
+          "speaker": "Aaron",
+          "text": "Universities should offer more micro-credentials, which are short courses in specific skills. People changing careers can't always commit to a three-year degree."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "Employers may not understand what these short courses are worth. A degree shows broader knowledge and critical thinking that a short course can't provide."
+        },
+        {
+          "speaker": "Aaron",
+          "text": "Many employers now care more about specific skills than degrees. Short courses let people update their skills quickly as industries change, and they're much cheaper than a full degree."
+        },
+        {
+          "speaker": "Tamati",
+          "text": "Micro-credentials could be designed with industry input, so employers trust them. They could also count towards a full degree later if students want to continue."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "If they can build towards a degree and employers help design them, that sounds valuable."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-controversial-speakers",
+      "kind": "discussion",
+      "title": "Controversial campus speakers",
+      "body": "Victoria: Universities should allow invited speakers with controversial views. Students need to hear different perspectives and learn to challenge arguments they disagree with.\nSamir: Free speech matters, but some speakers target particular groups of students, which can make campus feel unsafe for them.\nVictoria: Refusing to host speakers can make students less prepared to deal with difficult ideas in the real world. Students who disagree can protest peacefully or organise their own events with different views.\nElla: Events could include a moderator and time for questions, so views can be challenged openly. The university could also set clear rules against harassment. Students should be told about events well in advance, so anyone who disagrees can prepare questions.\nSamir: Moderation and clear rules would help balance free speech with student safety.",
+      "turns": [
+        {
+          "speaker": "Victoria",
+          "text": "Universities should allow invited speakers with controversial views. Students need to hear different perspectives and learn to challenge arguments they disagree with."
+        },
+        {
+          "speaker": "Samir",
+          "text": "Free speech matters, but some speakers target particular groups of students, which can make campus feel unsafe for them."
+        },
+        {
+          "speaker": "Victoria",
+          "text": "Refusing to host speakers can make students less prepared to deal with difficult ideas in the real world. Students who disagree can protest peacefully or organise their own events with different views."
+        },
+        {
+          "speaker": "Ella",
+          "text": "Events could include a moderator and time for questions, so views can be challenged openly. The university could also set clear rules against harassment. Students should be told about events well in advance, so anyone who disagrees can prepare questions."
+        },
+        {
+          "speaker": "Samir",
+          "text": "Moderation and clear rules would help balance free speech with student safety."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-early-timetable",
+      "kind": "discussion",
+      "title": "Eight o'clock classes",
+      "body": "Max: The new timetable starts classes at eight in the morning. Attendance will fall, because many students commute long distances or work late shifts.\nSophie: Earlier starts mean classes finish earlier, which helps students with afternoon jobs or childcare. Rooms are also used more efficiently.\nMax: Earlier starts also reduce clashes, because more rooms are available across the day. Students with afternoon commitments have struggled for years with late classes, so the change helps a group that is often overlooked.\nRewi: Early classes could be recorded, and core courses could be scheduled later in the day. Survey data on commuting and work patterns should guide the timetable.\nMax: If compulsory courses aren't at eight and students are surveyed, I'd be more accepting of the change.",
+      "turns": [
+        {
+          "speaker": "Max",
+          "text": "The new timetable starts classes at eight in the morning. Attendance will fall, because many students commute long distances or work late shifts."
+        },
+        {
+          "speaker": "Sophie",
+          "text": "Earlier starts mean classes finish earlier, which helps students with afternoon jobs or childcare. Rooms are also used more efficiently."
+        },
+        {
+          "speaker": "Max",
+          "text": "Earlier starts also reduce clashes, because more rooms are available across the day. Students with afternoon commitments have struggled for years with late classes, so the change helps a group that is often overlooked."
+        },
+        {
+          "speaker": "Rewi",
+          "text": "Early classes could be recorded, and core courses could be scheduled later in the day. Survey data on commuting and work patterns should guide the timetable."
+        },
+        {
+          "speaker": "Max",
+          "text": "If compulsory courses aren't at eight and students are surveyed, I'd be more accepting of the change."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-silent-zones",
+      "kind": "discussion",
+      "title": "Enforcing library silent zones",
+      "body": "Freya: The silent zone in the library is rarely silent. Staff should enforce the rules and ask noisy students to leave.\nKofi: Asking people to leave seems harsh. Many students don't realise they're in a silent zone because the signs are small.\nFreya: The rules are clearly stated at the entrance, and students who keep talking after being reminded are being disrespectful. Other students are trying to prepare for exams, and their needs should come first in a silent area.\nMere: Clearer signs and different furniture could help people recognise the zone. Students could also report noise anonymously through an app, so staff can respond without confrontation.\nFreya: Better signs and an anonymous reporting system would be a good start before stricter action.",
+      "turns": [
+        {
+          "speaker": "Freya",
+          "text": "The silent zone in the library is rarely silent. Staff should enforce the rules and ask noisy students to leave."
+        },
+        {
+          "speaker": "Kofi",
+          "text": "Asking people to leave seems harsh. Many students don't realise they're in a silent zone because the signs are small."
+        },
+        {
+          "speaker": "Freya",
+          "text": "The rules are clearly stated at the entrance, and students who keep talking after being reminded are being disrespectful. Other students are trying to prepare for exams, and their needs should come first in a silent area."
+        },
+        {
+          "speaker": "Mere",
+          "text": "Clearer signs and different furniture could help people recognise the zone. Students could also report noise anonymously through an app, so staff can respond without confrontation."
+        },
+        {
+          "speaker": "Freya",
+          "text": "Better signs and an anonymous reporting system would be a good start before stricter action."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-anonymous-marking",
+      "kind": "discussion",
+      "title": "Anonymous marking",
+      "body": "Adrian: All assignments should be marked anonymously. Markers might be unconsciously influenced by a student's name, gender or background.\nChen: Anonymity makes it harder for tutors to give personal feedback and track a student's progress through the semester.\nAdrian: Research has shown that markers can be influenced by names, even when they believe they are being fair. Students from minority backgrounds would feel more confident that their work is judged only on quality.\nPaige: Marking could be anonymous, with names revealed after grades are finalised. Tutors could then add personalised feedback without affecting the grade. Students could also request a meeting with their tutor to discuss the feedback in more detail.\nChen: Revealing names afterwards would keep the fairness while still allowing personal feedback.",
+      "turns": [
+        {
+          "speaker": "Adrian",
+          "text": "All assignments should be marked anonymously. Markers might be unconsciously influenced by a student's name, gender or background."
+        },
+        {
+          "speaker": "Chen",
+          "text": "Anonymity makes it harder for tutors to give personal feedback and track a student's progress through the semester."
+        },
+        {
+          "speaker": "Adrian",
+          "text": "Research has shown that markers can be influenced by names, even when they believe they are being fair. Students from minority backgrounds would feel more confident that their work is judged only on quality."
+        },
+        {
+          "speaker": "Paige",
+          "text": "Marking could be anonymous, with names revealed after grades are finalised. Tutors could then add personalised feedback without affecting the grade. Students could also request a meeting with their tutor to discuss the feedback in more detail."
+        },
+        {
+          "speaker": "Chen",
+          "text": "Revealing names afterwards would keep the fairness while still allowing personal feedback."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-online-invigilation",
+      "kind": "discussion",
+      "title": "Online exam supervision",
+      "body": "Jonah: Online exams with webcam supervision are convenient. Students don't need to travel, and the software can detect cheating.\nLeah: Webcam monitoring feels invasive, and the software sometimes flags innocent behaviour, like looking away to think. Not everyone has a quiet room or fast internet.\nJonah: Online exams also save students travel and accommodation costs, especially those living in rural areas. The software is improving, and students can contact support if they experience technical problems during the exam.\nKauri: Exams could be redesigned as open-book tasks that test understanding rather than memory, which reduces the need for strict monitoring. On-campus rooms could be available for those without suitable space.\nLeah: Open-book exams with campus rooms available would solve most of my concerns.",
+      "turns": [
+        {
+          "speaker": "Jonah",
+          "text": "Online exams with webcam supervision are convenient. Students don't need to travel, and the software can detect cheating."
+        },
+        {
+          "speaker": "Leah",
+          "text": "Webcam monitoring feels invasive, and the software sometimes flags innocent behaviour, like looking away to think. Not everyone has a quiet room or fast internet."
+        },
+        {
+          "speaker": "Jonah",
+          "text": "Online exams also save students travel and accommodation costs, especially those living in rural areas. The software is improving, and students can contact support if they experience technical problems during the exam."
+        },
+        {
+          "speaker": "Kauri",
+          "text": "Exams could be redesigned as open-book tasks that test understanding rather than memory, which reduces the need for strict monitoring. On-campus rooms could be available for those without suitable space."
+        },
+        {
+          "speaker": "Leah",
+          "text": "Open-book exams with campus rooms available would solve most of my concerns."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-intergenerational-housing",
+      "kind": "discussion",
+      "title": "Students living with older residents",
+      "body": "Mila: I read about schemes where students live with older people at low rent in exchange for helping around the house. It could ease the housing shortage and reduce loneliness.\nOwen: It sounds good, but living arrangements like that could create tension if expectations aren't clear, and students might feel pressured to do too much.\nMila: These schemes have already worked in several countries. Older people often have spare rooms and would welcome company, while students need affordable housing. Both groups gain something important from the arrangement.\nIhaia: A formal agreement setting out hours of help and house rules would protect both sides. An organisation could match people carefully and check in regularly.\nOwen: With clear agreements and support from an organisation, I think it could work well.",
+      "turns": [
+        {
+          "speaker": "Mila",
+          "text": "I read about schemes where students live with older people at low rent in exchange for helping around the house. It could ease the housing shortage and reduce loneliness."
+        },
+        {
+          "speaker": "Owen",
+          "text": "It sounds good, but living arrangements like that could create tension if expectations aren't clear, and students might feel pressured to do too much."
+        },
+        {
+          "speaker": "Mila",
+          "text": "These schemes have already worked in several countries. Older people often have spare rooms and would welcome company, while students need affordable housing. Both groups gain something important from the arrangement."
+        },
+        {
+          "speaker": "Ihaia",
+          "text": "A formal agreement setting out hours of help and house rules would protect both sides. An organisation could match people carefully and check in regularly."
+        },
+        {
+          "speaker": "Owen",
+          "text": "With clear agreements and support from an organisation, I think it could work well."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-feeding-campus-birds",
+      "kind": "discussion",
+      "title": "Feeding birds on campus",
+      "body": "Asha: Lots of students feed the ducks and gulls near the campus lake. It's a nice break between classes, and I don't see the harm.\nPatrick: Bread isn't good for birds, and feeding them makes gulls aggressive around the cafés. Leftover food also attracts rats.\nAsha: The birds look healthy, and people have fed them for years. Feeding them is one of the few relaxing activities on campus that doesn't cost anything.\nWhetu: Signs could explain why feeding is harmful. The university could also create a bird-friendly garden with native plants, so students can enjoy wildlife without feeding it.\nAsha: I didn't realise bread was harmful. A native garden sounds like a better way to enjoy the birds.",
+      "turns": [
+        {
+          "speaker": "Asha",
+          "text": "Lots of students feed the ducks and gulls near the campus lake. It's a nice break between classes, and I don't see the harm."
+        },
+        {
+          "speaker": "Patrick",
+          "text": "Bread isn't good for birds, and feeding them makes gulls aggressive around the cafés. Leftover food also attracts rats."
+        },
+        {
+          "speaker": "Asha",
+          "text": "The birds look healthy, and people have fed them for years. Feeding them is one of the few relaxing activities on campus that doesn't cost anything."
+        },
+        {
+          "speaker": "Whetu",
+          "text": "Signs could explain why feeding is harmful. The university could also create a bird-friendly garden with native plants, so students can enjoy wildlife without feeding it."
+        },
+        {
+          "speaker": "Asha",
+          "text": "I didn't realise bread was harmful. A native garden sounds like a better way to enjoy the birds."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-lab-dress-code",
+      "kind": "discussion",
+      "title": "Dress codes in laboratories",
+      "body": "Ryan: Students who arrive at labs in open shoes are sent away. I think that's too strict, especially when the experiment doesn't involve dangerous chemicals.\nKeisha: Safety rules exist because accidents are unpredictable. A dropped beaker of hot liquid can cause serious injuries, even in a basic experiment.\nRyan: Students are missing whole lab sessions for something small, and those sessions can be hard to make up. In many first-year labs we only use water and simple equipment, so the risk is very low.\nArohanui: The rules should stay, but the university could lend spare lab shoes and coats at the entrance, so students don't miss the class when they forget.\nRyan: Lending equipment would stop students missing labs, so I'd be happy with that.",
+      "turns": [
+        {
+          "speaker": "Ryan",
+          "text": "Students who arrive at labs in open shoes are sent away. I think that's too strict, especially when the experiment doesn't involve dangerous chemicals."
+        },
+        {
+          "speaker": "Keisha",
+          "text": "Safety rules exist because accidents are unpredictable. A dropped beaker of hot liquid can cause serious injuries, even in a basic experiment."
+        },
+        {
+          "speaker": "Ryan",
+          "text": "Students are missing whole lab sessions for something small, and those sessions can be hard to make up. In many first-year labs we only use water and simple equipment, so the risk is very low."
+        },
+        {
+          "speaker": "Arohanui",
+          "text": "The rules should stay, but the university could lend spare lab shoes and coats at the entrance, so students don't miss the class when they forget."
+        },
+        {
+          "speaker": "Ryan",
+          "text": "Lending equipment would stop students missing labs, so I'd be happy with that."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-textbook-costs",
+      "kind": "discussion",
+      "title": "The cost of required textbooks",
+      "body": "Bella: Some courses require textbooks that cost over two hundred dollars. Lecturers should only assign free or low-cost materials.\nAhmed: Free materials aren't always as high in quality, and some specialised subjects don't have good open textbooks yet.\nBella: Many excellent open textbooks now exist, and some are written by leading academics. Expensive books add to financial pressure, and some students simply don't buy them, which affects their grades.\nRosa: The library could buy more digital licences so everyone can access required books. Lecturers could also be funded to develop open textbooks in their fields. Older editions are often almost identical and much cheaper, so lecturers could allow them.\nAhmed: More library licences would help straight away, while open textbooks are developed over time.",
+      "turns": [
+        {
+          "speaker": "Bella",
+          "text": "Some courses require textbooks that cost over two hundred dollars. Lecturers should only assign free or low-cost materials."
+        },
+        {
+          "speaker": "Ahmed",
+          "text": "Free materials aren't always as high in quality, and some specialised subjects don't have good open textbooks yet."
+        },
+        {
+          "speaker": "Bella",
+          "text": "Many excellent open textbooks now exist, and some are written by leading academics. Expensive books add to financial pressure, and some students simply don't buy them, which affects their grades."
+        },
+        {
+          "speaker": "Rosa",
+          "text": "The library could buy more digital licences so everyone can access required books. Lecturers could also be funded to develop open textbooks in their fields. Older editions are often almost identical and much cheaper, so lecturers could allow them."
+        },
+        {
+          "speaker": "Ahmed",
+          "text": "More library licences would help straight away, while open textbooks are developed over time."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-exam-week-events",
+      "kind": "discussion",
+      "title": "Wellbeing events during exams",
+      "body": "Jade: The university should run wellbeing events during exam weeks, like free breakfasts, therapy dogs and short yoga classes. They help students manage stress.\nFelix: Those events are nice, but they don't address the real causes of stress, like having several exams on the same day or unclear marking criteria.\nJade: Small breaks really do help students reset. Many students feel isolated during exam weeks, and events create a sense of community that makes it easier to ask for help.\nMatiu: We need both. The events provide short-term relief, and the university could review exam timetables to avoid clashes and publish marking guides earlier.\nFelix: If timetable problems are fixed too, I'm fully in favour of the events.",
+      "turns": [
+        {
+          "speaker": "Jade",
+          "text": "The university should run wellbeing events during exam weeks, like free breakfasts, therapy dogs and short yoga classes. They help students manage stress."
+        },
+        {
+          "speaker": "Felix",
+          "text": "Those events are nice, but they don't address the real causes of stress, like having several exams on the same day or unclear marking criteria."
+        },
+        {
+          "speaker": "Jade",
+          "text": "Small breaks really do help students reset. Many students feel isolated during exam weeks, and events create a sense of community that makes it easier to ask for help."
+        },
+        {
+          "speaker": "Matiu",
+          "text": "We need both. The events provide short-term relief, and the university could review exam timetables to avoid clashes and publish marking guides earlier."
+        },
+        {
+          "speaker": "Felix",
+          "text": "If timetable problems are fixed too, I'm fully in favour of the events."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "SGD",
+      "source_key": "dis-paid-research-participation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Hannah wants research participants paid",
+          "Kieran says payment may attract careless participants",
+          "Aditi suggests choice of credit or payment with attention checks"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-student-union-fees",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Josh wants optional union fees",
+          "Talia says fees fund advocacy and support",
+          "Rangi suggests lower fees for part-time students and clear spending reports"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-cafe-prices",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Emma says café prices are too high",
+          "Callum says cafés have high rent and wages",
+          "Parisa suggests lower rent for low-cost meals and microwaves"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-reusable-cups",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Lucy proposes a reusable cup deposit scheme",
+          "Mateo says people forget to return cups",
+          "Hine suggests disposable cup fees and collection points"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-micro-credentials",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "Aaron wants more micro-credentials for career changers",
+          "Nadia says employers may not value them",
+          "Tamati suggests industry input and credit towards degrees"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-controversial-speakers",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "Victoria supports controversial speakers for different perspectives",
+          "Samir worries some speakers make students unsafe",
+          "Ella suggests moderators and rules against harassment"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-early-timetable",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Max says eight o'clock classes reduce attendance",
+          "Sophie says early finishes help jobs and childcare",
+          "Rewi suggests recording classes and surveying students"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-silent-zones",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Freya wants silent zone rules enforced",
+          "Kofi says signs are too small",
+          "Mere suggests clearer signs and anonymous reporting"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-anonymous-marking",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Adrian wants anonymous marking to avoid bias",
+          "Chen says it limits personal feedback",
+          "Paige suggests revealing names after grading"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-online-invigilation",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "Jonah says webcam exams are convenient",
+          "Leah says monitoring is invasive and unfair",
+          "Kauri suggests open-book exams and campus rooms"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-intergenerational-housing",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Mila supports students living with older people",
+          "Owen worries about tension and pressure",
+          "Ihaia suggests formal agreements and matching"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-feeding-campus-birds",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Asha enjoys feeding campus birds",
+          "Patrick says bread harms birds and attracts rats",
+          "Whetu suggests signs and a native bird garden"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-lab-dress-code",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Ryan says lab dress code is too strict",
+          "Keisha says accidents are unpredictable",
+          "Arohanui suggests lending shoes and coats"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-textbook-costs",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Bella wants free or low-cost textbooks",
+          "Ahmed says free materials may lack quality",
+          "Rosa suggests library licences and open textbooks"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-exam-week-events",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Jade wants wellbeing events during exams",
+          "Felix says events ignore causes of stress",
+          "Matiu suggests fixing exam timetable clashes too"
+        ]
+      }
+    }
+  ]
+}

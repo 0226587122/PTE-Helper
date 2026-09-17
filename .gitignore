@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PTE practice app
+.env
+node_modules/
+frontend/dist/
+frontend/playwright-report/
+frontend/test-results/
+bank-export-*.json
+
+# Local copies of the app spec with real secrets
+.do/*.local.yaml

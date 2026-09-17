@@ -1,0 +1,1167 @@
+{
+  "version": 1,
+  "notes": "Original reading passages (batch 1 of 3). Each passage feeds five types: RWFIB and RFIB (from blank_markup), MCMA, MCSA and SWT. Passages 11 to 15 are backup questions.",
+  "sources": [
+    {
+      "source_key": "pas-procrastination",
+      "kind": "passage",
+      "title": "Why we procrastinate",
+      "body": "Procrastination is often dismissed as simple laziness, but psychologists increasingly view it as a problem of emotional regulation. People tend to delay tasks that make them feel anxious or uncertain, choosing short-term relief over long-term goals. Ironically, the delay usually increases stress, because the task still has to be done in less time. Research suggests that breaking work into small, concrete steps can reduce the anxiety that triggers avoidance. Another useful strategy is self-compassion. Students who forgive themselves for procrastinating on one assignment are less likely to repeat the behaviour next time, perhaps because they spend less energy on guilt and more on the work itself.",
+      "blank_markup": "Procrastination is often {{dismissed|dispatched|discovered|distributed}} as simple laziness, but psychologists increasingly view it as a problem of emotional regulation. People tend to delay tasks that make them feel anxious or uncertain, choosing short-term relief over long-term {{goals|guests|grounds|gaps}}. Ironically, the delay usually increases stress, because the task still has to be done in less time. Research suggests that breaking work into small, concrete steps can reduce the anxiety that {{triggers|trims|trusts|treats}} avoidance. Another useful strategy is self-compassion. Students who forgive themselves for procrastinating on one assignment are less likely to {{repeat|reveal|recall|require}} the behaviour next time, perhaps because they spend less energy on guilt and more on the work itself."
+    },
+    {
+      "source_key": "pas-rewilding",
+      "kind": "passage",
+      "title": "Rewilding",
+      "body": "Rewilding is an approach to conservation that aims to restore natural processes rather than manage every detail of a landscape. Instead of planting particular species or controlling grazing by hand, rewilding projects may reintroduce large animals such as beavers or bison and then allow the ecosystem to develop with limited human intervention. Beavers, for example, build dams that slow rivers, create wetlands and reduce the risk of flooding downstream. Critics worry that rewilding can conflict with farming, especially when predators are involved, and that its outcomes are hard to predict. Supporters respond that many traditional conservation methods have failed to halt the decline of wildlife, so a bolder approach is needed.",
+      "blank_markup": "Rewilding is an approach to conservation that aims to restore natural processes rather than manage every detail of a landscape. Instead of planting particular species or controlling grazing by hand, rewilding projects may {{reintroduce|reinforce|rearrange|reproduce}} large animals such as beavers or bison and then allow the ecosystem to develop with limited human intervention. Beavers, for example, build dams that slow rivers, create wetlands and reduce the {{risk|rate|rise|rest}} of flooding downstream. Critics worry that rewilding can conflict with farming, especially when predators are involved, and that its outcomes are hard to {{predict|protect|prevent|provide}}. Supporters respond that many traditional conservation methods have failed to halt the {{decline|design|degree|delight}} of wildlife, so a bolder approach is needed."
+    },
+    {
+      "source_key": "pas-battery-recycling",
+      "kind": "passage",
+      "title": "Recycling lithium-ion batteries",
+      "body": "As electric vehicles become more common, the number of used lithium-ion batteries will rise sharply. These batteries contain valuable materials, including lithium, cobalt and nickel, which are expensive and environmentally damaging to mine. Recycling could reduce the need for new mining, but the process is still developing. Batteries differ widely in design, which makes it difficult to dismantle them automatically. Before recycling, however, many batteries may have a second life. A car battery that can no longer power a vehicle efficiently may still store energy from solar panels for years. Researchers argue that designing batteries to be easily taken apart would make both reuse and recycling far more practical.",
+      "blank_markup": "As electric vehicles become more common, the number of used lithium-ion batteries will rise sharply. These batteries contain valuable materials, including lithium, cobalt and nickel, which are expensive and {{environmentally|economically|essentially|eventually}} damaging to mine. Recycling could reduce the need for new mining, but the process is still developing. Batteries differ widely in design, which makes it difficult to {{dismantle|distinguish|distribute|display}} them automatically. Before recycling, however, many batteries may have a second life. A car battery that can no longer {{power|pour|pause|praise}} a vehicle efficiently may still store energy from solar panels for years. Researchers argue that designing batteries to be easily taken apart would make both reuse and recycling far more {{practical|political|partial|previous}}."
+    },
+    {
+      "source_key": "pas-polynesian-navigation",
+      "kind": "passage",
+      "title": "Polynesian navigation",
+      "body": "Long before modern instruments, Polynesian navigators crossed thousands of kilometres of open ocean and settled islands across the Pacific, including Aotearoa New Zealand. They relied on detailed knowledge passed down through generations. Navigators memorised the rising and setting points of stars, read the shape and direction of ocean swells, and watched for birds that return to land at dusk. Clouds forming over islands and changes in water colour offered further clues that land was near. In the nineteen seventies, a voyage from Hawaii to Tahiti using only traditional methods helped revive interest in these skills, which are now taught again to new generations of voyagers.",
+      "blank_markup": "Long before modern instruments, Polynesian navigators crossed thousands of kilometres of open ocean and settled islands across the Pacific, including Aotearoa New Zealand. They {{relied|replied|retired|reacted}} on detailed knowledge passed down through generations. Navigators memorised the rising and setting points of stars, read the shape and direction of ocean swells, and watched for birds that return to land at dusk. Clouds forming over islands and changes in water colour offered further {{clues|claims|clauses|charges}} that land was near. In the nineteen seventies, a voyage from Hawaii to Tahiti using only traditional methods helped {{revive|review|remove|reverse}} interest in these skills, which are now taught again to new generations of {{voyagers|viewers|villagers|volunteers}}."
+    },
+    {
+      "source_key": "pas-vertical-farming",
+      "kind": "passage",
+      "title": "Vertical farming",
+      "body": "Vertical farms grow crops indoors in stacked layers, using artificial lighting and carefully controlled temperature and humidity. Because they do not depend on the weather, they can produce food all year and are often located close to the cities where it will be consumed. They also use far less water than conventional farms, since water is recycled through the system. However, vertical farming has an important limitation: energy. Lighting and climate control are expensive, so most vertical farms grow leafy greens and herbs, which grow quickly and sell for relatively high prices. Staple crops such as wheat and rice are not currently profitable to grow this way. Falling electricity prices from renewable sources could change this calculation.",
+      "blank_markup": "Vertical farms grow crops indoors in stacked layers, using artificial lighting and carefully controlled temperature and humidity. Because they do not depend on the weather, they can produce food all year and are often located close to the cities where it will be {{consumed|consulted|contained|confirmed}}. They also use far less water than conventional farms, since water is recycled through the system. However, vertical farming has an important {{limitation|location|limitless|listing}}: energy. Lighting and climate control are expensive, so most vertical farms grow leafy greens and herbs, which grow quickly and sell for relatively high prices. Staple crops such as wheat and rice are not currently {{profitable|probable|portable|preferable}} to grow this way. Falling electricity prices from renewable sources could change this {{calculation|collection|celebration|circulation}}."
+    },
+    {
+      "source_key": "pas-handwriting",
+      "kind": "passage",
+      "title": "Handwriting and learning",
+      "body": "As more schoolwork moves onto laptops and tablets, some educators question whether children still need to learn handwriting. Several studies suggest that writing by hand may offer learning benefits. When young children form letters by hand, they appear to recognise those letters more quickly than when they type them. Taking notes by hand may also improve memory of the material, possibly because it is slower and requires learners to summarise ideas rather than copy them word for word. Typing, however, is faster and makes editing easier, which is valuable for longer writing tasks. Many researchers therefore recommend a balanced approach, teaching both skills and choosing the tool that suits the task.",
+      "blank_markup": "As more schoolwork moves onto laptops and tablets, some educators question whether children still need to learn handwriting. Several studies suggest that writing by hand may offer learning benefits. When young children form letters by hand, they appear to {{recognise|reorganise|recommend|recover}} those letters more quickly than when they type them. Taking notes by hand may also improve {{memory|money|mastery|mercy}} of the material, possibly because it is slower and requires learners to summarise ideas rather than copy them word for word. Typing, however, is faster and makes editing easier, which is valuable for longer writing tasks. Many researchers therefore {{recommend|remember|resemble|recognise}} a balanced approach, teaching both skills and choosing the tool that suits the {{task|taste|tax|talk}}."
+    },
+    {
+      "source_key": "pas-auckland-volcanoes",
+      "kind": "passage",
+      "title": "Living on a volcanic field",
+      "body": "Auckland, New Zealand's largest city, is built on a volcanic field that contains more than fifty small volcanoes. Unlike a single large volcano, a volcanic field does not erupt from the same place twice. The next eruption could occur almost anywhere within the field, which makes planning particularly challenging. The most recent eruption formed Rangitoto Island about six hundred years ago. Scientists monitor the region with a network of instruments that detect small earthquakes and ground movement. Because magma rising towards the surface usually produces warning signs, experts expect days or weeks of notice. Emergency planners have therefore prepared evacuation plans that could be adapted to whichever part of the city is affected.",
+      "blank_markup": "Auckland, New Zealand's largest city, is built on a volcanic field that contains more than fifty small volcanoes. Unlike a single large volcano, a volcanic field does not {{erupt|erode|exert|elect}} from the same place twice. The next eruption could occur almost anywhere within the field, which makes planning particularly challenging. The most recent eruption formed Rangitoto Island about six hundred years ago. Scientists monitor the region with a network of instruments that detect small earthquakes and ground {{movement|management|measurement|monument}}. Because magma rising towards the surface usually produces warning signs, experts expect days or weeks of notice. Emergency planners have therefore prepared {{evacuation|evaluation|education|exaggeration}} plans that could be adapted to whichever part of the city is {{affected|effected|afforded|affirmed}}."
+    },
+    {
+      "source_key": "pas-coffee-history",
+      "kind": "passage",
+      "title": "The spread of coffee",
+      "body": "Coffee plants originated in the highlands of Ethiopia, but coffee as a drink first became popular in Yemen, where it was valued by people who needed to stay awake for night-time prayers. From there, coffee houses spread to cities across the Middle East and later to Europe. These coffee houses were more than places to drink. They became important centres of conversation, where merchants exchanged news and customers debated politics. Some rulers viewed them with suspicion and tried to close them. European colonial powers later established coffee plantations in Asia and the Americas, often relying on forced labour. Today coffee is one of the world's most widely traded agricultural products.",
+      "blank_markup": "Coffee plants originated in the highlands of Ethiopia, but coffee as a drink first became popular in Yemen, where it was valued by people who needed to stay awake for night-time prayers. From there, coffee houses spread to cities across the Middle East and later to Europe. These coffee houses were more than places to drink. They became important centres of {{conversation|conservation|convention|conversion}}, where merchants exchanged news and customers debated politics. Some rulers viewed them with {{suspicion|supervision|suggestion|submission}} and tried to close them. European colonial powers later established coffee plantations in Asia and the Americas, often relying on forced {{labour|labels|layers|lectures}}. Today coffee is one of the world's most widely traded agricultural {{products|projects|prospects|protests}}."
+    },
+    {
+      "source_key": "pas-mangroves",
+      "kind": "passage",
+      "title": "The value of mangroves",
+      "body": "Mangroves are trees and shrubs that grow in salty coastal water in tropical and warm temperate regions, including northern New Zealand. Their tangled roots trap sediment and slow the movement of water, which helps protect coastlines from erosion and storm damage. Mangrove forests also serve as nurseries for many species of fish, providing shelter for young animals before they move out to sea. In addition, mangrove soils store large amounts of carbon, often more per hectare than many land forests. Despite these benefits, large areas of mangroves have been cleared for fish farms, agriculture and coastal development. Restoration projects have had mixed results, and scientists stress that protecting existing forests is usually cheaper and more effective than replanting.",
+      "blank_markup": "Mangroves are trees and shrubs that grow in salty coastal water in tropical and warm temperate regions, including northern New Zealand. Their tangled roots {{trap|tap|trip|tape}} sediment and slow the movement of water, which helps protect coastlines from erosion and storm damage. Mangrove forests also serve as nurseries for many species of fish, providing shelter for young animals before they move out to sea. In addition, mangrove soils store large amounts of carbon, often more per hectare than many land forests. Despite these benefits, large areas of mangroves have been {{cleared|cleaned|claimed|cleansed}} for fish farms, agriculture and coastal {{development|deployment|departure|deposit}}. Restoration projects have had mixed results, and scientists stress that protecting existing forests is usually cheaper and more {{effective|expensive|excessive|exclusive}} than replanting."
+    },
+    {
+      "source_key": "pas-four-day-week",
+      "kind": "passage",
+      "title": "Trials of the four-day week",
+      "body": "In recent years, companies in several countries have trialled a four-day working week with no reduction in pay. In many of these trials, employees reported lower stress and better work-life balance, and most participating businesses chose to continue the arrangement afterwards. Supporters argue that shorter weeks encourage staff to focus, cut unnecessary meetings and reduce time lost to fatigue. Sceptics point out that the companies that volunteered for trials may have been especially suited to the change, so the results may not apply to every industry. Hospitals, schools and factories, for example, may need to hire additional staff to maintain the same level of service, which would raise costs.",
+      "blank_markup": "In recent years, companies in several countries have trialled a four-day working week with no reduction in pay. In many of these trials, employees reported lower stress and better work-life balance, and most participating businesses {{chose|chased|chewed|choked}} to continue the arrangement afterwards. Supporters argue that shorter weeks encourage staff to focus, cut unnecessary meetings and reduce time lost to fatigue. Sceptics point out that the companies that {{volunteered|ventured|verified|vanished}} for trials may have been especially suited to the change, so the results may not apply to every industry. Hospitals, schools and factories, for example, may need to hire additional staff to {{maintain|mention|measure|merge}} the same level of service, which would raise {{costs|coasts|casts|coats}}."
+    },
+    {
+      "source_key": "pas-noise-health",
+      "kind": "passage",
+      "title": "Noise and health",
+      "body": "Noise is often treated as a minor nuisance, but long-term exposure to loud environments can have serious effects on health. Traffic, aircraft and industrial noise have been linked to sleep disturbance, raised blood pressure and a higher risk of heart disease. Even when people believe they have become used to noise, their bodies may continue to react with stress hormones. Children in schools near busy airports have been found to perform worse in reading tests, perhaps because noise interrupts concentration. Cities can reduce the problem through quieter road surfaces, noise barriers and better insulation in homes, as well as by planning housing away from major sources of noise.",
+      "blank_markup": "Noise is often treated as a minor nuisance, but long-term exposure to loud environments can have serious effects on health. Traffic, aircraft and industrial noise have been {{linked|licked|lifted|limited}} to sleep disturbance, raised blood pressure and a higher risk of heart disease. Even when people believe they have become used to noise, their bodies may continue to react with stress hormones. Children in schools near busy airports have been found to perform worse in reading tests, perhaps because noise {{interrupts|interprets|introduces|invests}} concentration. Cities can reduce the problem through quieter road surfaces, noise barriers and better {{insulation|installation|inspiration|invitation}} in homes, as well as by planning housing away from major sources of {{noise|nose|news|notice}}."
+    },
+    {
+      "source_key": "pas-platypus",
+      "kind": "passage",
+      "title": "The unusual platypus",
+      "body": "When the first platypus specimen reached Britain from Australia in the late eighteenth century, some scientists suspected it was a hoax, made by attaching a duck's bill to the body of another animal. The platypus is indeed unusual. It is a mammal that lays eggs, and males have venomous spurs on their back legs. Its soft bill contains thousands of sensors that detect tiny electrical signals produced by the muscles of its prey, allowing it to hunt with its eyes, ears and nose closed underwater. Platypuses live in rivers and streams in eastern Australia, where they are threatened by drought, dams and land clearing that reduce the quality of their habitat.",
+      "blank_markup": "When the first platypus specimen reached Britain from Australia in the late eighteenth century, some scientists suspected it was a {{hoax|host|hook|hose}}, made by attaching a duck's bill to the body of another animal. The platypus is indeed unusual. It is a mammal that lays eggs, and males have venomous spurs on their back legs. Its soft bill contains thousands of sensors that detect tiny electrical signals produced by the muscles of its prey, allowing it to hunt with its eyes, ears and nose {{closed|cleared|cloned|clothed}} underwater. Platypuses live in rivers and streams in eastern Australia, where they are {{threatened|threaded|thrilled|treated}} by drought, dams and land clearing that reduce the quality of their {{habitat|habit|harbour|heritage}}."
+    },
+    {
+      "source_key": "pas-open-access",
+      "kind": "passage",
+      "title": "Open-access publishing",
+      "body": "Traditionally, academic journals charged libraries expensive subscriptions, so research was available mainly to people at wealthy institutions. The open-access movement argues that publicly funded research should be free for anyone to read. Many journals now publish articles openly, but someone still has to pay for editing and hosting. In one common model, authors or their funders pay a fee when an article is accepted. Critics warn that this can disadvantage researchers from poorer institutions and has encouraged some low-quality journals that accept almost any paper in order to collect fees. Alternative models, such as university-funded journals and public repositories, are attempting to make research accessible without shifting costs onto authors.",
+      "blank_markup": "Traditionally, academic journals charged libraries expensive subscriptions, so research was available mainly to people at wealthy institutions. The open-access movement argues that publicly funded research should be free for anyone to read. Many journals now {{publish|punish|polish|perish}} articles openly, but someone still has to pay for editing and hosting. In one common model, authors or their funders pay a fee when an article is accepted. Critics warn that this can {{disadvantage|distribute|discourage|display}} researchers from poorer institutions and has encouraged some low-quality journals that accept almost any paper in order to collect fees. Alternative models, such as university-funded journals and public repositories, are attempting to make research {{accessible|acceptable|accountable|adjustable}} without shifting costs onto {{authors|editors|actors|auditors}}."
+    },
+    {
+      "source_key": "pas-wind-farm-siting",
+      "kind": "passage",
+      "title": "Where to build wind farms",
+      "body": "Choosing a location for a wind farm involves balancing many factors. The most obvious is wind speed, because the energy produced rises steeply as wind becomes stronger. Developers also need access to transmission lines, since building new connections to the grid can be very costly. Environmental assessments consider birds and bats, which can be killed by turbine blades, particularly along migration routes. Local communities are another important consideration. Some residents object to the noise and visual impact of turbines, while others welcome payments and jobs. Offshore wind farms avoid some of these conflicts and benefit from stronger, steadier winds, but they are more complex to build and maintain.",
+      "blank_markup": "Choosing a location for a wind farm involves balancing many factors. The most obvious is wind speed, because the energy produced rises {{steeply|sweetly|stiffly|sternly}} as wind becomes stronger. Developers also need access to transmission lines, since building new connections to the grid can be very {{costly|costume|coastal|courtly}}. Environmental assessments consider birds and bats, which can be killed by turbine blades, particularly along migration routes. Local communities are another important consideration. Some residents {{object|oblige|obtain|occupy}} to the noise and visual impact of turbines, while others welcome payments and jobs. Offshore wind farms avoid some of these conflicts and benefit from stronger, steadier winds, but they are more {{complex|compact|content|concise}} to build and maintain."
+    },
+    {
+      "source_key": "pas-queue-psychology",
+      "kind": "passage",
+      "title": "The psychology of waiting",
+      "body": "Most of us dislike waiting in queues, but research shows that how long a wait feels can matter as much as how long it actually lasts. Unoccupied time feels longer than occupied time, which is why some airports place mirrors or screens near lifts and baggage areas. Uncertainty also makes waiting more stressful; people become calmer when they are told how long the delay will be, even if the news is disappointing. Perceptions of fairness matter too. Customers become especially frustrated if someone who arrived later is served first. For this reason, many banks and offices use a single line that feeds several counters instead of separate lines for each.",
+      "blank_markup": "Most of us dislike waiting in queues, but research shows that how long a wait feels can matter as much as how long it actually lasts. Unoccupied time feels longer than occupied time, which is why some airports {{place|plate|plead|plane}} mirrors or screens near lifts and baggage areas. Uncertainty also makes waiting more {{stressful|successful|sensitive|scarce}}; people become calmer when they are told how long the delay will be, even if the news is disappointing. Perceptions of fairness matter too. Customers become especially frustrated if someone who arrived later is {{served|saved|solved|severed}} first. For this reason, many banks and offices use a single line that {{feeds|fades|feels|fetches}} several counters instead of separate lines for each."
+    }
+  ],
+  "questions": [
+    {
+      "type": "RWFIB",
+      "source_key": "pas-procrastination",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-procrastination",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "delays",
+          "motivated",
+          "ignores"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-procrastination",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "According to the passage, which of the following statements are true?",
+        "options": [
+          "Procrastination is linked to emotional regulation.",
+          "Delaying a task often increases stress.",
+          "Self-compassion may reduce future procrastination.",
+          "Procrastination is mainly caused by laziness.",
+          "Breaking work into steps usually increases anxiety."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-procrastination",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What is the main purpose of the passage?",
+        "options": [
+          "To explain procrastination as an emotional problem and suggest ways to reduce it",
+          "To argue that students who procrastinate are lazy",
+          "To show that guilt improves motivation",
+          "To compare procrastination in different countries"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-procrastination",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "procrastination is emotional regulation rather than laziness",
+          "delay increases stress",
+          "small steps and self-compassion reduce procrastination"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-rewilding",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-rewilding",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "remove",
+          "success",
+          "control"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-rewilding",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which points are made about rewilding?",
+        "options": [
+          "It focuses on restoring natural processes.",
+          "Beaver dams can reduce flooding downstream.",
+          "It may conflict with farming.",
+          "It always involves planting particular species.",
+          "Its outcomes are easy to predict."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-rewilding",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why do supporters believe rewilding is needed?",
+        "options": [
+          "Traditional methods have not stopped wildlife decline.",
+          "It is cheaper than any other form of farming.",
+          "Predators are no longer a threat to farms.",
+          "Beavers are the most endangered animals in Europe."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-rewilding",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "rewilding restores natural processes",
+          "reintroduce animals such as beavers",
+          "critics worry about farming and unpredictable outcomes"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-battery-recycling",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-battery-recycling",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "charge",
+          "difficult",
+          "recently"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-battery-recycling",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "According to the passage, which statements about lithium-ion batteries are correct?",
+        "options": [
+          "They contain valuable materials such as cobalt.",
+          "Differences in design make automatic dismantling difficult.",
+          "Old car batteries may be reused to store solar energy.",
+          "Battery recycling is already a fully developed process.",
+          "Used batteries cannot store energy at all."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-battery-recycling",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What do researchers suggest would improve reuse and recycling?",
+        "options": [
+          "Designing batteries to be taken apart easily",
+          "Mining more lithium and cobalt",
+          "Banning second-life battery use",
+          "Making batteries larger"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-battery-recycling",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "used electric vehicle batteries will increase",
+          "recycling reduces mining but is difficult",
+          "batteries can have a second life storing energy",
+          "design batteries to be taken apart"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-polynesian-navigation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-polynesian-navigation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "ignored",
+          "sailors",
+          "record"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-polynesian-navigation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which signs did Polynesian navigators use to find their way?",
+        "options": [
+          "The rising and setting points of stars",
+          "Ocean swells",
+          "Birds returning to land",
+          "Magnetic compasses",
+          "Written maps"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-polynesian-navigation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What was the effect of the voyage from Hawaii to Tahiti in the nineteen seventies?",
+        "options": [
+          "It renewed interest in traditional navigation.",
+          "It proved that modern instruments are unnecessary.",
+          "It was the first voyage between the two islands.",
+          "It ended the teaching of traditional skills."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-polynesian-navigation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Polynesian navigators crossed the Pacific without instruments",
+          "used stars swells and birds",
+          "traditional voyage revived interest in skills"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-vertical-farming",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-vertical-farming",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "harvested",
+          "advantage",
+          "cheaper"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-vertical-farming",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which advantages of vertical farms are mentioned?",
+        "options": [
+          "They can produce food all year.",
+          "They are often close to cities.",
+          "They use less water than conventional farms.",
+          "They use very little energy.",
+          "They are ideal for growing wheat and rice."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-vertical-farming",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why do most vertical farms grow leafy greens and herbs?",
+        "options": [
+          "They grow quickly and sell for relatively high prices.",
+          "They need no lighting.",
+          "They are easier to transport than wheat.",
+          "Consumers refuse to buy other indoor crops."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-vertical-farming",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "vertical farms grow crops indoors in layers",
+          "year-round production with less water",
+          "high energy costs limit crops to leafy greens"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-handwriting",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-handwriting",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "reject",
+          "speed",
+          "copy"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-handwriting",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What does the passage say about handwriting and typing?",
+        "options": [
+          "Forming letters by hand may help children recognise them.",
+          "Handwritten notes may improve memory.",
+          "Typing makes editing easier.",
+          "Typing always leads to better learning.",
+          "Handwriting is faster than typing."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-handwriting",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What approach do many researchers recommend?",
+        "options": [
+          "Teaching both handwriting and typing",
+          "Replacing handwriting with typing",
+          "Teaching handwriting only to young children",
+          "Using tablets for all note-taking"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-handwriting",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "handwriting may help letter recognition and memory",
+          "typing is faster and easier to edit",
+          "researchers recommend teaching both skills"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-auckland-volcanoes",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-auckland-volcanoes",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "explode",
+          "damaged",
+          "rescue"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-auckland-volcanoes",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which statements about the Auckland volcanic field are supported by the passage?",
+        "options": [
+          "It contains more than fifty volcanoes.",
+          "The next eruption could happen almost anywhere in the field.",
+          "Rangitoto Island formed about six hundred years ago.",
+          "Eruptions always happen at the same volcano.",
+          "Scientists expect no warning before an eruption."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-auckland-volcanoes",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why must evacuation plans be adaptable?",
+        "options": [
+          "An eruption could occur in any part of the city.",
+          "Rangitoto Island is likely to erupt again.",
+          "Earthquakes damage evacuation routes.",
+          "The city is growing too quickly."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-auckland-volcanoes",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Auckland built on volcanic field",
+          "next eruption could occur anywhere",
+          "monitoring gives warning and evacuation plans"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-coffee-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-coffee-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "pleasure",
+          "machines",
+          "crops"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-coffee-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "According to the passage, what roles did coffee houses play?",
+        "options": [
+          "Places where merchants exchanged news",
+          "Places where customers debated politics",
+          "Centres of conversation",
+          "Places of worship",
+          "Coffee plantations"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-coffee-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Where did coffee first become popular as a drink?",
+        "options": [
+          "Yemen",
+          "Ethiopia",
+          "Europe",
+          "The Americas"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-coffee-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "coffee originated in Ethiopia and became popular in Yemen",
+          "coffee houses became centres of conversation",
+          "colonial plantations used forced labour"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-mangroves",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-mangroves",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "release",
+          "tourism",
+          "difficult"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-mangroves",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which benefits of mangroves are described?",
+        "options": [
+          "Protecting coastlines from erosion",
+          "Providing shelter for young fish",
+          "Storing large amounts of carbon",
+          "Producing timber for building",
+          "Removing salt from seawater for drinking"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-mangroves",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What do scientists stress about mangrove conservation?",
+        "options": [
+          "Protecting existing forests is usually better than replanting.",
+          "Replanting always succeeds.",
+          "Mangroves should be replaced with fish farms.",
+          "Mangroves only grow in tropical regions."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-mangroves",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "mangroves protect coastlines",
+          "nurseries for fish and store carbon",
+          "cleared for development",
+          "protecting existing forests better than replanting"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-four-day-week",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-four-day-week",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "refused",
+          "profits",
+          "reduce"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-four-day-week",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What reasons do supporters give for the four-day week?",
+        "options": [
+          "Staff focus better.",
+          "Unnecessary meetings are cut.",
+          "Less time is lost to fatigue.",
+          "Employees receive higher pay.",
+          "Hospitals need fewer staff."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-four-day-week",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why might the trial results not apply to every industry?",
+        "options": [
+          "Companies that volunteered may have been especially suitable.",
+          "Employees in the trials were paid less.",
+          "Most businesses stopped the trials early.",
+          "The trials only took place in hospitals."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-four-day-week",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "four-day week trials without pay cuts",
+          "lower stress and most businesses continued",
+          "results may not apply to hospitals and schools"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-noise-health",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-noise-health",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "improves",
+          "silence",
+          "caused"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-noise-health",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which health effects of long-term noise exposure are mentioned?",
+        "options": [
+          "Sleep disturbance",
+          "Raised blood pressure",
+          "Higher risk of heart disease",
+          "Loss of eyesight",
+          "Improved concentration"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-noise-health",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What does the passage suggest about people who feel used to noise?",
+        "options": [
+          "Their bodies may still react with stress hormones.",
+          "They are no longer affected by it.",
+          "They sleep better than other people.",
+          "They perform better in reading tests."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-noise-health",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "long-term noise harms health",
+          "linked to sleep disturbance and heart disease",
+          "cities reduce noise with barriers and insulation"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-platypus",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-platypus",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "open",
+          "protected",
+          "joke"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-platypus",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which features of the platypus are described in the passage?",
+        "options": [
+          "It is a mammal that lays eggs.",
+          "Males have venomous spurs.",
+          "Its bill detects electrical signals from prey.",
+          "It hunts using its eyesight underwater.",
+          "It lives mainly in the ocean."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-platypus",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why did some scientists think the first platypus specimen was fake?",
+        "options": [
+          "It looked like a duck's bill attached to another animal.",
+          "It arrived without any legs.",
+          "It was much larger than expected.",
+          "It was sent without a description."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-platypus",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "platypus thought to be a hoax",
+          "egg-laying mammal with venom and electrical sensors",
+          "threatened by drought dams and land clearing"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-open-access",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-open-access",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "expensive",
+          "readers",
+          "encourage"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-open-access",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "What concerns about author-pays open access does the passage mention?",
+        "options": [
+          "It can disadvantage researchers at poorer institutions.",
+          "It has encouraged some low-quality journals.",
+          "Some journals accept almost any paper to collect fees.",
+          "It makes research harder for the public to read.",
+          "It removes the need for editing."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-open-access",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "What is the main argument of the open-access movement?",
+        "options": [
+          "Publicly funded research should be free to read.",
+          "Libraries should pay more for journals.",
+          "Authors should not be paid for articles.",
+          "Journals should stop editing articles."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-open-access",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "subscriptions limited access to research",
+          "open access makes research free to read",
+          "author fees disadvantage poorer researchers",
+          "alternative models avoid costs for authors"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-wind-farm-siting",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-wind-farm-siting",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "simple",
+          "support",
+          "cheap"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-wind-farm-siting",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "Which factors in choosing a wind farm location are mentioned?",
+        "options": [
+          "Wind speed",
+          "Access to transmission lines",
+          "Effects on birds and bats",
+          "Distance from airports",
+          "The price of land in cities"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-wind-farm-siting",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What is one disadvantage of offshore wind farms?",
+        "options": [
+          "They are more complex to build and maintain.",
+          "Winds at sea are weaker.",
+          "They cause more conflict with residents.",
+          "They cannot connect to the grid."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-wind-farm-siting",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "wind farm location balances many factors",
+          "wind speed and grid access matter",
+          "birds and local communities considered",
+          "offshore farms stronger winds but complex"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-queue-psychology",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-queue-psychology",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "ignored",
+          "divides",
+          "shorter"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-queue-psychology",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "According to the passage, what makes waiting feel worse?",
+        "options": [
+          "Having nothing to do",
+          "Not knowing how long the wait will be",
+          "Seeing someone who arrived later served first",
+          "Being told the delay is long",
+          "Standing in a single line"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-queue-psychology",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why do many banks use a single line for several counters?",
+        "options": [
+          "It feels fairer to customers.",
+          "It makes waiting times longer.",
+          "It reduces the number of staff needed.",
+          "It allows mirrors to be installed."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-queue-psychology",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "how long waiting feels matters",
+          "unoccupied and uncertain waits feel longer",
+          "fairness and single lines reduce frustration"
+        ]
+      }
+    }
+  ]
+}
