@@ -244,14 +244,19 @@ def render(code: str, payload: dict[str, Any], source: SourceData | None, seed: 
             correct = order.index(p["answer"])
         return {"display": display, "answer": {"correct": correct}}
     if code == "RO":
-        labels = [chr(ord("A") + i) for i in range(len(p["paragraphs"]))]
-        items = [{"id": labels[i], "text": text} for i, text in enumerate(p["paragraphs"])]
-        shuffled = items[:]
+        count = len(p["paragraphs"])
+        order = list(range(count))
         for _ in range(10):
-            rng.shuffle(shuffled)
-            if [x["id"] for x in shuffled] != labels:
+            rng.shuffle(order)
+            if order != sorted(order):
                 break
-        return {"display": {"paragraphs": shuffled}, "answer": {"order": labels, "paragraphs": items}}
+        # Letters follow the shuffled display order, so they give no hint of the correct order.
+        labels = [chr(ord("A") + i) for i in range(count)]
+        shown = [{"id": labels[i], "text": p["paragraphs"][original]} for i, original in enumerate(order)]
+        label_of = {original: labels[i] for i, original in enumerate(order)}
+        correct = [label_of[i] for i in range(count)]
+        items = [{"id": label_of[i], "text": text} for i, text in enumerate(p["paragraphs"])]
+        return {"display": {"paragraphs": shown}, "answer": {"order": correct, "paragraphs": items}}
     if code in ("LMCMA", "LMCSA"):
         assert source
         options, order = _shuffled_options(rng, p["options"])

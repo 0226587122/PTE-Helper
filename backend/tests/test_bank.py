@@ -183,6 +183,16 @@ class TestRendering:
         rendered = render("RO", sample_bank()[1][11]["payload"], None, 1)
         assert [p["id"] for p in rendered["display"]["paragraphs"]] != rendered["answer"]["order"]
 
+    def test_reorder_labels_do_not_reveal_the_order(self):
+        payload = sample_bank()[1][11]["payload"]
+        for seed in range(20):
+            rendered = render("RO", payload, None, seed)
+            shown = rendered["display"]["paragraphs"]
+            # Labels always read A, B, C, D down the screen, whatever the shuffle.
+            assert [p["id"] for p in shown] == ["A", "B", "C", "D"]
+            by_id = {p["id"]: p["text"] for p in shown}
+            assert [by_id[i] for i in rendered["answer"]["order"]] == payload["paragraphs"]
+
     def test_reading_blanks_options_include_correct(self):
         rendered = render("RWFIB", {}, _source_data("pas-microplastics"), 1)
         blanks = [s for s in rendered["display"]["segments"] if isinstance(s, dict)]
