@@ -119,21 +119,29 @@ Speaking and writing answers have a **Get examiner feedback** button. The API se
 
 These commands use [`doctl`](https://docs.digitalocean.com/reference/doctl/how-to/install/). Run them yourself; nothing in this repo touches your account.
 
-**1. Sign in and connect GitHub**
+**1. Sign in to your own DigitalOcean account and connect GitHub**
+
+This app belongs in your personal DigitalOcean account, not the FRENZ one. `doctl` on this computer already has a saved login called `default`, which may be a different account, so create a separate login called `personal` and use it for every command below.
+
+1. Sign in to your personal account in the browser and create a token under **API → Tokens** (read and write).
+2. Save it as its own `doctl` login and check it is the right account:
 
 ```bash
-doctl auth init
+doctl auth init --context personal   # paste the token from your personal account
+doctl account get --context personal   # the email shown must be your personal account
 ```
 
-In the DigitalOcean control panel, open **Apps → Create App** once and authorise GitHub access to this repository, then cancel. App Platform needs that permission before it can deploy from GitHub.
+Every command below includes `--context personal`, so nothing can land in another account by accident. Don't run `doctl auth switch`; leave your other login as it is.
+
+While signed in to your **personal** account in the control panel, open **Apps → Create App** once and authorise GitHub access to this repository, then cancel. App Platform needs that permission before it can deploy from GitHub.
 
 **2. Create the MySQL database** (Sydney is the closest region to New Zealand)
 
 ```bash
-doctl databases create pte-mysql --engine mysql --version 8 --region syd1 --size db-s-1vcpu-1gb --num-nodes 1
-doctl databases list                                   # copy the cluster ID
-doctl databases db create <cluster-id> pte
-doctl databases user create <cluster-id> pte
+doctl databases create pte-mysql --engine mysql --version 8 --region syd1 --size db-s-1vcpu-1gb --num-nodes 1 --context personal
+doctl databases list --context personal   # copy the cluster ID
+doctl databases db create <cluster-id> pte --context personal
+doctl databases user create <cluster-id> pte --context personal
 ```
 
 **3. Prepare the app spec**
@@ -151,9 +159,9 @@ openssl rand -hex 32                                   # use this for JWT_SECRET
 **4. Create the app**
 
 ```bash
-doctl apps spec validate .do/app.local.yaml
-doctl apps create --spec .do/app.local.yaml
-doctl apps list                                        # copy the app ID
+doctl apps spec validate .do/app.local.yaml --context personal
+doctl apps create --spec .do/app.local.yaml --context personal
+doctl apps list --context personal   # copy the app ID
 ```
 
 Each deploy first runs `alembic upgrade head` as a pre-deploy job.
@@ -161,7 +169,7 @@ Each deploy first runs `alembic upgrade head` as a pre-deploy job.
 **5. Load the questions and create your admin account** (once, after the first deploy succeeds)
 
 ```bash
-doctl apps console <app-id> api
+doctl apps console <app-id> api --context personal
 # then, inside the console:
 python -m scripts.seed
 python -m scripts.create_admin --email you@example.com --name "Your Name"
@@ -172,19 +180,19 @@ You can also use the **Console** tab for the `api` component in the control pane
 **6. Lock down the database (recommended)**
 
 ```bash
-doctl databases firewalls append <cluster-id> --rule app:<app-id>
+doctl databases firewalls append <cluster-id> --rule app:<app-id> --context personal
 ```
 
 This allows only the app to connect. The GitHub Actions backup below runs outside DigitalOcean, so it can't connect once trusted sources are on. Either add your own backup runner's IP, or run the export from the app console (`python -m scripts.export_bank --out /tmp/bank.json`).
 
-**Updating the app later**: pushes to `main` redeploy automatically. After changing the spec, run `doctl apps update <app-id> --spec .do/app.local.yaml`.
+**Updating the app later**: pushes to `main` redeploy automatically. After changing the spec, run `doctl apps update <app-id> --spec .do/app.local.yaml --context personal`.
 
 ## Backups
 
 - **Managed MySQL takes daily backups automatically** and keeps them for 7 days. You can restore them from the control panel.
 - **A readable copy of the question bank** is exported every week by `.github/workflows/bank-backup.yml` and uploaded to a DigitalOcean Spaces bucket as JSON. It uses the same format as the seed files, so you can edit it and seed it back.
 
-To set up the weekly export, create a private Spaces bucket and a Spaces access key in the control panel, then add these repository secrets:
+To set up the weekly export, create a private Spaces bucket and a Spaces access key in your personal account's control panel, then add these repository secrets:
 
 ```bash
 gh secret set PROD_DATABASE_URL          # mysql://pte:<password>@<host>:25060/pte?ssl-mode=REQUIRED
