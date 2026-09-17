@@ -1,0 +1,1165 @@
+{
+  "version": 1,
+  "notes": "Original reading passages (batch 2 of 3). Each passage feeds five types: RWFIB and RFIB (from blank_markup), MCMA, MCSA and SWT. Passages 11 to 15 are backup questions.",
+  "sources": [
+    {
+      "source_key": "pas-fast-fashion",
+      "kind": "passage",
+      "title": "The cost of fast fashion",
+      "body": "Fast fashion refers to clothing that is designed, produced and sold very quickly and cheaply, allowing retailers to introduce new styles every few weeks. Consumers benefit from low prices, but the environmental costs are considerable. Producing textiles uses large quantities of water and energy, and synthetic fibres such as polyester are made from fossil fuels. Because garments are cheap, they are often worn only a few times before being discarded. Much donated clothing cannot be resold locally and is exported, where a significant share ends up in landfill. Some brands now offer repair services or collect used garments for recycling, but critics argue that the only real solution is to buy fewer, more durable items.",
+      "blank_markup": "Fast fashion refers to clothing that is designed, produced and sold very quickly and cheaply, allowing retailers to {{introduce|induce|inspect|inherit}} new styles every few weeks. Consumers benefit from low prices, but the environmental costs are considerable. Producing textiles uses large quantities of water and energy, and synthetic fibres such as polyester are made from fossil fuels. Because garments are cheap, they are often worn only a few times before being {{discarded|discovered|discussed|disguised}}. Much donated clothing cannot be resold locally and is exported, where a significant share ends up in landfill. Some brands now offer repair services or {{collect|correct|connect|convict}} used garments for recycling, but critics argue that the only real solution is to buy fewer, more {{durable|desirable|dutiful|disposable}} items."
+    },
+    {
+      "source_key": "pas-stem-cells",
+      "kind": "passage",
+      "title": "What stem cells can do",
+      "body": "Stem cells are cells that can divide repeatedly and develop into different types of specialised cells, such as muscle, nerve or blood cells. This ability makes them valuable for medical research. Bone marrow transplants, which replace damaged blood-forming cells, have used stem cells successfully for decades. Scientists can also now reprogram ordinary adult cells so that they behave like embryonic stem cells, which avoids some of the ethical concerns associated with using embryos. Researchers hope stem cells will one day help treat conditions such as spinal injuries and heart damage. However, many treatments are still experimental, and some private clinics offer unproven therapies that can be expensive and even dangerous. Patients are advised to seek treatments that are part of properly regulated clinical trials.",
+      "blank_markup": "Stem cells are cells that can divide repeatedly and develop into different types of specialised cells, such as muscle, nerve or blood cells. This ability makes them valuable for medical research. Bone marrow transplants, which {{replace|repeat|repair|reply}} damaged blood-forming cells, have used stem cells successfully for decades. Scientists can also now reprogram ordinary adult cells so that they behave like embryonic stem cells, which avoids some of the ethical {{concerns|contents|contracts|contests}} associated with using embryos. Researchers hope stem cells will one day help treat conditions such as spinal injuries and heart damage. However, many treatments are still experimental, and some private clinics offer unproven therapies that can be expensive and even {{dangerous|generous|numerous|marvellous}}. Patients are advised to seek treatments that are part of properly {{regulated|regarded|recorded|repeated}} clinical trials."
+    },
+    {
+      "source_key": "pas-wetland-restoration",
+      "kind": "passage",
+      "title": "Restoring wetlands",
+      "body": "For centuries, wetlands were regarded as wasteland and were drained to create farmland and space for towns. In New Zealand, for example, only a small fraction of the country's original wetlands remain. Scientists now recognise that wetlands provide important services. They filter nutrients and sediment from water before it reaches rivers and lakes, store floodwater during heavy rain and provide habitat for many birds and fish. Restoring a wetland can involve blocking drains, replanting native vegetation and controlling invasive weeds. Some farmers have created small wetlands on their land to improve water quality, and research suggests these can remove a substantial proportion of nitrogen from farm runoff.",
+      "blank_markup": "For centuries, wetlands were regarded as wasteland and were drained to create farmland and space for towns. In New Zealand, for example, only a small fraction of the country's original wetlands {{remain|remind|retain|refrain}}. Scientists now recognise that wetlands provide important services. They filter nutrients and sediment from water before it reaches rivers and lakes, store floodwater during heavy rain and provide {{habitat|habit|harvest|heritage}} for many birds and fish. Restoring a wetland can involve blocking drains, replanting native vegetation and controlling {{invasive|intensive|inventive|informative}} weeds. Some farmers have created small wetlands on their land to improve water quality, and research suggests these can remove a {{substantial|superficial|subsequent|substitute}} proportion of nitrogen from farm runoff."
+    },
+    {
+      "source_key": "pas-electric-buses",
+      "kind": "passage",
+      "title": "Electric buses",
+      "body": "Many cities are replacing diesel buses with electric ones. Electric buses produce no exhaust emissions on the street, which improves air quality, and they are much quieter, making them more pleasant for passengers and residents. Although they are more expensive to buy, they cost less to run, because electricity is usually cheaper than diesel and electric motors need less maintenance. Cities must still overcome practical challenges. Batteries add weight and limit how far a bus can travel before charging, particularly in cold weather or on hilly routes. Depots need new charging equipment and a stronger connection to the grid. Some operators use fast chargers at the end of routes so that buses can top up their batteries during short breaks.",
+      "blank_markup": "Many cities are replacing diesel buses with electric ones. Electric buses produce no exhaust emissions on the street, which improves air quality, and they are much quieter, making them more {{pleasant|peasant|present|pleading}} for passengers and residents. Although they are more expensive to buy, they cost less to run, because electricity is usually cheaper than diesel and electric motors need less {{maintenance|maintain|mention|management}}. Cities must still overcome practical challenges. Batteries add weight and limit how far a bus can travel before charging, particularly in cold weather or on hilly routes. Depots need new charging equipment and a stronger connection to the {{grid|grip|grin|grind}}. Some operators use fast chargers at the end of routes so that buses can {{top|tip|tap|type}} up their batteries during short breaks."
+    },
+    {
+      "source_key": "pas-bicycle-history",
+      "kind": "passage",
+      "title": "How the bicycle changed society",
+      "body": "The first bicycles of the early nineteenth century had no pedals; riders pushed themselves along with their feet. Later designs with a very large front wheel were fast but dangerous, and they were ridden mainly by young, wealthy men. The development of the safety bicycle in the eighteen eighties, with two wheels of similar size and a chain driving the rear wheel, made cycling far more accessible. Bicycles gave ordinary workers a cheap way to travel longer distances, and they gave many women a new sense of independence. Cycling also encouraged the building of better roads, which later benefited motorists.",
+      "blank_markup": "The first bicycles of the early nineteenth century had no pedals; riders pushed themselves along with their feet. Later designs with a very large front wheel were fast but {{dangerous|domestic|delicious|dominant}}, and they were ridden mainly by young, wealthy men. The development of the safety bicycle in the eighteen eighties, with two wheels of similar size and a chain driving the rear wheel, made cycling far more {{accessible|accidental|acceptable|admissible}}. Bicycles gave ordinary workers a cheap way to travel longer distances, and they gave many women a new sense of {{independence|indifference|incidence|intelligence}}. Cycling also encouraged the building of better roads, which later benefited {{motorists|moralists|modernists|monarchists}}."
+    },
+    {
+      "source_key": "pas-group-work",
+      "kind": "passage",
+      "title": "Making group work work",
+      "body": "Universities often require students to complete group assignments, partly because employers value the ability to work in teams. Group work can help students develop communication skills and learn from classmates with different backgrounds. Yet many students dislike it. A common complaint is that some members contribute little but receive the same mark as everyone else. Research suggests that the design of the task matters. Groups work better when roles are clearly defined, when the task genuinely requires cooperation, and when individual contributions are assessed as well as the final product. Peer evaluation, in which students rate one another's input, can reduce the problem of unequal effort, although it must be designed carefully to be fair.",
+      "blank_markup": "Universities often require students to complete group assignments, partly because employers value the ability to work in teams. Group work can help students {{develop|deliver|devote|deserve}} communication skills and learn from classmates with different backgrounds. Yet many students dislike it. A common complaint is that some members contribute little but receive the same {{mark|mask|mast|mall}} as everyone else. Research suggests that the design of the task matters. Groups work better when roles are clearly defined, when the task genuinely requires {{cooperation|corporation|corrosion|competition}}, and when individual contributions are assessed as well as the final product. Peer evaluation, in which students rate one another's input, can reduce the problem of {{unequal|unusual|unlikely|unclear}} effort, although it must be designed carefully to be fair."
+    },
+    {
+      "source_key": "pas-hydrogen-fuel",
+      "kind": "passage",
+      "title": "The role of hydrogen",
+      "body": "Hydrogen is often described as a clean fuel because using it in a fuel cell produces only water. However, its environmental benefits depend on how it is made. Most hydrogen today is produced from natural gas, a process that releases carbon dioxide. Green hydrogen, made by using renewable electricity to split water, avoids these emissions but is currently more expensive. Hydrogen is also difficult to store and transport, because it is very light and must be compressed or cooled to extremely low temperatures. Many experts believe hydrogen will be most useful in sectors that are hard to electrify, such as steel making, fertiliser production and possibly long-distance shipping, rather than in private cars, where batteries are already more efficient.",
+      "blank_markup": "Hydrogen is often described as a clean fuel because using it in a fuel cell produces only water. However, its environmental benefits {{depend|defend|deny|descend}} on how it is made. Most hydrogen today is produced from natural gas, a process that releases carbon dioxide. Green hydrogen, made by using renewable electricity to split water, avoids these emissions but is currently more expensive. Hydrogen is also difficult to store and {{transport|transplant|transform|translate}}, because it is very light and must be compressed or cooled to extremely low temperatures. Many experts believe hydrogen will be most useful in sectors that are hard to electrify, such as steel making, fertiliser production and possibly long-distance shipping, rather than in {{private|primitive|precise|previous}} cars, where batteries are already more {{efficient|sufficient|deficient|proficient}}."
+    },
+    {
+      "source_key": "pas-drought-crops",
+      "kind": "passage",
+      "title": "Breeding crops for drought",
+      "body": "As droughts become more frequent in many farming regions, plant breeders are working to develop crops that can tolerate dry conditions. Some drought-tolerant varieties have deeper roots that reach water further underground. Others close the small pores on their leaves more quickly to reduce water loss, or complete their growth cycle before the driest part of the season. Breeders use traditional cross-breeding as well as modern genetic techniques that help them identify useful traits more quickly. Traditional crops such as sorghum and millet, which are naturally hardy, are also receiving renewed attention. However, drought-tolerant seeds cannot solve water shortages alone; better soil management and irrigation practices are also essential.",
+      "blank_markup": "As droughts become more frequent in many farming regions, plant breeders are working to develop crops that can {{tolerate|tabulate|terminate|translate}} dry conditions. Some drought-tolerant varieties have deeper roots that reach water further underground. Others close the small pores on their leaves more quickly to reduce water loss, or {{complete|compete|compile|comply}} their growth cycle before the driest part of the season. Breeders use traditional cross-breeding as well as modern genetic techniques that help them identify useful traits more quickly. Traditional crops such as sorghum and millet, which are naturally {{hardy|handy|hearty|happy}}, are also receiving renewed attention. However, drought-tolerant seeds cannot solve water shortages alone; better soil management and irrigation {{practices|prices|prizes|passages}} are also essential."
+    },
+    {
+      "source_key": "pas-museum-digitisation",
+      "kind": "passage",
+      "title": "Digitising museum collections",
+      "body": "Most museums can display only a small fraction of their collections at any one time; the rest is kept in storage. Digitisation, which involves photographing or scanning objects and recording information about them, allows people anywhere in the world to explore these hidden collections online. Researchers can compare objects held in different countries without travelling, and teachers can use images in lessons. Digitisation also creates a record that could be valuable if an object is damaged or stolen. However, the process is slow and costly. Each item must be handled carefully, and detailed three-dimensional scans require specialist equipment. Museums must also consider cultural sensitivities, as some communities do not want certain objects to be shared publicly.",
+      "blank_markup": "Most museums can display only a small fraction of their collections at any one time; the rest is kept in storage. Digitisation, which involves photographing or scanning objects and recording information about them, allows people anywhere in the world to {{explore|explode|expose|expire}} these hidden collections online. Researchers can compare objects held in different countries without travelling, and teachers can use images in lessons. Digitisation also creates a record that could be valuable if an object is damaged or {{stolen|stored|sworn|swollen}}. However, the process is slow and costly. Each item must be handled carefully, and detailed three-dimensional scans require specialist {{equipment|environment|entertainment|employment}}. Museums must also consider cultural sensitivities, as some communities do not want certain objects to be shared {{publicly|politely|partly|promptly}}."
+    },
+    {
+      "source_key": "pas-loneliness-older",
+      "kind": "passage",
+      "title": "Loneliness in later life",
+      "body": "Loneliness is not the same as being alone. A person can live alone and feel content, or be surrounded by others and still feel isolated. Among older adults, loneliness has been associated with poorer physical and mental health, including higher rates of depression and heart disease. Life events such as retirement, the death of a partner or reduced mobility can shrink social networks. Programmes that help often focus on meaningful activity rather than simply bringing people together. Community gardens, volunteering and intergenerational projects, where older adults mentor young people, have shown promising results. Transport also matters, because people who cannot travel easily may lose contact with friends.",
+      "blank_markup": "Loneliness is not the same as being alone. A person can live alone and feel content, or be surrounded by others and still feel isolated. Among older adults, loneliness has been {{associated|assisted|assumed|assembled}} with poorer physical and mental health, including higher rates of depression and heart disease. Life events such as retirement, the death of a partner or reduced mobility can {{shrink|shrug|shrine|shrill}} social networks. Programmes that help often focus on meaningful activity rather than simply bringing people together. Community gardens, volunteering and intergenerational projects, where older adults {{mentor|mention|measure|merit}} young people, have shown promising results. Transport also matters, because people who cannot travel easily may lose {{contact|contract|content|context}} with friends."
+    },
+    {
+      "source_key": "pas-space-debris",
+      "kind": "passage",
+      "title": "The problem of space debris",
+      "body": "Thousands of satellites orbit the Earth, along with far larger numbers of fragments from old rockets, broken satellites and past collisions. Because objects in orbit travel at extremely high speeds, even a small piece of debris can damage a working spacecraft. Space agencies track the larger objects and occasionally move satellites to avoid them. Scientists are concerned about a chain reaction, in which collisions create more fragments that then cause further collisions, making some orbits unusable. Proposed solutions include designing satellites to re-enter the atmosphere and burn up at the end of their missions, and developing spacecraft that can capture and remove debris. International agreement will be needed, since orbits are shared by all nations.",
+      "blank_markup": "Thousands of satellites orbit the Earth, along with far larger numbers of fragments from old rockets, broken satellites and past collisions. Because objects in orbit travel at extremely high speeds, even a small piece of debris can {{damage|manage|dimension|imagine}} a working spacecraft. Space agencies track the larger objects and occasionally move satellites to avoid them. Scientists are concerned about a chain reaction, in which collisions create more fragments that then cause further collisions, making some orbits {{unusable|unstable|unable|unsuitable}}. Proposed solutions include designing satellites to {{re-enter|re-enact|re-edit|re-elect}} the atmosphere and burn up at the end of their missions, and developing spacecraft that can capture and remove debris. International {{agreement|argument|arrangement|amendment}} will be needed, since orbits are shared by all nations."
+    },
+    {
+      "source_key": "pas-sugar-taxes",
+      "kind": "passage",
+      "title": "Do sugar taxes work?",
+      "body": "A number of countries have introduced taxes on sugary drinks in an attempt to reduce obesity and tooth decay. The idea is that higher prices will discourage consumption. Evidence from several places suggests that sales of taxed drinks do fall after a tax is introduced. In some cases, manufacturers have also reformulated their products, reducing sugar content to avoid the tax. Critics argue that such taxes are unfair to people on low incomes, who spend a larger share of their income on food and drink. Supporters reply that low-income groups often suffer most from diet-related illness and may therefore benefit most. It is still unclear how much these taxes reduce obesity over the long term, because many other factors affect weight.",
+      "blank_markup": "A number of countries have introduced taxes on sugary drinks in an attempt to reduce obesity and tooth decay. The idea is that higher prices will {{discourage|discover|disclose|dismiss}} consumption. Evidence from several places suggests that sales of taxed drinks do fall after a tax is introduced. In some cases, manufacturers have also {{reformulated|reformed|reflected|refunded}} their products, reducing sugar content to avoid the tax. Critics argue that such taxes are unfair to people on low incomes, who spend a larger share of their income on food and drink. Supporters reply that low-income groups often suffer most from diet-related illness and may therefore benefit most. It is still {{unclear|unequal|unkind|uneven}} how much these taxes reduce obesity over the long term, because many other {{factors|farmers|fractions|failures}} affect weight."
+    },
+    {
+      "source_key": "pas-predator-free",
+      "kind": "passage",
+      "title": "A predator-free New Zealand",
+      "body": "New Zealand's native birds evolved without land mammals as predators, so many of them nest on the ground or cannot fly. When humans introduced rats, stoats and possums, bird populations declined dramatically. In response, the country has set a goal of removing these introduced predators by twenty fifty. Offshore islands have already been successfully cleared, allowing species such as the kākāpō to survive. Removing predators from the mainland is far more difficult. It will require new technologies, such as smarter traps and remote monitoring, as well as widespread community support. Some scientists question whether the goal can be fully achieved, but many agree that the effort has already increased protection for native species.",
+      "blank_markup": "New Zealand's native birds evolved without land mammals as predators, so many of them nest on the ground or cannot fly. When humans introduced rats, stoats and possums, bird populations {{declined|declared|designed|decided}} dramatically. In response, the country has set a goal of removing these introduced predators by twenty fifty. Offshore islands have already been successfully cleared, allowing species such as the kākāpō to {{survive|survey|surface|suppose}}. Removing predators from the mainland is far more difficult. It will require new technologies, such as smarter traps and remote monitoring, as well as {{widespread|withdrawn|wasteful|wholesale}} community support. Some scientists question whether the goal can be fully achieved, but many agree that the effort has already {{increased|included|inclined|insisted}} protection for native species."
+    },
+    {
+      "source_key": "pas-history-maps",
+      "kind": "passage",
+      "title": "What maps reveal",
+      "body": "Maps are often thought of as neutral descriptions of the world, but historians point out that they also reflect the beliefs and interests of the people who made them. Medieval European maps, for instance, often placed Jerusalem at the centre, expressing a religious view of the world rather than accurate geography. During the age of European exploration, maps recorded new coastlines but also supported claims to territory, sometimes ignoring the people who already lived there. Even modern maps involve choices: which place names to use, which borders to show and which features to emphasise. Reading old maps critically can therefore tell us as much about the past as about geography.",
+      "blank_markup": "Maps are often thought of as neutral descriptions of the world, but historians point out that they also {{reflect|reject|refer|refuel}} the beliefs and interests of the people who made them. Medieval European maps, for instance, often placed Jerusalem at the centre, expressing a religious view of the world rather than accurate geography. During the age of European exploration, maps recorded new coastlines but also {{supported|suggested|supposed|surpassed}} claims to territory, sometimes ignoring the people who already lived there. Even modern maps involve choices: which place names to use, which borders to show and which features to {{emphasise|emerge|empty|employ}}. Reading old maps critically can therefore tell us as much about the past as about {{geography|geology|biography|photography}}."
+    },
+    {
+      "source_key": "pas-bioluminescence",
+      "kind": "passage",
+      "title": "Living light",
+      "body": "Bioluminescence is the production of light by living organisms. It is rare on land, where the best-known examples are fireflies and certain fungi, but it is extremely common in the deep ocean, where sunlight does not reach. Animals use light in many ways. Some attract prey with glowing lures, while others use sudden flashes to startle predators. Certain fish produce light on their undersides that matches the faint light from above, making their outline harder to see from below. In New Zealand, glow-worms in caves such as Waitomo use light to attract small insects into sticky threads. Scientists have also borrowed bioluminescent proteins as tools for tracking processes inside living cells.",
+      "blank_markup": "Bioluminescence is the production of light by living organisms. It is rare on land, where the best-known examples are fireflies and certain {{fungi|funds|fumes|furs}}, but it is extremely common in the deep ocean, where sunlight does not {{reach|teach|rich|preach}}. Animals use light in many ways. Some attract prey with glowing lures, while others use sudden flashes to {{startle|settle|stable|starve}} predators. Certain fish produce light on their undersides that matches the faint light from above, making their outline harder to see from below. In New Zealand, glow-worms in caves such as Waitomo use light to attract small insects into sticky threads. Scientists have also borrowed bioluminescent proteins as tools for {{tracking|trading|tracing|training}} processes inside living cells."
+    }
+  ],
+  "questions": [
+    {
+      "type": "RWFIB",
+      "source_key": "pas-fast-fashion",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-fast-fashion",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "expensive",
+          "sold",
+          "donate"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-fast-fashion",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which environmental problems of fast fashion are mentioned?",
+        "options": [
+          "Textile production uses a lot of water and energy.",
+          "Synthetic fibres are made from fossil fuels.",
+          "Many exported garments end up in landfill.",
+          "Clothing prices are rising sharply.",
+          "Repair services increase waste."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-fast-fashion",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What do critics believe is the only real solution?",
+        "options": [
+          "Buying fewer, more durable clothes",
+          "Recycling all used garments",
+          "Exporting more donated clothing",
+          "Using more synthetic fibres"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-fast-fashion",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "fast fashion is cheap and quickly produced",
+          "high environmental costs of water energy and landfill",
+          "buy fewer durable clothes"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-stem-cells",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-stem-cells",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "cheap",
+          "banned",
+          "proven"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-stem-cells",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "According to the passage, which statements about stem cells are true?",
+        "options": [
+          "They can develop into specialised cells.",
+          "Bone marrow transplants have used them for decades.",
+          "Adult cells can be reprogrammed to behave like embryonic stem cells.",
+          "All stem cell treatments are now fully proven.",
+          "Private clinics only offer regulated trials."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-stem-cells",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What advice is given to patients?",
+        "options": [
+          "Seek treatments that are part of regulated clinical trials.",
+          "Choose private clinics for faster treatment.",
+          "Avoid bone marrow transplants.",
+          "Wait for embryonic stem cell treatments."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-stem-cells",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "stem cells develop into specialised cells",
+          "used in bone marrow transplants and research",
+          "many treatments experimental and unproven clinics risky"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-wetland-restoration",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-wetland-restoration",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "drained",
+          "native",
+          "small"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-wetland-restoration",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which services provided by wetlands are described?",
+        "options": [
+          "Filtering nutrients and sediment",
+          "Storing floodwater",
+          "Providing habitat for birds and fish",
+          "Producing timber",
+          "Creating farmland"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-wetland-restoration",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why have some farmers created small wetlands?",
+        "options": [
+          "To improve water quality",
+          "To attract tourists",
+          "To grow more crops",
+          "To store drinking water"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-wetland-restoration",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "wetlands were drained for farmland",
+          "wetlands filter water store floods and provide habitat",
+          "restoration and farm wetlands remove nitrogen"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-electric-buses",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-electric-buses",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "fuel",
+          "noisy",
+          "fill"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-electric-buses",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What challenges do electric buses face?",
+        "options": [
+          "Batteries add weight.",
+          "Range can be limited in cold weather.",
+          "Depots need new charging equipment.",
+          "They produce exhaust emissions on the street.",
+          "They are louder than diesel buses."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-electric-buses",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why do electric buses cost less to run?",
+        "options": [
+          "Electricity is cheaper and motors need less maintenance.",
+          "They carry fewer passengers.",
+          "They never need charging.",
+          "Governments pay all their costs."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-electric-buses",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "cities replacing diesel with electric buses",
+          "cleaner quieter and cheaper to run",
+          "battery range and charging challenges"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-bicycle-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-bicycle-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "expensive",
+          "freedom",
+          "pedestrians"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-bicycle-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What effects did the safety bicycle have?",
+        "options": [
+          "Workers gained a cheap way to travel further.",
+          "Many women gained a sense of independence.",
+          "It encouraged the building of better roads.",
+          "It was ridden only by wealthy young men.",
+          "It made cycling more dangerous."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-bicycle-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What was a feature of the safety bicycle?",
+        "options": [
+          "Two wheels of similar size",
+          "A very large front wheel",
+          "No pedals",
+          "Three wheels"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-bicycle-history",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "early bicycles were dangerous",
+          "safety bicycle made cycling accessible",
+          "gave workers and women independence and better roads"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-group-work",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-group-work",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "grade",
+          "ignore",
+          "equal"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-group-work",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "According to the passage, when does group work tend to be more successful?",
+        "options": [
+          "When roles are clearly defined",
+          "When the task genuinely requires cooperation",
+          "When individual contributions are also assessed",
+          "When groups are as large as possible",
+          "When all members receive the same mark regardless of effort"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-group-work",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What is a common student complaint about group work?",
+        "options": [
+          "Some members contribute little but receive the same mark.",
+          "Group tasks are always too easy.",
+          "Employers do not value teamwork.",
+          "Groups meet too often."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-group-work",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "universities use group work for teamwork skills",
+          "students complain about unequal effort",
+          "clear roles and individual assessment improve group work"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-hydrogen-fuel",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-hydrogen-fuel",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "produce",
+          "public",
+          "cheaper"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-hydrogen-fuel",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "Which statements about hydrogen are supported by the passage?",
+        "options": [
+          "Most hydrogen today is made from natural gas.",
+          "Green hydrogen is currently more expensive.",
+          "Hydrogen is difficult to store.",
+          "Hydrogen is best suited to private cars.",
+          "Using hydrogen in a fuel cell releases carbon dioxide."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-hydrogen-fuel",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "Where do many experts think hydrogen will be most useful?",
+        "options": [
+          "In sectors that are hard to electrify",
+          "In small private cars",
+          "In home heating in warm countries",
+          "In mobile phones"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-hydrogen-fuel",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "hydrogen benefits depend on how it is made",
+          "green hydrogen expensive and hard to store",
+          "most useful for steel and shipping not cars"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-drought-crops",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-drought-crops",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "resist",
+          "fragile",
+          "methods"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-drought-crops",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "How do drought-tolerant crops cope with dry conditions?",
+        "options": [
+          "Growing deeper roots",
+          "Closing leaf pores quickly",
+          "Completing their growth cycle early",
+          "Storing water in their seeds",
+          "Growing larger leaves"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-drought-crops",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What point does the passage make in its final sentence?",
+        "options": [
+          "Seeds alone cannot solve water shortages.",
+          "Sorghum is the best crop for all farms.",
+          "Irrigation is no longer necessary.",
+          "Genetic techniques should be avoided."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-drought-crops",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "breeders develop drought tolerant crops",
+          "deeper roots and faster pore closing",
+          "seeds alone cannot solve water shortages"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-museum-digitisation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-museum-digitisation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "display",
+          "cheaply",
+          "lost"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-museum-digitisation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What benefits of digitising collections are mentioned?",
+        "options": [
+          "People anywhere can explore hidden collections.",
+          "Researchers can compare objects without travelling.",
+          "It creates a record if an object is damaged.",
+          "It is a quick and cheap process.",
+          "It allows museums to sell objects online."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-museum-digitisation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why must museums consider cultural sensitivities?",
+        "options": [
+          "Some communities do not want certain objects shared publicly.",
+          "Some objects are too large to scan.",
+          "Online visitors may damage objects.",
+          "Teachers cannot use images in lessons."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-museum-digitisation",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "most collections kept in storage",
+          "digitisation lets people explore online",
+          "slow costly and culturally sensitive"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-loneliness-older",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-loneliness-older",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "expand",
+          "lonely",
+          "visit"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-loneliness-older",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which life events can shrink older adults' social networks?",
+        "options": [
+          "Retirement",
+          "The death of a partner",
+          "Reduced mobility",
+          "Joining a community garden",
+          "Volunteering"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-loneliness-older",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What do successful programmes tend to focus on?",
+        "options": [
+          "Meaningful activity",
+          "Simply bringing people together",
+          "Moving people into care homes",
+          "Teaching technology skills"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-loneliness-older",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "loneliness differs from being alone",
+          "loneliness linked to poor health in older adults",
+          "meaningful activity and transport help"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-space-debris",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-space-debris",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "repair",
+          "national",
+          "safe"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-space-debris",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "Which solutions to space debris are proposed?",
+        "options": [
+          "Designing satellites to burn up at the end of missions",
+          "Developing spacecraft to capture debris",
+          "International agreement",
+          "Launching larger rockets",
+          "Stopping the tracking of objects"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-space-debris",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "What are scientists concerned about?",
+        "options": [
+          "A chain reaction of collisions",
+          "Satellites falling on cities",
+          "Rockets becoming too expensive",
+          "Debris slowing down too much"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-space-debris",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "debris travels fast and damages spacecraft",
+          "collisions could cause a chain reaction",
+          "satellites designed to burn up and international agreement"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-sugar-taxes",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-sugar-taxes",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "encourage",
+          "certain",
+          "prices"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-sugar-taxes",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What has happened in some places after sugar taxes were introduced?",
+        "options": [
+          "Sales of taxed drinks fell.",
+          "Manufacturers reduced sugar content.",
+          "Products were reformulated to avoid the tax.",
+          "Obesity disappeared completely.",
+          "Drink prices fell."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-sugar-taxes",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "How do supporters answer the claim that sugar taxes are unfair to people on low incomes?",
+        "options": [
+          "Low-income groups may benefit most from better health.",
+          "Low-income groups rarely buy sugary drinks.",
+          "The tax is refunded to low-income families.",
+          "Prices do not really change."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-sugar-taxes",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "sugar taxes aim to reduce obesity",
+          "sales fall and drinks reformulated",
+          "critics say unfair to low incomes",
+          "long-term effect unclear"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-predator-free",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-predator-free",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "recovered",
+          "limited",
+          "hunt"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-predator-free",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What will removing predators from the mainland require?",
+        "options": [
+          "Smarter traps",
+          "Remote monitoring",
+          "Widespread community support",
+          "Introducing new predators",
+          "Moving all birds to islands"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-predator-free",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why were New Zealand's native birds vulnerable to introduced predators?",
+        "options": [
+          "They evolved without mammal predators.",
+          "They lived only on offshore islands.",
+          "They were hunted by humans.",
+          "They migrated every winter."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-predator-free",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "native birds evolved without mammal predators",
+          "goal to remove predators by twenty fifty",
+          "islands cleared but mainland needs technology and support"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-history-maps",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-history-maps",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "hide",
+          "history",
+          "neutral"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-history-maps",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "Which choices involved in making modern maps are mentioned?",
+        "options": [
+          "Which place names to use",
+          "Which borders to show",
+          "Which features to emphasise",
+          "Which paper to print on",
+          "Which language the legend is in"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-history-maps",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "What is the main idea of the passage?",
+        "options": [
+          "Maps reflect the beliefs and interests of their makers.",
+          "Medieval maps were the most accurate ever made.",
+          "Modern maps involve no choices.",
+          "Explorers always respected local people."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-history-maps",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "maps reflect beliefs and interests of makers",
+          "medieval maps placed Jerusalem at centre",
+          "exploration maps supported territorial claims"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-bioluminescence",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-bioluminescence",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "attract",
+          "shine",
+          "hiding"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-bioluminescence",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "How do animals use bioluminescence, according to the passage?",
+        "options": [
+          "To attract prey",
+          "To startle predators",
+          "To hide their outline from below",
+          "To keep warm",
+          "To communicate with plants"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-bioluminescence",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Where is bioluminescence extremely common?",
+        "options": [
+          "In the deep ocean",
+          "In deserts",
+          "In mountain forests",
+          "In rivers"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-bioluminescence",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "bioluminescence is light produced by organisms",
+          "common in the deep ocean",
+          "used to attract prey and avoid predators",
+          "proteins used as research tools"
+        ]
+      }
+    }
+  ]
+}

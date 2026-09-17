@@ -1,0 +1,1164 @@
+{
+  "version": 1,
+  "notes": "Original reading passages (batch 3 of 3). Each passage feeds five types: RWFIB and RFIB (from blank_markup), MCMA, MCSA and SWT. Passages 11 to 15 are backup questions.",
+  "sources": [
+    {
+      "source_key": "pas-language-loss",
+      "kind": "passage",
+      "title": "Why languages disappear",
+      "body": "Linguists estimate that around seven thousand languages are spoken today, but a large proportion of them may no longer be spoken by the end of this century. Languages rarely disappear suddenly. Instead, speakers gradually shift to a more dominant language that offers better access to education, jobs and media. Parents may stop passing their first language on to children, believing it will hold them back. When a language is lost, communities can lose traditional knowledge that is embedded in its vocabulary, such as names for local plants and their uses. Recording elderly speakers helps to preserve this knowledge, but documentation is not the same as revival, which depends on people choosing to use the language every day.",
+      "blank_markup": "Linguists estimate that around seven thousand languages are spoken today, but a large proportion of them may no longer be spoken by the end of this century. Languages rarely disappear suddenly. Instead, speakers gradually {{shift|shelf|shaft|shine}} to a more dominant language that offers better access to education, jobs and media. Parents may stop passing their first language on to children, believing it will hold them back. When a language is lost, communities can lose traditional knowledge that is {{embedded|embarked|embraced|embroidered}} in its vocabulary, such as names for local plants and their uses. Recording elderly speakers helps to {{preserve|prevent|pretend|prepare}} this knowledge, but documentation is not the same as revival, which depends on people {{choosing|chasing|closing|chewing}} to use the language every day."
+    },
+    {
+      "source_key": "pas-agrivoltaics",
+      "kind": "passage",
+      "title": "Farming under solar panels",
+      "body": "Solar farms need large areas of land, which can bring them into competition with agriculture. Agrivoltaics offers a possible solution by combining the two on the same site. Solar panels are mounted high enough above the ground for crops to grow or animals to graze beneath them. In hot, dry regions, the partial shade from panels can reduce water loss from soil and protect some crops from heat stress, sometimes improving yields. Sheep can graze under panels and keep grass short, reducing maintenance costs. Not every crop benefits, however, since many need full sunlight. The approach also requires higher and more expensive mounting structures, so its success depends on careful design and the local climate.",
+      "blank_markup": "Solar farms need large areas of land, which can bring them into {{competition|completion|composition|compensation}} with agriculture. Agrivoltaics offers a possible solution by combining the two on the same site. Solar panels are mounted high enough above the ground for crops to grow or animals to graze beneath them. In hot, dry regions, the partial shade from panels can reduce water loss from soil and protect some crops from heat stress, sometimes {{improving|imposing|importing|impressing}} yields. Sheep can graze under panels and keep grass short, reducing maintenance costs. Not every crop benefits, however, since many need full sunlight. The approach also requires higher and more expensive mounting structures, so its {{success|excess|access|process}} depends on careful design and the local {{climate|client|climb|clinic}}."
+    },
+    {
+      "source_key": "pas-nutrition-labels",
+      "kind": "passage",
+      "title": "Front-of-pack food labels",
+      "body": "Nutrition information on the back of food packaging is often detailed but difficult to interpret quickly. To help shoppers make healthier choices, several countries have introduced simpler labels on the front of packages. Australia and New Zealand, for example, use a voluntary system that rates foods with stars, while other countries use colour-coded warnings for high levels of sugar, salt or fat. Studies suggest that clear labels can shift purchases towards healthier products and encourage manufacturers to improve recipes. However, voluntary schemes may be used mainly on products that score well, which limits their usefulness. Some researchers therefore argue that front-of-pack labels should be made mandatory.",
+      "blank_markup": "Nutrition information on the back of food packaging is often detailed but difficult to interpret quickly. To help shoppers make healthier choices, several countries have introduced simpler labels on the front of packages. Australia and New Zealand, for example, use a voluntary system that {{rates|rots|rites|rests}} foods with stars, while other countries use colour-coded warnings for high levels of sugar, salt or fat. Studies suggest that clear labels can shift purchases towards healthier products and {{encourage|enrage|endure|enclose}} manufacturers to improve recipes. However, voluntary schemes may be used mainly on products that score well, which limits their {{usefulness|uselessness|loneliness|likeness}}. Some researchers therefore argue that front-of-pack labels should be made {{mandatory|monetary|momentary|migratory}}."
+    },
+    {
+      "source_key": "pas-tsunami-warnings",
+      "kind": "passage",
+      "title": "Tsunami warning systems",
+      "body": "A tsunami is a series of powerful waves usually caused by an undersea earthquake. In the open ocean, tsunami waves may be less than a metre high, but they travel extremely fast and grow much taller as they approach the coast. Warning systems use seismic stations to detect large earthquakes and ocean sensors that measure changes in sea level. When a threat is confirmed, alerts are sent to authorities and the public. Warnings are less useful for communities very close to the earthquake, where waves may arrive within minutes. For this reason, people in coastal areas of New Zealand are taught that a long or strong earthquake is itself a natural warning, and that they should move to higher ground immediately without waiting for an official alert.",
+      "blank_markup": "A tsunami is a series of powerful waves usually caused by an undersea earthquake. In the open ocean, tsunami waves may be less than a metre high, but they travel extremely fast and grow much taller as they {{approach|appraise|applaud|appoint}} the coast. Warning systems use seismic stations to detect large earthquakes and ocean sensors that measure changes in sea level. When a threat is {{confirmed|conformed|confined|confessed}}, alerts are sent to authorities and the public. Warnings are less useful for communities very close to the earthquake, where waves may arrive within minutes. For this reason, people in coastal areas of New Zealand are taught that a long or strong earthquake is itself a natural warning, and that they should move to higher ground {{immediately|intimately|imaginably|immensely}} without waiting for an {{official|offensive|optional|original}} alert."
+    },
+    {
+      "source_key": "pas-crowdfunding-science",
+      "kind": "passage",
+      "title": "Crowdfunding scientific research",
+      "body": "Scientific research has traditionally been funded by governments, universities and large foundations. In recent years, some researchers have turned to crowdfunding, asking members of the public to contribute small amounts online. Crowdfunding can support projects that struggle to win traditional grants, such as early-stage ideas or research on topics that attract public interest, like local wildlife. It also encourages scientists to explain their work in accessible language, which can increase public engagement with science. However, the amounts raised are usually small, and projects with appealing stories may succeed more easily than those that are important but less exciting. Crowdfunding is therefore best seen as a supplement to conventional funding.",
+      "blank_markup": "Scientific research has traditionally been funded by governments, universities and large foundations. In recent years, some researchers have turned to crowdfunding, asking members of the public to {{contribute|construct|contradict|confuse}} small amounts online. Crowdfunding can support projects that struggle to win traditional grants, such as early-stage ideas or research on topics that attract public interest, like local wildlife. It also encourages scientists to explain their work in accessible language, which can increase public {{engagement|enlargement|enrolment|entitlement}} with science. However, the amounts raised are usually small, and projects with appealing stories may succeed more {{easily|early|eagerly|evenly}} than those that are important but less exciting. Crowdfunding is therefore best seen as a {{supplement|settlement|statement|shipment}} to conventional funding."
+    },
+    {
+      "source_key": "pas-congestion-charging",
+      "kind": "passage",
+      "title": "Congestion charging",
+      "body": "Congestion charging requires drivers to pay a fee to enter busy parts of a city at certain times. The aim is to reduce traffic by encouraging some people to travel at different times, use public transport or combine trips. Cities such as London and Stockholm have introduced such schemes, and traffic in the charged zones fell noticeably after the charges began. The revenue can be invested in public transport, which makes alternatives to driving more attractive. Opponents argue that the charges are unfair to people who must drive for work and may harm businesses in the zone. In Stockholm, public opinion was initially hostile, but support grew after residents experienced the reduction in congestion.",
+      "blank_markup": "Congestion charging requires drivers to pay a fee to enter busy parts of a city at certain times. The aim is to {{reduce|redeem|reside|refuse}} traffic by encouraging some people to travel at different times, use public transport or combine trips. Cities such as London and Stockholm have introduced such schemes, and traffic in the charged zones fell noticeably after the charges began. The revenue can be {{invested|invented|inverted|invited}} in public transport, which makes alternatives to driving more attractive. Opponents argue that the charges are unfair to people who must drive for work and may harm businesses in the zone. In Stockholm, public opinion was initially {{hostile|hospital|hostel|hotel}}, but support grew after residents experienced the reduction in {{congestion|conclusion|confession|confusion}}."
+    },
+    {
+      "source_key": "pas-antarctic-krill",
+      "kind": "passage",
+      "title": "Antarctic krill",
+      "body": "Antarctic krill are small, shrimp-like animals, but they are one of the most important species in the Southern Ocean. They feed on tiny algae, including algae that grow under sea ice, and are themselves eaten by whales, seals, penguins and fish. Because so many predators depend on them, changes in krill populations can affect the whole ecosystem. Scientists are concerned that shrinking sea ice may reduce the food available to young krill in winter. Krill are also harvested commercially, mainly for fish farm feed and dietary supplements. The fishery is managed by an international commission that sets catch limits, but some conservation groups argue that fishing should be kept away from areas where predators feed.",
+      "blank_markup": "Antarctic krill are small, shrimp-like animals, but they are one of the most important species in the Southern Ocean. They feed on tiny algae, including algae that grow under sea ice, and are themselves eaten by whales, seals, penguins and fish. Because so many predators {{depend|deport|deposit|depart}} on them, changes in krill populations can affect the whole ecosystem. Scientists are concerned that shrinking sea ice may reduce the food available to young krill in winter. Krill are also {{harvested|harnessed|harboured|hardened}} commercially, mainly for fish farm feed and dietary supplements. The fishery is managed by an international commission that sets catch {{limits|lists|lifts|links}}, but some conservation groups argue that fishing should be kept away from areas where predators {{feed|feud|fend|feel}}."
+    },
+    {
+      "source_key": "pas-exercise-mental-health",
+      "kind": "passage",
+      "title": "Exercise and mental health",
+      "body": "The physical benefits of exercise are well known, but a growing body of research shows that exercise also supports mental health. Regular physical activity has been linked to lower rates of depression and anxiety, and in some studies, exercise programmes have reduced symptoms of mild to moderate depression about as effectively as other common treatments. Scientists believe several mechanisms are involved, including changes in brain chemistry, better sleep and a sense of achievement. Exercise does not need to be intense to help; regular walking can be beneficial. Group activities may offer additional benefits through social contact. Nevertheless, experts caution that exercise should complement, rather than replace, professional treatment for serious mental illness.",
+      "blank_markup": "The physical benefits of exercise are well known, but a growing body of research shows that exercise also {{supports|surpasses|suspends|supplies}} mental health. Regular physical activity has been linked to lower rates of depression and anxiety, and in some studies, exercise programmes have reduced symptoms of mild to moderate depression about as {{effectively|affectionately|eventually|exceptionally}} as other common treatments. Scientists believe several mechanisms are involved, including changes in brain chemistry, better sleep and a sense of achievement. Exercise does not need to be intense to help; regular walking can be beneficial. Group activities may offer additional benefits through social {{contact|contract|context|contest}}. Nevertheless, experts caution that exercise should complement, rather than {{replace|repeat|repay|relate}}, professional treatment for serious mental illness."
+    },
+    {
+      "source_key": "pas-ebooks-print",
+      "kind": "passage",
+      "title": "Printed books and e-books",
+      "body": "When e-books first became popular, many commentators predicted that printed books would soon disappear. That has not happened. In many countries, sales of e-books grew quickly and then levelled off, while printed books have remained popular. E-books are convenient, especially for travellers, and allow readers to adjust text size. Printed books, however, offer a physical experience that many readers value, and they do not require a device or battery. Some research suggests that readers remember the layout of printed pages, which may help them locate information later. Rather than replacing print, e-books appear to have become one option among several ways of reading.",
+      "blank_markup": "When e-books first became popular, many commentators predicted that printed books would soon {{disappear|disagree|disapprove|dispose}}. That has not happened. In many countries, sales of e-books grew quickly and then levelled off, while printed books have remained popular. E-books are convenient, especially for travellers, and allow readers to adjust text size. Printed books, however, offer a physical experience that many readers value, and they do not {{require|acquire|inquire|retire}} a device or battery. Some research suggests that readers remember the layout of printed pages, which may help them {{locate|relocate|allocate|dislocate}} information later. Rather than replacing print, e-books appear to have become one {{option|opinion|operation|occasion}} among several ways of reading."
+    },
+    {
+      "source_key": "pas-water-footprint",
+      "kind": "passage",
+      "title": "The water footprint of food",
+      "body": "The water footprint of a food measures the total amount of fresh water used to produce it, including rain that falls on crops and water used for irrigation and processing. Animal products generally have larger water footprints than plant foods, because animals must be fed crops over many months. However, water footprints need to be interpreted carefully. Water used in a rainy region where it is plentiful has very different consequences from irrigation water taken from rivers in a dry region. For this reason, some researchers focus on water scarcity rather than total volume. Consumers who want to reduce their impact can benefit from understanding where and how their food is produced, not just which category it belongs to.",
+      "blank_markup": "The water footprint of a food measures the total amount of fresh water used to produce it, including rain that falls on crops and water used for irrigation and processing. Animal products generally have larger water footprints than plant foods, because animals must be fed crops over many months. {{However|Whatever|Whenever|Wherever}}, water footprints need to be interpreted carefully. Water used in a rainy region where it is {{plentiful|plateful|playful|pitiful}} has very different consequences from irrigation water taken from rivers in a dry region. For this reason, some researchers focus on water scarcity rather than total volume. Consumers who want to reduce their impact can {{benefit|bench|bundle|bargain}} from understanding where and how their food is produced, not just which {{category|capacity|calendar|catalogue}} it belongs to."
+    },
+    {
+      "source_key": "pas-wildlife-corridors",
+      "kind": "passage",
+      "title": "Wildlife corridors",
+      "body": "When natural habitats are divided by roads, farms and towns, animal populations can become isolated in small patches. Isolated populations are more vulnerable to disease, inbreeding and local disasters such as fire. Wildlife corridors are strips of habitat that link these patches, allowing animals to move, find mates and recolonise areas where populations have disappeared. Corridors can be as simple as a line of native trees along a stream, or as large as bridges built over highways. In Australia, rope bridges have helped tree-dwelling animals such as possums cross roads safely. Designing effective corridors requires knowledge of how particular species behave, since a corridor that suits birds may be useless for small mammals.",
+      "blank_markup": "When natural habitats are divided by roads, farms and towns, animal populations can become isolated in small patches. Isolated populations are more {{vulnerable|valuable|variable|visible}} to disease, inbreeding and local disasters such as fire. Wildlife corridors are strips of habitat that link these patches, allowing animals to move, find mates and {{recolonise|recognise|reconcile|recommend}} areas where populations have disappeared. Corridors can be as simple as a line of native trees along a stream, or as large as bridges built over highways. In Australia, rope bridges have helped tree-dwelling animals such as possums cross roads safely. Designing effective corridors requires knowledge of how particular species {{behave|behold|belong|beware}}, since a corridor that suits birds may be {{useless|useful|usual|unused}} for small mammals."
+    },
+    {
+      "source_key": "pas-cryptography",
+      "kind": "passage",
+      "title": "How encryption protects data",
+      "body": "Every time someone shops online or sends a private message, encryption helps keep the information secure. Encryption converts readable data into a scrambled form that can only be read with the correct key. Modern internet security relies heavily on public-key cryptography, in which each user has two keys. A public key, which can be shared freely, is used to lock a message, while a private key, kept secret, is needed to unlock it. The security of these systems depends on mathematical problems that are extremely difficult for current computers to solve. Researchers are concerned that powerful quantum computers could one day break some of these systems, so new encryption methods are already being developed.",
+      "blank_markup": "Every time someone shops online or sends a private message, encryption helps keep the information secure. Encryption {{converts|converses|convicts|conveys}} readable data into a scrambled form that can only be read with the correct key. Modern internet security relies heavily on public-key cryptography, in which each user has two keys. A public key, which can be shared freely, is used to lock a message, while a private key, kept {{secret|second|sacred|select}}, is needed to unlock it. The security of these systems depends on mathematical problems that are extremely difficult for current computers to solve. Researchers are concerned that powerful quantum computers could one day {{break|brake|breed|brief}} some of these systems, so new encryption methods are already being {{developed|devoted|defended|deleted}}."
+    },
+    {
+      "source_key": "pas-great-artesian-basin",
+      "kind": "passage",
+      "title": "The Great Artesian Basin",
+      "body": "The Great Artesian Basin lies beneath about a fifth of Australia and is one of the largest underground water resources in the world. Rain that falls on its eastern edge slowly seeps into layers of sandstone and moves through the rock over thousands of years. Because the water is under pressure, it can rise to the surface through bores without pumping. For more than a century, this water has allowed pastoral farming and towns to exist in dry inland regions. However, many early bores were left to flow freely into open drains, wasting large amounts of water and reducing pressure. Government programmes have since capped many bores and replaced open drains with pipes, helping pressure to recover in some areas.",
+      "blank_markup": "The Great Artesian Basin lies beneath about a fifth of Australia and is one of the largest underground water resources in the world. Rain that falls on its eastern edge slowly {{seeps|sleeps|sweeps|steps}} into layers of sandstone and moves through the rock over thousands of years. Because the water is under pressure, it can rise to the surface through bores without pumping. For more than a century, this water has allowed pastoral farming and towns to {{exist|exit|exert|excel}} in dry inland regions. However, many early bores were left to flow freely into open drains, wasting large amounts of water and reducing pressure. Government programmes have since {{capped|clapped|camped|copied}} many bores and replaced open drains with pipes, helping pressure to {{recover|remove|reveal|refer}} in some areas."
+    },
+    {
+      "source_key": "pas-school-start-times",
+      "kind": "passage",
+      "title": "Teenagers and school start times",
+      "body": "During adolescence, the body clock shifts so that teenagers naturally feel sleepy later at night and find it harder to wake early. Early school start times can therefore leave many students chronically short of sleep. Lack of sleep has been linked to poorer concentration, lower grades and a higher risk of accidents among young drivers. Some schools that have delayed their start times by around an hour have reported improvements in attendance and alertness. Changing schedules is not simple, however. Later starts can affect bus timetables, after-school sports and parents' work arrangements. Supporters argue that these practical obstacles should be weighed against the clear evidence about adolescent sleep.",
+      "blank_markup": "During adolescence, the body clock shifts so that teenagers naturally feel sleepy later at night and find it harder to wake early. Early school start times can therefore leave many students {{chronically|chemically|chronologically|critically}} short of sleep. Lack of sleep has been linked to poorer concentration, lower grades and a higher risk of accidents among young drivers. Some schools that have {{delayed|decayed|delivered|declared}} their start times by around an hour have reported improvements in attendance and alertness. Changing schedules is not simple, however. Later starts can affect bus timetables, after-school sports and parents' work arrangements. Supporters argue that these practical {{obstacles|oracles|obstructs|occasions}} should be weighed against the clear evidence about adolescent {{sleep|slip|slap|sleet}}."
+    },
+    {
+      "source_key": "pas-urban-beekeeping",
+      "kind": "passage",
+      "title": "Bees in the city",
+      "body": "Beekeeping has become a popular hobby in many cities, with hives appearing on rooftops, balconies and community gardens. Urban environments can offer bees a surprising variety of flowers in parks and gardens, and some city hives produce more honey than rural ones. However, researchers have raised concerns. In some cities, the number of managed honeybee hives has grown so rapidly that there may not be enough flowers to feed them all. Honeybees may then compete with wild bees, which are often more threatened. Experts suggest that people who want to help pollinators may achieve more by planting a diversity of flowering plants than by installing new hives.",
+      "blank_markup": "Beekeeping has become a popular hobby in many cities, with hives appearing on rooftops, balconies and community gardens. Urban environments can offer bees a {{surprising|supporting|surrounding|surpassing}} variety of flowers in parks and gardens, and some city hives produce more honey than rural ones. However, researchers have raised concerns. In some cities, the number of managed honeybee hives has grown so {{rapidly|rarely|readily|rightly}} that there may not be enough flowers to feed them all. Honeybees may then compete with wild bees, which are often more {{threatened|threaded|thrilled|treated}}. Experts suggest that people who want to help pollinators may achieve more by planting a diversity of flowering plants than by {{installing|insulting|inspiring|instilling}} new hives."
+    }
+  ],
+  "questions": [
+    {
+      "type": "RWFIB",
+      "source_key": "pas-language-loss",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-language-loss",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "return",
+          "recorded",
+          "forcing"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-language-loss",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "According to the passage, why do speakers move away from their first language?",
+        "options": [
+          "A dominant language offers better access to education.",
+          "A dominant language offers better access to jobs.",
+          "Parents believe their language will hold children back.",
+          "Governments have banned minority languages everywhere.",
+          "Elderly speakers refuse to teach the language."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-language-loss",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "What does the passage say about documentation?",
+        "options": [
+          "It is not the same as revival.",
+          "It is enough to save a language.",
+          "It should be avoided.",
+          "It only records plant names."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-language-loss",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "many languages may disappear this century",
+          "speakers shift to dominant languages",
+          "traditional knowledge lost",
+          "revival depends on daily use"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-agrivoltaics",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-agrivoltaics",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "reducing",
+          "failure",
+          "weather"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-agrivoltaics",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "What benefits of agrivoltaics are described?",
+        "options": [
+          "Shade can reduce water loss from soil.",
+          "Some crops are protected from heat stress.",
+          "Grazing sheep reduce maintenance costs.",
+          "All crops grow better under panels.",
+          "Mounting structures are cheaper."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-agrivoltaics",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What is agrivoltaics?",
+        "options": [
+          "Combining solar panels and farming on the same land",
+          "Using crops to produce electricity",
+          "Building solar farms on unused desert land",
+          "Powering farm machinery with batteries"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-agrivoltaics",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "solar farms compete with agriculture for land",
+          "agrivoltaics combines panels with crops or grazing",
+          "shade can help crops but success depends on design and climate"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-nutrition-labels",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-nutrition-labels",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "optional",
+          "prevent",
+          "counts"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-nutrition-labels",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What effects of clear front-of-pack labels are suggested?",
+        "options": [
+          "Shoppers buy healthier products.",
+          "Manufacturers improve recipes.",
+          "Purchases shift towards healthier options.",
+          "Food prices fall.",
+          "Back-of-pack information is removed."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-nutrition-labels",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What is a weakness of voluntary labelling schemes?",
+        "options": [
+          "They may appear mainly on products that score well.",
+          "They use too many colours.",
+          "They are only used in Australia.",
+          "They are too detailed to read."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-nutrition-labels",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "front-of-pack labels simplify nutrition information",
+          "labels shift purchases and improve recipes",
+          "voluntary schemes limited so should be mandatory"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-tsunami-warnings",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-tsunami-warnings",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "slowly",
+          "leave",
+          "cancelled"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-tsunami-warnings",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which statements about tsunamis and warnings are correct according to the passage?",
+        "options": [
+          "Tsunami waves grow taller near the coast.",
+          "Warning systems use ocean sensors.",
+          "Warnings may come too late for communities near the earthquake.",
+          "Tsunami waves are always very tall in the open ocean.",
+          "People should wait for an official alert before moving."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-tsunami-warnings",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What are people in coastal New Zealand taught to do after a long or strong earthquake?",
+        "options": [
+          "Move to higher ground immediately",
+          "Wait for a text message",
+          "Go to the beach to check the water",
+          "Stay indoors near a window"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-tsunami-warnings",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "tsunamis caused by undersea earthquakes",
+          "warning systems use seismic stations and ocean sensors",
+          "strong earthquake is a natural warning to move to higher ground"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-crowdfunding-science",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-crowdfunding-science",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "replacement",
+          "donate",
+          "slowly"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-crowdfunding-science",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "What advantages of crowdfunding research are mentioned?",
+        "options": [
+          "It can support early-stage ideas.",
+          "It encourages scientists to explain their work clearly.",
+          "It can increase public engagement with science.",
+          "It usually raises very large amounts.",
+          "It treats all projects equally."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-crowdfunding-science",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "How does the writer view crowdfunding?",
+        "options": [
+          "As a supplement to conventional funding",
+          "As a replacement for government grants",
+          "As a threat to science",
+          "As useful only for wildlife research"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-crowdfunding-science",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "researchers use crowdfunding from the public",
+          "supports early ideas and public engagement",
+          "small amounts and appealing projects favoured so a supplement"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-congestion-charging",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-congestion-charging",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "increase",
+          "supportive",
+          "spent"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-congestion-charging",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "How does congestion charging aim to change behaviour?",
+        "options": [
+          "Encouraging travel at different times",
+          "Encouraging use of public transport",
+          "Encouraging people to combine trips",
+          "Encouraging people to buy new cars",
+          "Encouraging businesses to move into the zone"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-congestion-charging",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What happened to public opinion in Stockholm?",
+        "options": [
+          "Support grew after people experienced less congestion.",
+          "Opposition grew after charges began.",
+          "People were always strongly in favour.",
+          "The scheme was cancelled after a year."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-congestion-charging",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "congestion charges reduce city traffic",
+          "revenue invested in public transport",
+          "opponents say unfair but Stockholm support grew"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-antarctic-krill",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-antarctic-krill",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "protected",
+          "prey",
+          "rules"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-antarctic-krill",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which animals eat krill, according to the passage?",
+        "options": [
+          "Whales",
+          "Seals",
+          "Penguins",
+          "Polar bears",
+          "Sharks only"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-antarctic-krill",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why are scientists concerned about shrinking sea ice?",
+        "options": [
+          "It may reduce food for young krill in winter.",
+          "It makes fishing more difficult.",
+          "It increases the number of predators.",
+          "It warms the water too quickly for whales."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-antarctic-krill",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "krill are central to the Southern Ocean ecosystem",
+          "shrinking sea ice threatens krill",
+          "commercial fishing managed but should avoid feeding areas"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-exercise-mental-health",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-exercise-mental-health",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "harms",
+          "quickly",
+          "avoid"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-exercise-mental-health",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which mechanisms may explain how exercise helps mental health?",
+        "options": [
+          "Changes in brain chemistry",
+          "Better sleep",
+          "A sense of achievement",
+          "Higher body temperature",
+          "Weight loss alone"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-exercise-mental-health",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What caution do experts give?",
+        "options": [
+          "Exercise should not replace professional treatment for serious illness.",
+          "Only intense exercise is helpful.",
+          "Group exercise is harmful.",
+          "Walking has no mental health benefits."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-exercise-mental-health",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "exercise supports mental health",
+          "linked to lower depression and anxiety",
+          "should complement not replace professional treatment"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-ebooks-print",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-ebooks-print",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "replace",
+          "forget",
+          "charge"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-ebooks-print",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which advantages of printed books are mentioned?",
+        "options": [
+          "They offer a physical experience readers value.",
+          "They do not need a device or battery.",
+          "Readers may remember page layout.",
+          "They allow readers to change text size.",
+          "They are more convenient for travellers."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-ebooks-print",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "question": "What does the passage conclude about e-books?",
+        "options": [
+          "They have become one option among several.",
+          "They have replaced printed books.",
+          "Their sales are still growing quickly everywhere.",
+          "They are unpopular with travellers."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-ebooks-print",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "printed books did not disappear",
+          "e-books convenient but sales levelled off",
+          "e-books are one option among several"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-water-footprint",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-water-footprint",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "Therefore",
+          "scarce",
+          "price"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-water-footprint",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "What does a food's water footprint include?",
+        "options": [
+          "Rain that falls on crops",
+          "Water used for irrigation",
+          "Water used in processing",
+          "Water used by consumers when cooking",
+          "Seawater used for transport"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-water-footprint",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "question": "Why must water footprints be interpreted carefully?",
+        "options": [
+          "The impact of water use depends on local scarcity.",
+          "They are always exaggerated.",
+          "They do not include irrigation.",
+          "Plant foods use more water than animal products."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-water-footprint",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "water footprint measures total fresh water used",
+          "animal products have larger footprints",
+          "impact depends on local water scarcity"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-wildlife-corridors",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-wildlife-corridors",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "resistant",
+          "avoid",
+          "helpful"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-wildlife-corridors",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What risks do isolated animal populations face?",
+        "options": [
+          "Disease",
+          "Inbreeding",
+          "Local disasters such as fire",
+          "Too many mates",
+          "Excessive food supply"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-wildlife-corridors",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why do corridor designers need to understand species behaviour?",
+        "options": [
+          "A corridor that suits one species may not suit another.",
+          "All animals use corridors in the same way.",
+          "Birds cannot use corridors.",
+          "Corridors must always be bridges."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-wildlife-corridors",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "divided habitats isolate populations",
+          "corridors link habitat patches",
+          "design depends on species behaviour"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-cryptography",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-cryptography",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "extra_words": [
+          "public",
+          "protect",
+          "abandoned"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-cryptography",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "Which statements about public-key cryptography are correct?",
+        "options": [
+          "Each user has two keys.",
+          "The public key can be shared freely.",
+          "The private key is needed to unlock a message.",
+          "The private key is shared with everyone.",
+          "It is impossible for any computer to break."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-cryptography",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "question": "Why are new encryption methods being developed?",
+        "options": [
+          "Quantum computers could break some current systems.",
+          "Online shopping has declined.",
+          "Public keys are too difficult to share.",
+          "Current methods are too slow for messages."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-cryptography",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "encryption scrambles data so only key holders read it",
+          "public-key cryptography uses public and private keys",
+          "quantum computers may break systems so new methods developed"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-great-artesian-basin",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-great-artesian-basin",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "drained",
+          "flows",
+          "decline"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-great-artesian-basin",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which statements about the Great Artesian Basin are supported?",
+        "options": [
+          "It lies beneath about a fifth of Australia.",
+          "Water moves through the rock over thousands of years.",
+          "Water can rise through bores without pumping.",
+          "It is refilled mainly by seawater.",
+          "All bores have always been capped."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-great-artesian-basin",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What problem did early bores cause?",
+        "options": [
+          "They wasted water and reduced pressure.",
+          "They caused earthquakes.",
+          "They polluted the sandstone.",
+          "They made towns flood."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-great-artesian-basin",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Great Artesian Basin is a huge underground water resource",
+          "water supports inland farming and towns",
+          "free flowing bores wasted water but capping restores pressure"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-school-start-times",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-school-start-times",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "advanced",
+          "benefits",
+          "rarely"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-school-start-times",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which practical difficulties of later school start times are mentioned?",
+        "options": [
+          "Effects on bus timetables",
+          "Effects on after-school sports",
+          "Effects on parents' work arrangements",
+          "Higher teacher salaries",
+          "Shorter summer holidays"
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-school-start-times",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Why do teenagers find it hard to wake early?",
+        "options": [
+          "Their body clock shifts later during adolescence.",
+          "They use phones too much.",
+          "They exercise too little.",
+          "Schools give too much homework."
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-school-start-times",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "teenage body clocks shift later",
+          "early starts cause sleep loss and poorer concentration",
+          "later starts improve attendance despite practical obstacles"
+        ]
+      }
+    },
+    {
+      "type": "RWFIB",
+      "source_key": "pas-urban-beekeeping",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {}
+    },
+    {
+      "type": "RFIB",
+      "source_key": "pas-urban-beekeeping",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "extra_words": [
+          "limited",
+          "slowly",
+          "removing"
+        ]
+      }
+    },
+    {
+      "type": "MCMA",
+      "source_key": "pas-urban-beekeeping",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "Which concerns about urban beekeeping are raised?",
+        "options": [
+          "There may not be enough flowers for all hives.",
+          "Honeybees may compete with wild bees.",
+          "Hive numbers have grown very rapidly in some cities.",
+          "City honey is unsafe to eat.",
+          "Rooftop hives damage buildings."
+        ],
+        "answers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "type": "MCSA",
+      "source_key": "pas-urban-beekeeping",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "question": "What do experts suggest is a better way to help pollinators?",
+        "options": [
+          "Planting a diversity of flowering plants",
+          "Installing more hives",
+          "Moving hives to rural areas",
+          "Feeding bees sugar water"
+        ],
+        "answer": 0
+      }
+    },
+    {
+      "type": "SWT",
+      "source_key": "pas-urban-beekeeping",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "urban beekeeping has become popular",
+          "too many hives may lack flowers and compete with wild bees",
+          "planting diverse flowers helps pollinators more"
+        ]
+      }
+    }
+  ]
+}
