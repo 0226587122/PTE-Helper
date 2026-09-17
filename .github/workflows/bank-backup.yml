@@ -1,0 +1,65 @@
+# Weekly readable backup of the question bank.
+#
+# Managed MySQL already takes daily backups. This adds a plain JSON copy of every source and question
+# (all statuses) in a DigitalOcean Spaces bucket, separate from the database backups.
+#
+# Repository secrets needed (Settings > Secrets and variables > Actions):
+#   PROD_DATABASE_URL         the mysql:// connection string for the production database
+#   PROD_DATABASE_CA_CERT     the cluster's CA certificate (PEM text)
+#   SPACES_ACCESS_KEY_ID      a Spaces access key with write access to the bucket
+#   SPACES_SECRET_ACCESS_KEY
+#   SPACES_BUCKET             bucket name, for example pte-bank-backups
+#   SPACES_REGION             Spaces region, for example syd1
+#
+# Note: if the database uses trusted sources, GitHub's runners are not on the list and the export will be
+# refused. See the README for options.
+
+name: Question bank backup
+
+on:
+  schedule:
+    - cron: "0 14 * * 0" # Sundays 14:00 UTC (Monday early morning in New Zealand)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Export the question bank
+        id: export
+        working-directory: backend
+        env:
+          ENVIRONMENT: production
+          DATABASE_URL: ${{ secrets.PROD_DATABASE_URL }}
+          DATABASE_CA_CERT: ${{ secrets.PROD_DATABASE_CA_CERT }}
+        run: |
+          file="bank-$(date -u +%Y-%m-%d).json"
+          python -m scripts.export_bank --out "$RUNNER_TEMP/$file"
+          echo "file=$file" >> "$GITHUB_OUTPUT"
+
+      - name: Upload to DigitalOcean Spaces
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SPACES_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SPACES_SECRET_ACCESS_KEY }}
+          # The AWS CLI needs a region value; Spaces uses the endpoint instead.
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          aws s3 cp "$RUNNER_TEMP/${{ steps.export.outputs.file }}" \
+            "s3://${{ secrets.SPACES_BUCKET }}/question-bank/${{ steps.export.outputs.file }}" \
+            --endpoint-url "https://${{ secrets.SPACES_REGION }}.digitaloceanspaces.com" \
+            --acl private
