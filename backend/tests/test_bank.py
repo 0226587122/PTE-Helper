@@ -204,3 +204,35 @@ def test_repository_bank_meets_targets():
     report = validate_bank(sources, questions, min_active=30, min_backup=15)
     assert report.errors == []
     assert all(words(s["body"]) for s in sources)
+
+
+def test_every_repository_question_renders_and_scores():
+    """Render each real question with several seeds: no leaked answers, sensible variants, full marks for a perfect answer."""
+    sources, questions, _ = load_bank(DEFAULT_BANK_PATHS)
+    if not questions:
+        pytest.skip("No bank files yet.")
+    by_key = {
+        s["source_key"]: SourceData(s["source_key"], s["kind"], s["title"], s["body"], s.get("blank_markup"), s.get("turns"))
+        for s in sources
+    }
+    problems = []
+    for i, q in enumerate(questions):
+        code = q["type"]
+        for seed in range(5):
+            rendered = render(code, q["payload"], by_key.get(q.get("source_key")), seed)
+            if ANSWER_KEYS & set(_walk_keys(rendered["display"])):
+                problems.append(f"#{i} {code} leaks answers")
+            a = rendered["answer"]
+            if code == "HIW" and len(a["incorrect"]) < 3:
+                problems.append(f"#{i} HIW only changed {len(a['incorrect'])} words (seed {seed})")
+            if code == "LFIB" and len(a["blanks"]) < 4:
+                problems.append(f"#{i} LFIB only {len(a['blanks'])} blanks (seed {seed})")
+            perfect = {
+                "WFD": {"text": a.get("sentence")}, "RWFIB": {"answers": a.get("blanks")}, "RFIB": {"answers": a.get("blanks")},
+                "LFIB": {"answers": a.get("blanks")}, "MCMA": {"selected": a.get("correct")}, "LMCMA": {"selected": a.get("correct")},
+                "MCSA": {"selected": a.get("correct")}, "LMCSA": {"selected": a.get("correct")}, "HCS": {"selected": a.get("correct")},
+                "SMW": {"selected": a.get("correct")}, "RO": {"order": a.get("order")}, "HIW": {"selected": a.get("incorrect")},
+            }
+            if code in perfect and score_answer(code, rendered, perfect[code]).pct != 100.0:
+                problems.append(f"#{i} {code} perfect answer did not score 100 (seed {seed})")
+    assert problems == []

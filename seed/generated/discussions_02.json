@@ -1,0 +1,623 @@
+{
+  "version": 1,
+  "notes": "Original group discussions (batch 2 of 3) for Summarize Group Discussion. Discussions 11 to 15 are backup questions. The body is the turns joined as 'Speaker: text' lines.",
+  "sources": [
+    {
+      "source_key": "dis-mental-health-days",
+      "kind": "discussion",
+      "title": "Mental health days",
+      "body": "Olivia: Students should be allowed to take a few mental health days each semester without needing a medical certificate. Stress is a real problem, and sometimes a day of rest prevents a much bigger crisis later.\nJames: I'm worried some students would use those days to avoid tests or deadlines. There needs to be some way to stop the system being misused.\nOlivia: Requiring a certificate means students must pay to see a doctor when what they really need is rest. Most students are honest, and a limit of two or three days each semester would reduce the risk of misuse.\nAroha: Perhaps the days could apply only to attendance, not to assessment deadlines. The university should also make counselling easier to access, so rest days aren't the only support available.\nJames: Limiting it to attendance would address my concern. Better counselling access is a great point too.",
+      "turns": [
+        {
+          "speaker": "Olivia",
+          "text": "Students should be allowed to take a few mental health days each semester without needing a medical certificate. Stress is a real problem, and sometimes a day of rest prevents a much bigger crisis later."
+        },
+        {
+          "speaker": "James",
+          "text": "I'm worried some students would use those days to avoid tests or deadlines. There needs to be some way to stop the system being misused."
+        },
+        {
+          "speaker": "Olivia",
+          "text": "Requiring a certificate means students must pay to see a doctor when what they really need is rest. Most students are honest, and a limit of two or three days each semester would reduce the risk of misuse."
+        },
+        {
+          "speaker": "Aroha",
+          "text": "Perhaps the days could apply only to attendance, not to assessment deadlines. The university should also make counselling easier to access, so rest days aren't the only support available."
+        },
+        {
+          "speaker": "James",
+          "text": "Limiting it to attendance would address my concern. Better counselling access is a great point too."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-study-abroad-funding",
+      "kind": "discussion",
+      "title": "Funding study abroad",
+      "body": "Sienna: The university should spend more on study abroad scholarships. Living in another country builds independence, language skills and cultural understanding that employers really value.\nMohammed: Those benefits are real, but only a small number of students can go overseas. I'd rather the money went to services everyone uses, like tutoring and mental health support.\nSienna: The benefits go beyond the students who travel. When they return, they bring new ideas into classes, and exchange partnerships attract international students to our campus. Scholarships also allow students who could never afford to go overseas to take part.\nCharlotte: What about expanding virtual exchanges and international projects on campus? More students could benefit, and scholarships could still be targeted at students from low-income families.\nMohammed: Targeting scholarships at students who need them most would make the spending much fairer.",
+      "turns": [
+        {
+          "speaker": "Sienna",
+          "text": "The university should spend more on study abroad scholarships. Living in another country builds independence, language skills and cultural understanding that employers really value."
+        },
+        {
+          "speaker": "Mohammed",
+          "text": "Those benefits are real, but only a small number of students can go overseas. I'd rather the money went to services everyone uses, like tutoring and mental health support."
+        },
+        {
+          "speaker": "Sienna",
+          "text": "The benefits go beyond the students who travel. When they return, they bring new ideas into classes, and exchange partnerships attract international students to our campus. Scholarships also allow students who could never afford to go overseas to take part."
+        },
+        {
+          "speaker": "Charlotte",
+          "text": "What about expanding virtual exchanges and international projects on campus? More students could benefit, and scholarships could still be targeted at students from low-income families."
+        },
+        {
+          "speaker": "Mohammed",
+          "text": "Targeting scholarships at students who need them most would make the spending much fairer."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-peer-review",
+      "kind": "discussion",
+      "title": "Peer review of assignments",
+      "body": "Ellie: I like peer review, where students give each other feedback on draft assignments. Reading someone else's work helps me see the weaknesses in my own writing.\nKai: The quality of feedback varies a lot, though. Sometimes classmates only write 'good job', and sometimes they're harsh without being helpful.\nEllie: Even weak feedback is useful practice, because giving feedback forces you to think critically. Over time, students get better at it. Lecturers can also model good comments at the beginning of the course.\nAnanya: Clear guidelines could help. If lecturers provide a checklist and example comments, students would know what useful feedback looks like. Peer review shouldn't affect grades directly either.\nKai: With a checklist and no effect on grades, I'd be happy to try it.",
+      "turns": [
+        {
+          "speaker": "Ellie",
+          "text": "I like peer review, where students give each other feedback on draft assignments. Reading someone else's work helps me see the weaknesses in my own writing."
+        },
+        {
+          "speaker": "Kai",
+          "text": "The quality of feedback varies a lot, though. Sometimes classmates only write 'good job', and sometimes they're harsh without being helpful."
+        },
+        {
+          "speaker": "Ellie",
+          "text": "Even weak feedback is useful practice, because giving feedback forces you to think critically. Over time, students get better at it. Lecturers can also model good comments at the beginning of the course."
+        },
+        {
+          "speaker": "Ananya",
+          "text": "Clear guidelines could help. If lecturers provide a checklist and example comments, students would know what useful feedback looks like. Peer review shouldn't affect grades directly either."
+        },
+        {
+          "speaker": "Kai",
+          "text": "With a checklist and no effect on grades, I'd be happy to try it."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-late-penalties",
+      "kind": "discussion",
+      "title": "Penalties for late assignments",
+      "body": "Benjamin: Late penalties are necessary. If there were no penalty, students who submit on time would be at a disadvantage, and lecturers couldn't return marked work promptly.\nTia: Some penalties are too harsh, though. Losing ten percent for being one hour late seems excessive, especially for students with jobs or family responsibilities.\nBenjamin: Without penalties, deadlines would quickly lose their meaning. In workplaces, late reports can cost money or clients, so students should learn to plan their time. Students with genuine problems can already apply for extensions.\nRohan: A grace period of twenty-four hours without penalty could reduce stress, followed by smaller daily deductions. Extensions should also be simple to request for genuine reasons.\nBenjamin: A short grace period seems fair, as long as deadlines still mean something.",
+      "turns": [
+        {
+          "speaker": "Benjamin",
+          "text": "Late penalties are necessary. If there were no penalty, students who submit on time would be at a disadvantage, and lecturers couldn't return marked work promptly."
+        },
+        {
+          "speaker": "Tia",
+          "text": "Some penalties are too harsh, though. Losing ten percent for being one hour late seems excessive, especially for students with jobs or family responsibilities."
+        },
+        {
+          "speaker": "Benjamin",
+          "text": "Without penalties, deadlines would quickly lose their meaning. In workplaces, late reports can cost money or clients, so students should learn to plan their time. Students with genuine problems can already apply for extensions."
+        },
+        {
+          "speaker": "Rohan",
+          "text": "A grace period of twenty-four hours without penalty could reduce stress, followed by smaller daily deductions. Extensions should also be simple to request for genuine reasons."
+        },
+        {
+          "speaker": "Benjamin",
+          "text": "A short grace period seems fair, as long as deadlines still mean something."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-parking-fees",
+      "kind": "discussion",
+      "title": "Campus parking fees",
+      "body": "Madison: The university plans to double parking fees. That's unfair to students who live far away or in areas with poor public transport. They have no choice but to drive.\nLuca: Higher fees might encourage people who do have alternatives to take the bus or cycle, which would reduce traffic and emissions around campus.\nMadison: Many students also can't afford a car in the first place, yet they help pay for car parks through their fees. If driving costs more, the bus service might finally get enough passengers to improve.\nAnahera: Maybe fees could depend on circumstances. Students with long commutes or disabilities could get discounted permits, and the extra revenue could fund better bus connections.\nMadison: Discounts for people without alternatives would make the increase much easier to accept.",
+      "turns": [
+        {
+          "speaker": "Madison",
+          "text": "The university plans to double parking fees. That's unfair to students who live far away or in areas with poor public transport. They have no choice but to drive."
+        },
+        {
+          "speaker": "Luca",
+          "text": "Higher fees might encourage people who do have alternatives to take the bus or cycle, which would reduce traffic and emissions around campus."
+        },
+        {
+          "speaker": "Madison",
+          "text": "Many students also can't afford a car in the first place, yet they help pay for car parks through their fees. If driving costs more, the bus service might finally get enough passengers to improve."
+        },
+        {
+          "speaker": "Anahera",
+          "text": "Maybe fees could depend on circumstances. Students with long commutes or disabilities could get discounted permits, and the extra revenue could fund better bus connections."
+        },
+        {
+          "speaker": "Madison",
+          "text": "Discounts for people without alternatives would make the increase much easier to accept."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-open-plan-study",
+      "kind": "discussion",
+      "title": "Open-plan study spaces",
+      "body": "Jasmine: The new open-plan study area is great for group work. It's bright and flexible, and it's easy to meet classmates there.\nAlexander: It's far too noisy for individual study, though. Since the quiet rooms were removed, I can't concentrate on campus anymore.\nJasmine: Students who need silence can use the library's quiet floors. Most learning at university now involves discussion and projects, so a space that encourages collaboration is more useful than individual desks.\nMoana: The space could be divided into zones, with one area for discussion and another for silent study. Bookable rooms for small groups would also help reduce noise in the main area.\nAlexander: Zones would solve most of my problems, as long as the silent area is properly respected.",
+      "turns": [
+        {
+          "speaker": "Jasmine",
+          "text": "The new open-plan study area is great for group work. It's bright and flexible, and it's easy to meet classmates there."
+        },
+        {
+          "speaker": "Alexander",
+          "text": "It's far too noisy for individual study, though. Since the quiet rooms were removed, I can't concentrate on campus anymore."
+        },
+        {
+          "speaker": "Jasmine",
+          "text": "Students who need silence can use the library's quiet floors. Most learning at university now involves discussion and projects, so a space that encourages collaboration is more useful than individual desks."
+        },
+        {
+          "speaker": "Moana",
+          "text": "The space could be divided into zones, with one area for discussion and another for silent study. Bookable rooms for small groups would also help reduce noise in the main area."
+        },
+        {
+          "speaker": "Alexander",
+          "text": "Zones would solve most of my problems, as long as the silent area is properly respected."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-first-aid-training",
+      "kind": "discussion",
+      "title": "Compulsory first-aid training",
+      "body": "Hugo: All students should complete basic first-aid training in their first year. Knowing how to respond in an emergency could save a life, on campus or anywhere else.\nLayla: It's a useful skill, but making it compulsory adds to an already busy timetable. And who would pay for the courses?\nHugo: The training only takes a few hours, and it could replace part of the orientation programme, which many students find unhelpful. Some employers also require first-aid certificates, so it would make graduates more employable.\nNikau: It could be offered free as a short online module plus a two-hour practical session. Students who already have a certificate could be exempt.\nLayla: A short, free course with exemptions sounds reasonable. I'd be more supportive of that version.",
+      "turns": [
+        {
+          "speaker": "Hugo",
+          "text": "All students should complete basic first-aid training in their first year. Knowing how to respond in an emergency could save a life, on campus or anywhere else."
+        },
+        {
+          "speaker": "Layla",
+          "text": "It's a useful skill, but making it compulsory adds to an already busy timetable. And who would pay for the courses?"
+        },
+        {
+          "speaker": "Hugo",
+          "text": "The training only takes a few hours, and it could replace part of the orientation programme, which many students find unhelpful. Some employers also require first-aid certificates, so it would make graduates more employable."
+        },
+        {
+          "speaker": "Nikau",
+          "text": "It could be offered free as a short online module plus a two-hour practical session. Students who already have a certificate could be exempt."
+        },
+        {
+          "speaker": "Layla",
+          "text": "A short, free course with exemptions sounds reasonable. I'd be more supportive of that version."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-volunteering-credits",
+      "kind": "discussion",
+      "title": "Course credit for volunteering",
+      "body": "Grace: Students should be able to earn course credit for volunteering. It develops practical skills and benefits the community at the same time.\nAdam: But how do you assess volunteering fairly? Hours alone don't show what someone has learned, and some placements are much more demanding than others.\nGrace: Supervisors at volunteer organisations could confirm the hours and describe the tasks. Many professional programmes, such as teaching and nursing, already give credit for practical placements, so there are models to follow.\nKeira: Students could write a reflective report linking their experience to course concepts. That way, the credit is for learning rather than simply turning up.\nAdam: A reflective report would make the assessment more meaningful, so I could accept that.",
+      "turns": [
+        {
+          "speaker": "Grace",
+          "text": "Students should be able to earn course credit for volunteering. It develops practical skills and benefits the community at the same time."
+        },
+        {
+          "speaker": "Adam",
+          "text": "But how do you assess volunteering fairly? Hours alone don't show what someone has learned, and some placements are much more demanding than others."
+        },
+        {
+          "speaker": "Grace",
+          "text": "Supervisors at volunteer organisations could confirm the hours and describe the tasks. Many professional programmes, such as teaching and nursing, already give credit for practical placements, so there are models to follow."
+        },
+        {
+          "speaker": "Keira",
+          "text": "Students could write a reflective report linking their experience to course concepts. That way, the credit is for learning rather than simply turning up."
+        },
+        {
+          "speaker": "Adam",
+          "text": "A reflective report would make the assessment more meaningful, so I could accept that."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-grade-inflation",
+      "kind": "discussion",
+      "title": "Grade inflation",
+      "body": "William: Average grades have risen a lot over the past twenty years. If almost everyone gets high marks, employers can't tell who the strongest graduates are.\nPriya: Higher grades don't necessarily mean lower standards. Teaching has improved, and students have more support and resources than before.\nWilliam: Some courses now give top grades to more than half the class. When grades are so high, they stop motivating students to improve, and scholarships based on grades become harder to award fairly.\nTane: Both could be true. Universities could publish grade distributions alongside transcripts, so employers can see how a student performed compared with their classmates.\nWilliam: Publishing distributions would give useful context without having to lower anyone's marks.",
+      "turns": [
+        {
+          "speaker": "William",
+          "text": "Average grades have risen a lot over the past twenty years. If almost everyone gets high marks, employers can't tell who the strongest graduates are."
+        },
+        {
+          "speaker": "Priya",
+          "text": "Higher grades don't necessarily mean lower standards. Teaching has improved, and students have more support and resources than before."
+        },
+        {
+          "speaker": "William",
+          "text": "Some courses now give top grades to more than half the class. When grades are so high, they stop motivating students to improve, and scholarships based on grades become harder to award fairly."
+        },
+        {
+          "speaker": "Tane",
+          "text": "Both could be true. Universities could publish grade distributions alongside transcripts, so employers can see how a student performed compared with their classmates."
+        },
+        {
+          "speaker": "William",
+          "text": "Publishing distributions would give useful context without having to lower anyone's marks."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-remote-tutorials",
+      "kind": "discussion",
+      "title": "Online tutorials",
+      "body": "Emily: Tutorials should stay online. I save two hours of travel each week, and it's easier to fit study around my part-time job.\nRafael: Online tutorials are much less interactive. Most students keep their cameras off and rarely speak, so discussions don't really happen.\nEmily: Quiet students often find it easier to type questions in the chat than to speak in a room. Online tutorials also make it easier for students with disabilities or caring responsibilities to take part.\nHuia: We could offer both options and let students choose each week. Tutors could also use small breakout groups online, which makes it easier for quieter students to contribute.\nRafael: Breakout groups might improve participation. I'd still like the in-person option to remain available.",
+      "turns": [
+        {
+          "speaker": "Emily",
+          "text": "Tutorials should stay online. I save two hours of travel each week, and it's easier to fit study around my part-time job."
+        },
+        {
+          "speaker": "Rafael",
+          "text": "Online tutorials are much less interactive. Most students keep their cameras off and rarely speak, so discussions don't really happen."
+        },
+        {
+          "speaker": "Emily",
+          "text": "Quiet students often find it easier to type questions in the chat than to speak in a room. Online tutorials also make it easier for students with disabilities or caring responsibilities to take part."
+        },
+        {
+          "speaker": "Huia",
+          "text": "We could offer both options and let students choose each week. Tutors could also use small breakout groups online, which makes it easier for quieter students to contribute."
+        },
+        {
+          "speaker": "Rafael",
+          "text": "Breakout groups might improve participation. I'd still like the in-person option to remain available."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-sports-scholarships",
+      "kind": "discussion",
+      "title": "Sports scholarships",
+      "body": "Jacob: The university should offer more sports scholarships. Successful teams raise the university's profile and attract new students.\nSarah: Academic scholarships should come first. A university's main purpose is education, and money is limited.\nJacob: Sport also brings in money through events and sponsorship, which can support other programmes. Many athletes are strong students too, and scholarships allow them to continue both without needing a full-time job.\nManaia: Sport also supports wellbeing and community on campus. Perhaps scholarships could require athletes to maintain good academic results, so they reward both. Athletes could also be asked to mentor younger students or help run community sports programmes, which would give something back to the wider university.\nSarah: If academic standards are part of the requirement, I'm more comfortable with the idea.",
+      "turns": [
+        {
+          "speaker": "Jacob",
+          "text": "The university should offer more sports scholarships. Successful teams raise the university's profile and attract new students."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Academic scholarships should come first. A university's main purpose is education, and money is limited."
+        },
+        {
+          "speaker": "Jacob",
+          "text": "Sport also brings in money through events and sponsorship, which can support other programmes. Many athletes are strong students too, and scholarships allow them to continue both without needing a full-time job."
+        },
+        {
+          "speaker": "Manaia",
+          "text": "Sport also supports wellbeing and community on campus. Perhaps scholarships could require athletes to maintain good academic results, so they reward both. Athletes could also be asked to mentor younger students or help run community sports programmes, which would give something back to the wider university."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "If academic standards are part of the requirement, I'm more comfortable with the idea."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-night-buses",
+      "kind": "discussion",
+      "title": "Night buses to campus",
+      "body": "Isabella: We need a night bus service from campus. Students who study late or finish evening classes often walk home alone in the dark, which isn't safe.\nThomas: A bus service would be expensive to run, and demand might be low on some nights. Perhaps a safe-walk service with security staff would be cheaper.\nIsabella: Campus security already records incidents near bus stops and on nearby streets after dark. Students who feel unsafe may simply avoid evening study, which affects their grades. A safe-walk service only covers the campus, not the journey home.\nAiko: The student union could run a trial on the busiest nights, like weekdays during exams, and use ride data to decide whether to continue. A shuttle van might be cheaper than a full-size bus.\nThomas: Starting small with a shuttle makes sense, and it would show whether demand is really there.",
+      "turns": [
+        {
+          "speaker": "Isabella",
+          "text": "We need a night bus service from campus. Students who study late or finish evening classes often walk home alone in the dark, which isn't safe."
+        },
+        {
+          "speaker": "Thomas",
+          "text": "A bus service would be expensive to run, and demand might be low on some nights. Perhaps a safe-walk service with security staff would be cheaper."
+        },
+        {
+          "speaker": "Isabella",
+          "text": "Campus security already records incidents near bus stops and on nearby streets after dark. Students who feel unsafe may simply avoid evening study, which affects their grades. A safe-walk service only covers the campus, not the journey home."
+        },
+        {
+          "speaker": "Aiko",
+          "text": "The student union could run a trial on the busiest nights, like weekdays during exams, and use ride data to decide whether to continue. A shuttle van might be cheaper than a full-size bus."
+        },
+        {
+          "speaker": "Thomas",
+          "text": "Starting small with a shuttle makes sense, and it would show whether demand is really there."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-coding-all-majors",
+      "kind": "discussion",
+      "title": "Coding for all students",
+      "body": "Nathan: Every student, whatever their major, should take an introductory coding course. Technology affects every industry, and basic programming teaches logical thinking.\nMia: I don't see why an art history student needs to code. It would take time away from subjects that are directly relevant to their degree.\nNathan: Art historians increasingly work with digital archives, image databases and online exhibitions. Even a basic understanding of code helps people work with data and communicate with technical teams, whatever their field.\nPita: Instead of coding specifically, perhaps a course on digital literacy would be more useful, covering data, privacy and how algorithms work, with coding as an option.\nMia: A broader digital literacy course seems more relevant to everyone, so I'd support that.",
+      "turns": [
+        {
+          "speaker": "Nathan",
+          "text": "Every student, whatever their major, should take an introductory coding course. Technology affects every industry, and basic programming teaches logical thinking."
+        },
+        {
+          "speaker": "Mia",
+          "text": "I don't see why an art history student needs to code. It would take time away from subjects that are directly relevant to their degree."
+        },
+        {
+          "speaker": "Nathan",
+          "text": "Art historians increasingly work with digital archives, image databases and online exhibitions. Even a basic understanding of code helps people work with data and communicate with technical teams, whatever their field."
+        },
+        {
+          "speaker": "Pita",
+          "text": "Instead of coding specifically, perhaps a course on digital literacy would be more useful, covering data, privacy and how algorithms work, with coding as an option."
+        },
+        {
+          "speaker": "Mia",
+          "text": "A broader digital literacy course seems more relevant to everyone, so I'd support that."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-campus-solar",
+      "kind": "discussion",
+      "title": "Solar panels on campus",
+      "body": "Ruby: The university should install solar panels on every suitable roof. It would cut electricity bills and show that the university takes climate change seriously.\nGeorge: The upfront cost is huge, and some older buildings might need roof repairs first. That money could be used for teaching.\nRuby: Electricity prices keep rising, so the panels would pay for themselves within several years. Students also want the university to act on climate change, and visible projects like this can attract new students.\nKahu: Many organisations use power purchase agreements, where a company installs the panels and the university buys the electricity at a lower price. That avoids the upfront cost.\nGeorge: If it doesn't require a large upfront investment, I'd definitely support it.",
+      "turns": [
+        {
+          "speaker": "Ruby",
+          "text": "The university should install solar panels on every suitable roof. It would cut electricity bills and show that the university takes climate change seriously."
+        },
+        {
+          "speaker": "George",
+          "text": "The upfront cost is huge, and some older buildings might need roof repairs first. That money could be used for teaching."
+        },
+        {
+          "speaker": "Ruby",
+          "text": "Electricity prices keep rising, so the panels would pay for themselves within several years. Students also want the university to act on climate change, and visible projects like this can attract new students."
+        },
+        {
+          "speaker": "Kahu",
+          "text": "Many organisations use power purchase agreements, where a company installs the panels and the university buys the electricity at a lower price. That avoids the upfront cost."
+        },
+        {
+          "speaker": "George",
+          "text": "If it doesn't require a large upfront investment, I'd definitely support it."
+        }
+      ]
+    },
+    {
+      "source_key": "dis-weekend-classes",
+      "kind": "discussion",
+      "title": "Weekend classes",
+      "body": "Chloe: Offering some classes on Saturdays would help students who work full time during the week. It would make degrees more accessible.\nDaniel: Weekend classes would be hard for students with family commitments or weekend jobs. Staff would also need to work extra days.\nChloe: Many students already work full time, and evening classes are often full. Saturday classes could also make better use of empty buildings, and staff could choose whether to teach on weekends in exchange for a weekday off.\nAna: Weekend classes could be optional repeats of weekday sessions rather than replacements. That would add flexibility without forcing anyone to attend on Saturdays.\nDaniel: As an optional extra, it sounds reasonable, but staff workloads would need to be managed fairly.",
+      "turns": [
+        {
+          "speaker": "Chloe",
+          "text": "Offering some classes on Saturdays would help students who work full time during the week. It would make degrees more accessible."
+        },
+        {
+          "speaker": "Daniel",
+          "text": "Weekend classes would be hard for students with family commitments or weekend jobs. Staff would also need to work extra days."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "Many students already work full time, and evening classes are often full. Saturday classes could also make better use of empty buildings, and staff could choose whether to teach on weekends in exchange for a weekday off."
+        },
+        {
+          "speaker": "Ana",
+          "text": "Weekend classes could be optional repeats of weekday sessions rather than replacements. That would add flexibility without forcing anyone to attend on Saturdays."
+        },
+        {
+          "speaker": "Daniel",
+          "text": "As an optional extra, it sounds reasonable, but staff workloads would need to be managed fairly."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "SGD",
+      "source_key": "dis-mental-health-days",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Olivia wants mental health days without certificates",
+          "James worries students would misuse them",
+          "Aroha suggests attendance only and easier counselling"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-study-abroad-funding",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Sienna wants more study abroad scholarships",
+          "Mohammed prefers services everyone uses",
+          "Charlotte suggests virtual exchanges and targeted scholarships"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-peer-review",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Ellie likes peer review to improve writing",
+          "Kai says feedback quality varies",
+          "Ananya suggests checklists and no effect on grades"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-late-penalties",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Benjamin says late penalties are necessary",
+          "Tia says penalties are too harsh",
+          "Rohan suggests a grace period and easy extensions"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-parking-fees",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Madison says doubling parking fees is unfair",
+          "Luca says higher fees encourage bus and cycling",
+          "Anahera suggests discounts and funding bus connections"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-open-plan-study",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Jasmine likes open-plan space for group work",
+          "Alexander says it is too noisy to concentrate",
+          "Moana suggests zones and bookable rooms"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-first-aid-training",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Hugo wants compulsory first-aid training",
+          "Layla worries about timetable and cost",
+          "Nikau suggests a free short course with exemptions"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-volunteering-credits",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Grace wants course credit for volunteering",
+          "Adam questions fair assessment",
+          "Keira suggests reflective reports"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-grade-inflation",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "key_points": [
+          "William says grade inflation confuses employers",
+          "Priya says better teaching raised grades",
+          "Tane suggests publishing grade distributions"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-remote-tutorials",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Emily wants online tutorials to save travel",
+          "Rafael says online tutorials are less interactive",
+          "Huia suggests both options and breakout groups"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-sports-scholarships",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Jacob wants more sports scholarships",
+          "Sarah says academic scholarships come first",
+          "Manaia suggests requiring good academic results"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-night-buses",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Isabella wants night buses for safety",
+          "Thomas worries about cost and suggests safe-walk",
+          "Aiko suggests a shuttle trial on busy nights"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-coding-all-majors",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Nathan wants coding for all students",
+          "Mia says coding is irrelevant for some degrees",
+          "Pita suggests digital literacy course"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-campus-solar",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Ruby wants solar panels on campus roofs",
+          "George worries about upfront cost and repairs",
+          "Kahu suggests power purchase agreements"
+        ]
+      }
+    },
+    {
+      "type": "SGD",
+      "source_key": "dis-weekend-classes",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "key_points": [
+          "Chloe wants Saturday classes for workers",
+          "Daniel says weekends are hard for families and staff",
+          "Ana suggests optional repeat sessions"
+        ]
+      }
+    }
+  ]
+}

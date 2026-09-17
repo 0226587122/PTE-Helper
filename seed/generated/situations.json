@@ -1,0 +1,592 @@
+{
+  "version": 1,
+  "notes": "Original Respond to a Situation items (30 to 90 words each). Questions 31 to 45 are backup questions.",
+  "sources": [],
+  "questions": [
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You borrowed a textbook from your classmate, Sam, and accidentally spilled coffee on several pages. Sam needs the book for an exam next week. Explain to Sam what happened and offer a solution.",
+        "key_points": [
+          "apologise to Sam",
+          "explain coffee spilled on the pages",
+          "offer to replace or buy a new book"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You are working on a group project, but one member, Alex, has not replied to messages for a week and the presentation is in three days. Call Alex, explain your concern and suggest what the group should do next.",
+        "key_points": [
+          "explain the presentation is in three days",
+          "concern that Alex has not replied",
+          "suggest dividing tasks or meeting soon"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You ordered a laptop online for your studies, but it arrived with a cracked screen. Call the store's customer service, describe the problem and explain what you would like them to do.",
+        "key_points": [
+          "laptop arrived with cracked screen",
+          "needed for studies",
+          "ask for replacement or refund"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "Your lecturer has scheduled a make-up class at the same time as your part-time job, which you cannot change. Speak to your lecturer, explain the situation and ask about possible alternatives.",
+        "key_points": [
+          "make-up class clashes with part-time job",
+          "cannot change work shift",
+          "ask for recording or alternative session"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 1,
+      "payload": {
+        "situation": "Your flatmate often plays loud music late at night, and you have an important exam tomorrow morning. Talk to your flatmate politely, explain your situation and ask for their cooperation.",
+        "key_points": [
+          "exam tomorrow morning",
+          "music is loud late at night",
+          "ask politely to lower volume or use headphones"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You were charged twice for your library fine when you paid online last night. Visit the library help desk, explain what happened and ask the staff member to fix the problem.",
+        "key_points": [
+          "charged twice for library fine",
+          "paid online",
+          "ask for refund of extra payment"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "A new international student in your class looks confused about how to use the online learning system. Offer to help, explain a few important features and suggest where they can find more support.",
+        "key_points": [
+          "offer help to new student",
+          "explain how to find course materials and submit assignments",
+          "suggest student support or IT help desk"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "situation": "You have been offered a summer internship, but it starts one week before your final exam finishes. Call the employer, thank them for the offer, explain the clash and ask whether the start date could change.",
+        "key_points": [
+          "thank employer for the offer",
+          "explain start date clashes with final exam",
+          "ask to start one week later"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 1,
+      "payload": {
+        "situation": "You left your umbrella in a lecture theatre after your economics class yesterday afternoon. Go to the university security office, describe the umbrella and ask whether anyone has handed it in.",
+        "key_points": [
+          "left umbrella in lecture theatre yesterday",
+          "describe the umbrella",
+          "ask if it was handed in"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "Your friend Jordan has invited you to a birthday dinner on Saturday, but you have to finish an assignment due on Monday. Call Jordan, explain why you cannot come and suggest another way to celebrate.",
+        "key_points": [
+          "thank Jordan for the invitation",
+          "assignment due on Monday",
+          "suggest celebrating another day"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "The heater in your student accommodation has stopped working, and the nights have been very cold this week. Call the accommodation manager, describe the problem and ask when it can be repaired.",
+        "key_points": [
+          "heater stopped working",
+          "nights are very cold",
+          "ask when it will be repaired"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "situation": "You received a lower mark than expected on an essay, and the feedback does not explain why. Email your tutor to request a meeting, explaining that you want to understand how to improve.",
+        "key_points": [
+          "mark was lower than expected",
+          "feedback does not explain reasons",
+          "request meeting to learn how to improve"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You are volunteering at a university open day. A parent asks you where the engineering building is and whether there are any tours today. Give clear directions and information about the tours.",
+        "key_points": [
+          "give directions to engineering building",
+          "mention landmark or route",
+          "explain tour times"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You booked a study room for your group, but when you arrive, other students are using it. Speak to them politely, explain that you have a booking and suggest a solution.",
+        "key_points": [
+          "politely explain you booked the room",
+          "show booking",
+          "suggest they find another room or share briefly"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 1,
+      "payload": {
+        "situation": "Your neighbour's dog has been barking all day while they are at work, and you are trying to study at home. Speak to your neighbour when they return and explain the problem politely.",
+        "key_points": [
+          "dog barks all day",
+          "trying to study at home",
+          "ask politely for a solution"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You need to change your enrolment from one course to another, but the online deadline passed yesterday. Visit the student services office, explain your situation and ask what you can do.",
+        "key_points": [
+          "want to change course",
+          "missed deadline by one day",
+          "ask if late change is possible"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You are the leader of a study group. One member keeps arriving late and the group is becoming frustrated. Talk to this member privately, explain the effect on the group and agree on a solution.",
+        "key_points": [
+          "member keeps arriving late",
+          "group is frustrated and loses time",
+          "agree on better meeting time or punctuality"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You bought a monthly bus pass, but the bus route to campus has been cancelled for road works for three weeks. Call the transport company, explain the situation and ask for compensation.",
+        "key_points": [
+          "bought monthly bus pass",
+          "route cancelled for three weeks",
+          "ask for refund or compensation"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "situation": "Your manager at your part-time job has asked you to work extra shifts during your exam period. Speak to your manager, explain why this is difficult and suggest a compromise.",
+        "key_points": [
+          "exam period is busy",
+          "cannot work many extra shifts",
+          "offer fewer shifts or work after exams"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 1,
+      "payload": {
+        "situation": "A classmate asks to copy your completed assignment because they did not have time to finish theirs. Respond to your classmate, explain why you cannot share it and offer another kind of help.",
+        "key_points": [
+          "refuse to share assignment",
+          "explain academic integrity risk",
+          "offer to help explain topic or ask for extension"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You are presenting in class, but the projector is not working and your slides cannot be shown. Explain the problem to the audience and describe how you will continue your presentation.",
+        "key_points": [
+          "projector is not working",
+          "apologise to audience",
+          "continue by speaking from notes or sharing slides later"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You have been feeling very stressed about your studies and have not been sleeping well. Call the university counselling service, explain how you are feeling and ask about making an appointment.",
+        "key_points": [
+          "feeling stressed about studies",
+          "not sleeping well",
+          "ask for counselling appointment"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You arrive at a restaurant for a booking you made for a friend's farewell dinner, but the staff cannot find your reservation. Speak to the manager, explain the situation and ask for help.",
+        "key_points": [
+          "made a booking for farewell dinner",
+          "reservation cannot be found",
+          "ask manager for a table or solution"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "situation": "Your research supervisor has asked you to present your results at a department meeting next week, but your data analysis is not finished. Speak to your supervisor, explain your progress and suggest options.",
+        "key_points": [
+          "analysis not finished",
+          "explain current progress",
+          "suggest presenting preliminary results or later date"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 1,
+      "payload": {
+        "situation": "You found a wallet containing cash and a student ID card on a bench outside the library. Take it to the campus security office and explain where and when you found it.",
+        "key_points": [
+          "found wallet outside library",
+          "contains cash and student ID",
+          "explain time and place and hand it in"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You want to join the university hiking club, but the membership fee is higher than you can afford this month. Speak to the club president and ask whether there are any payment options.",
+        "key_points": [
+          "want to join hiking club",
+          "fee too high this month",
+          "ask about payment plan or discount"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "Your landlord has told you that your rent will increase next month, but your lease says the rent is fixed for the year. Call your landlord, refer to the lease and explain your position calmly.",
+        "key_points": [
+          "landlord plans rent increase",
+          "lease says rent is fixed for the year",
+          "calmly ask to keep current rent"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You are sick with a high fever on the day of a tutorial presentation. Call your tutor, explain your illness and ask whether you can present on a different day.",
+        "key_points": [
+          "sick with high fever",
+          "cannot attend presentation",
+          "ask to present another day and provide medical certificate"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 2,
+      "payload": {
+        "situation": "A tourist stops you in the city centre and asks how to get to the art gallery. You know the gallery is a ten-minute walk away. Give clear directions and mention a useful landmark.",
+        "key_points": [
+          "gallery is ten minutes walk",
+          "give clear directions",
+          "mention a landmark"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "active",
+      "difficulty": 3,
+      "payload": {
+        "situation": "You are organising a charity event on campus, and the guest speaker has just cancelled. Call a lecturer you know, explain the situation and ask whether they could speak at the event instead.",
+        "key_points": [
+          "guest speaker cancelled",
+          "describe charity event",
+          "ask lecturer to speak instead"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "The washing machine in your shared house broke after you used it, and your housemates think you damaged it. Talk to your housemates, explain what happened and suggest how to fix the problem.",
+        "key_points": [
+          "machine broke while using it",
+          "explain you used it normally",
+          "suggest calling repair service and sharing cost"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You signed up for a free trial of a study app, but you were charged a monthly fee without warning. Call customer support, explain what happened and ask for a refund.",
+        "key_points": [
+          "signed up for free trial",
+          "charged without warning",
+          "ask for refund and cancellation"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 1,
+      "payload": {
+        "situation": "Your classmate missed today's biology lecture because of illness and asks you what was covered. Summarise the main topics briefly and tell them where they can find the lecture slides.",
+        "key_points": [
+          "hope classmate feels better",
+          "summarise main topics",
+          "slides available online"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You ordered a vegetarian meal for a university conference dinner, but you were served a meat dish. Speak to the waiter politely, explain the mistake and ask for the correct meal.",
+        "key_points": [
+          "ordered vegetarian meal",
+          "served meat dish",
+          "politely ask for correct meal"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "situation": "You have been asked to lead a new student orientation tour, but you have never done it before. Speak to the coordinator, explain your concerns and ask what information and support you will receive.",
+        "key_points": [
+          "asked to lead orientation tour",
+          "never done it before",
+          "ask for training and route information"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "Your new phone's screen cracked one week after you bought it, even though you did not drop it. Return to the shop, explain what happened and ask about the warranty.",
+        "key_points": [
+          "screen cracked after one week",
+          "did not drop phone",
+          "ask for repair under warranty"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You notice that a group of students is leaving rubbish in the campus garden after lunch every day. Speak to them politely, explain why this is a problem and suggest what they could do instead.",
+        "key_points": [
+          "students leave rubbish in garden",
+          "explain effect on environment and others",
+          "suggest using bins"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You need a reference letter for a scholarship application due in five days. Speak to a lecturer who taught you last year, explain the scholarship and politely ask whether they could write the letter.",
+        "key_points": [
+          "applying for scholarship",
+          "deadline in five days",
+          "politely ask lecturer for reference letter"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 1,
+      "payload": {
+        "situation": "You accidentally took a classmate's calculator home after this morning's statistics exam, and they need it for another exam tomorrow. Call your classmate, apologise and arrange a time to return it.",
+        "key_points": [
+          "apologise for taking calculator",
+          "explain it was an accident",
+          "arrange time to return it"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "The Wi-Fi in the library keeps disconnecting, and you cannot submit your online quiz. Go to the IT help desk, describe the problem and ask for help before the quiz closes.",
+        "key_points": [
+          "library Wi-Fi keeps disconnecting",
+          "cannot submit online quiz",
+          "ask for urgent help or extension"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 3,
+      "payload": {
+        "situation": "You disagree with a decision your group made about the topic for your research project. At the next meeting, explain your view respectfully and suggest a way the group could reach agreement.",
+        "key_points": [
+          "disagree with project topic",
+          "explain reasons respectfully",
+          "suggest voting or combining ideas"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You have been waiting forty minutes for a doctor's appointment at the campus clinic, and you have a class starting soon. Speak to the receptionist, explain your situation and ask about your options.",
+        "key_points": [
+          "waiting forty minutes",
+          "class starting soon",
+          "ask how long or to rebook"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "A close friend has asked you for advice because they are thinking about dropping out of university after failing one course this semester. Give your friend some encouragement and practical suggestions.",
+        "key_points": [
+          "encourage friend not to give up",
+          "one failed course is not the end",
+          "suggest talking to adviser or getting tutoring"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 1,
+      "payload": {
+        "situation": "You are at a café and realise you left your wallet at home after ordering your coffee. Explain the situation to the staff member and suggest a way to pay.",
+        "key_points": [
+          "left wallet at home",
+          "apologise to staff",
+          "offer to pay by phone or return later"
+        ]
+      }
+    },
+    {
+      "type": "RTS",
+      "status": "backup",
+      "difficulty": 2,
+      "payload": {
+        "situation": "You are sharing a car ride to campus with three classmates, but one person is always late, making everyone miss the start of class. Speak to the group and suggest a fair solution.",
+        "key_points": [
+          "one person always late",
+          "everyone misses start of class",
+          "suggest fixed departure time"
+        ]
+      }
+    }
+  ]
+}

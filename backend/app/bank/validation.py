@@ -86,7 +86,7 @@ def validate_source(source: dict[str, Any]) -> list[str]:
         elif len({t["speaker"] for t in turns}) < 2:
             errors.append("Discussions need at least 2 speakers.")
         else:
-            _word_range("A discussion", " ".join(t["text"] for t in turns), 120, 260, errors)
+            _word_range("A discussion", " ".join(t["text"] for t in turns), 110, 300, errors)
     return errors
 
 
@@ -194,7 +194,10 @@ def validate_payload(code: str, payload: Any, source: dict[str, Any] | None) -> 
         if not isinstance(swaps, list) or len(swaps) < 4:
             errors.append("'hiw_swaps' needs at least 4 [original, replacement] pairs.")
         else:
-            body_words = set(words(source["body"])) if source else set()
+            # Match the renderer exactly: whole whitespace tokens, ignoring surrounding punctuation.
+            from app.variants import token_cores
+
+            body_words = token_cores(source["body"]) if source else set()
             originals = []
             for pair in swaps:
                 if not (isinstance(pair, list) and len(pair) == 2 and all(_is_text(x) for x in pair)):

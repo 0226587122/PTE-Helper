@@ -43,6 +43,11 @@ def _split_token(token: str) -> tuple[str, str, str] | None:
     return (match.group(1), match.group(2), match.group(3)) if match else None
 
 
+def token_cores(text: str) -> set[str]:
+    """Lower-case words that Highlight Incorrect Words can swap (hyphenated words count as one token)."""
+    return {parts[1].lower() for token in text.split() if (parts := _split_token(token))}
+
+
 def _match_case(template: str, word: str) -> str:
     return word[:1].upper() + word[1:] if template[:1].isupper() else word
 
