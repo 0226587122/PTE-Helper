@@ -67,7 +67,8 @@ class TypeProgress(BaseModel):
 
 class HistoryItem(BaseModel):
     set_id: int
-    code: str
+    mode: str
+    code: str | None
     name: str
     finished_at: datetime
     average_pct: float
@@ -78,6 +79,9 @@ class ProgressOut(BaseModel):
     types: list[TypeProgress]
     recent: list[HistoryItem]
     overall_estimate: int | None
+    mock_tests_completed: int
+    best_mock_score: int | None
+    last_mock_score: int | None
 
 
 @router.get("/me/progress", response_model=ProgressOut)
@@ -87,9 +91,12 @@ def progress(user: CurrentUser, db: DB) -> ProgressOut:
         .where(PracticeSet.user_id == user.id, PracticeSet.finished_at.is_not(None))
         .order_by(PracticeSet.finished_at.desc(), PracticeSet.id.desc())
     ).all()
+    mocks = [s for s in finished if s.mode == "mock"]
+    drills = [s for s in finished if s.mode != "mock"]
     by_type: dict[str, list[PracticeSet]] = {}
-    for s in finished:
-        by_type.setdefault(s.task_type_code, []).append(s)
+    for s in drills:
+        if s.task_type_code:
+            by_type.setdefault(s.task_type_code, []).append(s)
     types = [
         TypeProgress(
             code=code,
@@ -102,11 +109,25 @@ def progress(user: CurrentUser, db: DB) -> ProgressOut:
     ]
     recent = [
         HistoryItem(
-            set_id=s.id, code=s.task_type_code, name=TYPES_BY_CODE[s.task_type_code].name,
-            finished_at=s.finished_at, average_pct=s.average_pct or 0, estimated_score=s.estimated_score or 10,
+            set_id=s.id,
+            mode=s.mode,
+            code=s.task_type_code,
+            name="Full mock test" if s.mode == "mock" else TYPES_BY_CODE[s.task_type_code].name,
+            finished_at=s.finished_at,
+            average_pct=s.average_pct or 0,
+            estimated_score=s.estimated_score or 10,
         )
         for s in finished[:20]
     ]
+    # A finished mock test covers the whole exam, so it is the best readiness estimate available.
+    mock_scores = [s.estimated_score for s in mocks if s.estimated_score is not None]
     last_scores = [t.last_score for t in types if t.last_score is not None]
-    overall = round(sum(last_scores) / len(last_scores)) if last_scores else None
-    return ProgressOut(types=types, recent=recent, overall_estimate=overall)
+    overall = mock_scores[0] if mock_scores else (round(sum(last_scores) / len(last_scores)) if last_scores else None)
+    return ProgressOut(
+        types=types,
+        recent=recent,
+        overall_estimate=overall,
+        mock_tests_completed=len(mocks),
+        best_mock_score=max(mock_scores) if mock_scores else None,
+        last_mock_score=mock_scores[0] if mock_scores else None,
+    )

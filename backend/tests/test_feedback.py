@@ -108,5 +108,5 @@ def test_missing_api_key_gives_clear_message(client, db, monkeypatch):
     _essay_question(db)
     sq_id = _answered_essay(client)
     response = client.post(f"/api/set-questions/{sq_id}/feedback")
-    assert response.status_code == 503
+    assert response.status_code == 424
     assert "isn't set up" in response.json()["detail"]

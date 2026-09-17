@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from app.config import get_settings
 from app.models import ContentSource, PracticeSet, Question, QuestionReport, SetQuestion, User
+from app.task_types import TYPES_BY_CODE
 from app.variants import SourceData, render
 
 log = logging.getLogger(__name__)
@@ -28,18 +29,27 @@ def source_data(source: ContentSource | None) -> SourceData | None:
 
 
 def recent_question_ids(db: Session, user_id: int, code: str, set_limit: int) -> set[int]:
+    """Questions of this type the student met in their last few sets, drills and mock tests alike."""
     if set_limit <= 0:
         return set()
     recent_sets = (
         select(PracticeSet.id)
-        .where(PracticeSet.user_id == user_id, PracticeSet.task_type_code == code)
-        .order_by(PracticeSet.started_at.desc(), PracticeSet.id.desc())
+        .join(SetQuestion, SetQuestion.set_id == PracticeSet.id)
+        .where(PracticeSet.user_id == user_id, SetQuestion.task_type_code == code)
+        .group_by(PracticeSet.id)
+        .order_by(func.max(PracticeSet.started_at).desc(), PracticeSet.id.desc())
         .limit(set_limit)
     )
     set_ids = list(db.scalars(recent_sets))
     if not set_ids:
         return set()
-    return set(db.scalars(select(SetQuestion.question_id).where(SetQuestion.set_id.in_(set_ids))))
+    return set(
+        db.scalars(
+            select(SetQuestion.question_id).where(
+                SetQuestion.set_id.in_(set_ids), SetQuestion.task_type_code == code
+            )
+        )
+    )
 
 
 def _random_ids(db: Session, code: str, status: str, exclude: set[int], limit: int) -> list[int]:
@@ -100,7 +110,9 @@ def create_set(db: Session, user: User, code: str) -> PracticeSet:
     if not picks:
         raise NoQuestionsError(code)
     questions = {q.id: q for q in db.scalars(select(Question).where(Question.id.in_({qid for qid, _ in picks})))}
-    practice_set = PracticeSet(user_id=user.id, task_type_code=code, question_count=len(picks))
+    practice_set = PracticeSet(
+        user_id=user.id, mode="drill", task_type_code=code, question_count=len(picks)
+    )
     db.add(practice_set)
     for position, (qid, from_backup) in enumerate(picks, start=1):
         question = questions[qid]
@@ -110,6 +122,8 @@ def create_set(db: Session, user: User, code: str) -> PracticeSet:
             SetQuestion(
                 question_id=qid,
                 position=position,
+                task_type_code=code,
+                section=TYPES_BY_CODE[code].section,
                 variant_seed=seed,
                 rendered_payload=rendered,
                 drew_from_backup=from_backup,

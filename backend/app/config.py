@@ -38,9 +38,13 @@ class Settings(BaseSettings):
 
     anthropic_api_key: str | None = None
     anthropic_model: str = "claude-sonnet-5"
+    # Only needed when the API key belongs to the whole account instead of one workspace.
+    anthropic_workspace_id: str | None = None
     feedback_daily_limit: int = 30
 
     questions_per_set: int = 15
+    # Speeds up mock test clocks for end-to-end tests. Keep at 1.0 in real use.
+    mock_time_scale: float = 1.0
     min_active_per_type: int = 30
     recent_sets_excluded: int = 3
     report_retire_threshold: int = 3

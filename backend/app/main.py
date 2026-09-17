@@ -2,7 +2,7 @@ import logging
 
 from fastapi import FastAPI
 
-from app.api import admin, auth, general, sets
+from app.api import admin, auth, general, mock, sets
 from app.config import get_settings
 
 settings = get_settings()
@@ -24,4 +24,5 @@ app = FastAPI(
 app.include_router(general.router)
 app.include_router(auth.router)
 app.include_router(sets.router)
+app.include_router(mock.router)
 app.include_router(admin.router)
