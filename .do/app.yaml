@@ -119,7 +119,8 @@ static_sites:
       deploy_on_push: true
     source_dir: frontend
     environment_slug: node-js
-    build_command: npm ci && npm run build
+    # Include dev dependencies: the build needs TypeScript and Vite.
+    build_command: npm ci --include=dev && npm run build
     output_dir: dist
     # Send unknown paths to the React app so client-side routes like /practice/12 work on refresh.
     catchall_document: index.html
