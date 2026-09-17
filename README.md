@@ -150,7 +150,7 @@ doctl databases user create <cluster-id> pte --context personal
 cp .do/app.yaml .do/app.local.yaml                     # ignored by git
 ```
 
-In `.do/app.local.yaml`, replace `YOUR_GITHUB_USER/PTE-Helper` with your repository (3 places) and put real values in place of the two `REPLACE_ME` secrets:
+In `.do/app.local.yaml`, put real values in place of the two `REPLACE_ME` secrets:
 
 ```bash
 openssl rand -hex 32                                   # use this for JWT_SECRET
@@ -165,6 +165,8 @@ doctl apps list --context personal   # copy the app ID
 ```
 
 Each deploy first runs `alembic upgrade head` as a pre-deploy job.
+
+> **"No components detected" in the control panel?** That's expected. The app lives in `backend/` and `frontend/` rather than the repository root, so DigitalOcean's automatic detection can't find it. Create the app from the spec instead, with the `doctl apps create` command above. If you'd rather use the control panel: set **Source directory** to `frontend` so it detects the website, create the app, then go to **Settings → App Spec → Edit**, paste the whole of `.do/app.local.yaml` and save.
 
 **5. Load the questions and create your admin account** (once, after the first deploy succeeds)
 

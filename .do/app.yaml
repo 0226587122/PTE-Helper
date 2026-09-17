@@ -1,7 +1,7 @@
 # DigitalOcean App Platform spec for the PTE practice app.
 #
 # Before the first deploy:
-#   1. Replace YOUR_GITHUB_USER/PTE-Helper with your repository.
+#   1. The repository below is 0226587122/PTE-Helper on the main branch.
 #   2. Create the Managed MySQL cluster named below (see README, "Deploy to DigitalOcean").
 #   3. Replace the two REPLACE_ME secrets, or leave them and set the values in the control panel.
 #      App Platform encrypts SECRET values once the spec is applied. Never commit real values.
@@ -30,7 +30,7 @@ ingress:
 services:
   - name: api
     github:
-      repo: YOUR_GITHUB_USER/PTE-Helper
+      repo: 0226587122/PTE-Helper
       branch: main
       deploy_on_push: true
     # Build from the repository root so the Dockerfile can copy the question bank in seed/.
@@ -92,7 +92,7 @@ jobs:
   - name: migrate
     kind: PRE_DEPLOY
     github:
-      repo: YOUR_GITHUB_USER/PTE-Helper
+      repo: 0226587122/PTE-Helper
       branch: main
       deploy_on_push: true
     source_dir: /
@@ -114,7 +114,7 @@ jobs:
 static_sites:
   - name: web
     github:
-      repo: YOUR_GITHUB_USER/PTE-Helper
+      repo: 0226587122/PTE-Helper
       branch: main
       deploy_on_push: true
     source_dir: frontend
