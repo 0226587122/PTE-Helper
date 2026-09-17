@@ -129,7 +129,7 @@ databases:
   # App Platform dev databases are PostgreSQL only, so MySQL is an attached Managed MySQL cluster.
   - name: db
     engine: MYSQL
-    version: "8"
+    version: "8.4"
     production: true
     cluster_name: pte-mysql
     db_name: pte

@@ -138,7 +138,7 @@ While signed in to your **personal** account in the control panel, open **Apps â
 **2. Create the MySQL database** (Sydney is the closest region to New Zealand)
 
 ```bash
-doctl databases create pte-mysql --engine mysql --version 8 --region syd1 --size db-s-1vcpu-1gb --num-nodes 1 --context personal
+doctl databases create pte-mysql --engine mysql --version 8.4 --region syd1 --size db-s-1vcpu-1gb --num-nodes 1 --context personal
 doctl databases list --context personal   # copy the cluster ID
 doctl databases db create <cluster-id> pte --context personal
 doctl databases user create <cluster-id> pte --context personal
