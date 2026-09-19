@@ -2,7 +2,12 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 import { api, ApiError } from "./client";
 import type {
+  Blueprint,
   Feedback,
+  MockAnswerAck,
+  MockQuestion,
+  MockReport,
+  MockState,
   PracticeSet,
   Progress,
   Question,
@@ -191,5 +196,62 @@ export function useResolveReport() {
   return useMutation({
     mutationFn: (reportId: number) => api<Report>(`/admin/reports/${reportId}/resolve`, { method: "POST" }),
     onSuccess: () => client.invalidateQueries({ queryKey: ["admin"] }),
+  });
+}
+
+// --- Full mock test ---
+
+export function useBlueprint() {
+  return useQuery<Blueprint>({ queryKey: ["mock", "blueprint"], queryFn: () => api("/mock-tests/blueprint"), staleTime: Infinity });
+}
+
+export function useStartMock() {
+  const client = useQueryClient();
+  return useMutation({
+    mutationFn: () => api<MockState>("/mock-tests", { method: "POST" }),
+    onSuccess: (state) => client.setQueryData(["mock", state.id], state),
+  });
+}
+
+export function useMockState(setId: number, enabled = true) {
+  return useQuery<MockState>({ queryKey: ["mock", setId], queryFn: () => api(`/mock-tests/${setId}`), enabled });
+}
+
+export function useMockQuestion(setId: number, position: number) {
+  return useQuery<MockQuestion>({
+    queryKey: ["mock", setId, "question", position],
+    queryFn: () => api(`/mock-tests/${setId}/questions/${position}`),
+    enabled: position > 0,
+    staleTime: Infinity,
+    retry: false,
+  });
+}
+
+export function useMockAnswer(setId: number) {
+  const client = useQueryClient();
+  return useMutation({
+    mutationFn: ({ position, response }: { position: number; response: TaskResponse }) =>
+      api<MockAnswerAck>(`/mock-tests/${setId}/questions/${position}/answer`, { method: "POST", body: { response } }),
+    onSuccess: () => client.invalidateQueries({ queryKey: ["mock", setId], exact: true }),
+  });
+}
+
+export function useSubmitMock(setId: number) {
+  const client = useQueryClient();
+  return useMutation({
+    mutationFn: () => api<MockReport>(`/mock-tests/${setId}/submit`, { method: "POST" }),
+    onSuccess: (report) => {
+      client.setQueryData(["mock", setId, "report"], report);
+      client.invalidateQueries({ queryKey: ["mock", setId], exact: true });
+      client.invalidateQueries({ queryKey: ["progress"] });
+    },
+  });
+}
+
+export function useMockReport(setId: number, enabled = true) {
+  return useQuery<MockReport>({
+    queryKey: ["mock", setId, "report"],
+    queryFn: () => api(`/mock-tests/${setId}/report`),
+    enabled,
   });
 }

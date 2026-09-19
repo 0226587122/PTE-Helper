@@ -11,6 +11,11 @@ export default defineConfig({
   use: {
     baseURL: process.env.E2E_BASE_URL ?? "http://localhost:5174",
     trace: "retain-on-failure",
+    permissions: ["microphone"],
+    // A fake microphone so speaking items can record without real hardware.
+    launchOptions: {
+      args: ["--use-fake-ui-for-media-stream", "--use-fake-device-for-media-capture"],
+    },
   },
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
   webServer: process.env.E2E_BASE_URL

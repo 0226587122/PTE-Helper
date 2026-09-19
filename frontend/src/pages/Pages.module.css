@@ -342,3 +342,31 @@
   text-decoration: underline;
   padding: 0;
 }
+
+.mockCard {
+  background: var(--surface);
+  border: 1px solid var(--blue-100);
+  border-left: 5px solid var(--blue-700);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mockButton {
+  background: var(--blue-700);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  white-space: nowrap;
+}
+
+.mockButton:hover {
+  background: var(--blue-800);
+}

@@ -159,13 +159,17 @@ export interface Progress {
   types: TypeProgress[];
   recent: {
     set_id: number;
-    code: string;
+    mode: "drill" | "mock";
+    code: string | null;
     name: string;
     finished_at: string;
     average_pct: number;
     estimated_score: number;
   }[];
   overall_estimate: number | null;
+  mock_tests_completed: number;
+  best_mock_score: number | null;
+  last_mock_score: number | null;
 }
 
 // Admin
@@ -229,4 +233,103 @@ export interface QuestionDetail {
   retired_at: string | null;
   reports: Report[];
   promoted_ids: number[];
+}
+
+// --- Full mock test ---
+
+export interface MockItemState {
+  position: number;
+  task_type: string;
+  task_name: string;
+  section: Section;
+  answered: boolean;
+  late: boolean;
+}
+
+export interface MockState {
+  id: number;
+  blueprint_version: string;
+  status: "in_progress" | "finished";
+  started_at: string;
+  finished_at: string | null;
+  question_count: number;
+  current_position: number;
+  answered_count: number;
+  server_time: string;
+  section_deadlines: Record<string, string>;
+  items: MockItemState[];
+}
+
+export interface MockQuestion {
+  set_id: number;
+  position: number;
+  set_question_id: number;
+  question_id: number;
+  task_type: string;
+  section: Section;
+  part_title: string;
+  display: Display;
+  answered: boolean;
+  response: TaskResponse | null;
+  prep_seconds: number;
+  answer_seconds: number;
+  deadline_at: string;
+  seconds_remaining: number;
+  section_deadline_at: string | null;
+  section_seconds_remaining: number | null;
+  allow_back: boolean;
+  starts_part: boolean;
+  server_time: string;
+}
+
+export interface MockAnswerAck {
+  position: number;
+  accepted: boolean;
+  late: boolean;
+  next_position: number | null;
+  finished: boolean;
+}
+
+export interface BlueprintPart {
+  section: Section;
+  title: string;
+  instructions: string;
+  allow_back: boolean;
+  minutes: { min: number; max: number };
+  task_types: { code: string; name: string; count: number[]; skills: string[] }[];
+}
+
+export interface Blueprint {
+  blueprint_version: string;
+  minutes: { min: number; max: number };
+  items: { min: number; max: number };
+  personal_introduction: { title: string; prompt: string; prep_seconds: number; record_seconds: number };
+  parts: BlueprintPart[];
+}
+
+export interface SkillScore {
+  key: string;
+  label: string;
+  score: number | null;
+  percent: number | null;
+  item_count?: number;
+  available?: boolean;
+  note?: string | null;
+}
+
+export interface MockReport {
+  set_id: number;
+  blueprint_version: string;
+  started_at: string | null;
+  finished_at: string | null;
+  overall_score: number;
+  overall_percent: number;
+  item_count: number;
+  answered_count: number;
+  late_count: number;
+  communicative_skills: SkillScore[];
+  enabling_skills: SkillScore[];
+  sections: { section: Section; label: string; score: number | null; percent: number | null; item_count: number; answered_count: number }[];
+  task_types: { code: string; percent: number | null; item_count: number }[];
+  disclaimer: string;
 }
