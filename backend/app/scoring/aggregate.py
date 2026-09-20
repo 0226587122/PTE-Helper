@@ -9,8 +9,10 @@ scoring is proprietary, so the numbers here will not match a real test. What is 
   scale that PTE reports.
 * Unanswered and late items count as zero, exactly like a missed item in the real test.
 
-Spelling is not scored, because the app has no dictionary check. It is reported as unavailable
-rather than as a zero, so a student is not misled.
+Spelling is scored from every word a student typed, as errors per 100 words, and the report says how
+many words that rate was measured over. A misspelling costs a student once: in the writing tasks it
+lowers that item's Spelling trait, and in Write from Dictation and the listening blanks the word was
+already marked wrong by the answer key, so it is only recorded there, never deducted twice.
 """
 
 from typing import Any
@@ -18,6 +20,7 @@ from typing import Any
 from app.exam.blueprint import LISTENING, READING, SPEAKING, WRITING, skills_for
 from app.models import PracticeSet, SetQuestion
 from app.scoring.result import estimated_score
+from app.scoring.spelling import skill_percent
 
 COMMUNICATIVE_SKILLS = (LISTENING, READING, SPEAKING, WRITING)
 
@@ -42,11 +45,13 @@ ENABLING_SKILLS: dict[str, tuple[str, str]] = {
     "pronunciation": ("Pronunciation", "speaking"),
     "vocabulary": ("Vocabulary", "writing"),
     "written_discourse": ("Written discourse", "writing"),
-    "spelling": ("Spelling", "unavailable"),
+    "spelling": ("Spelling", "spelling"),
 }
 
 # Writing traits are scored out of small whole numbers; convert them to percentages.
-WRITING_TRAIT_MAX = {"grammar": 2, "vocabulary": 2, "structure": 2, "linguistic_range": 2, "content": 3, "form": 2}
+WRITING_TRAIT_MAX = {
+    "grammar": 2, "vocabulary": 2, "structure": 2, "linguistic_range": 2, "content": 3, "form": 2, "spelling": 2,
+}
 
 
 def item_percent(item: SetQuestion) -> float:
@@ -88,6 +93,27 @@ def _enabling_percentages(items: list[SetQuestion]) -> dict[str, list[float]]:
     return collected
 
 
+def _spelling_totals(items: list[SetQuestion]) -> tuple[int, int, list[dict[str, Any]]]:
+    """Errors, words typed and the distinct misspellings across everything the student typed."""
+    errors = words_typed = 0
+    found: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for item in items:
+        detail = item.score_detail or {}
+        inner = detail.get("detail") if isinstance(detail.get("detail"), dict) else detail
+        spelling = inner.get("spelling") if isinstance(inner, dict) else None
+        if not isinstance(spelling, dict):
+            continue
+        words_typed += int(spelling.get("typed_words") or 0)
+        for entry in spelling.get("misspellings") or []:
+            typed = entry.get("typed")
+            errors += 1
+            if typed and typed not in seen:
+                seen.add(typed)
+                found.append(entry)
+    return errors, words_typed, found
+
+
 def _average(values: list[float]) -> float | None:
     return round(sum(values) / len(values), 1) if values else None
 
@@ -112,19 +138,34 @@ def build_report(practice_set: PracticeSet, items: list[SetQuestion]) -> dict[st
         )
 
     collected = _enabling_percentages(items)
+    spelling_errors, spelling_words, misspelled = _spelling_totals(items)
     enabling = []
     for key, (label, source) in ENABLING_SKILLS.items():
-        average = _average(collected[key])
-        enabling.append(
-            {
-                "key": key,
-                "label": label,
-                "score": estimated_score(average) if average is not None else None,
-                "percent": average,
-                "available": average is not None,
-                "note": "Not scored in practice" if source == "unavailable" else None,
+        if source == "spelling":
+            average = skill_percent(spelling_errors, spelling_words)
+        else:
+            average = _average(collected[key])
+        entry = {
+            "key": key,
+            "label": label,
+            "score": estimated_score(average) if average is not None else None,
+            "percent": average,
+            "available": average is not None,
+            "note": "Not scored in practice" if source == "unavailable" else None,
+        }
+        if source == "spelling":
+            # The sample size matters: two errors in 40 words is a different story from two in 400.
+            entry["detail"] = {
+                "error_count": spelling_errors,
+                "words_checked": spelling_words,
+                "errors_per_hundred": (
+                    round(spelling_errors / spelling_words * 100, 1) if spelling_words else None
+                ),
+                "misspelled_words": misspelled,
             }
-        )
+            if not spelling_words:
+                entry["note"] = "You did not type anything to check"
+        enabling.append(entry)
 
     sections = []
     for section, label in SECTION_LABELS.items():

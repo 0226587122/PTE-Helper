@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 
 import { useMockReport, useReview, useTaskTypes } from "../api/hooks";
-import type { SkillScore } from "../api/types";
+import type { SkillScore, SpellingSkillDetail } from "../api/types";
 import { ErrorMessage, Loading } from "../components/Loading";
 import { ResultPanel } from "../components/ResultPanel";
 import { bandFor } from "../pages/Home";
@@ -25,9 +25,37 @@ function SkillCard({ skill }: { skill: SkillScore }) {
               {skill.item_count} question{skill.item_count === 1 ? "" : "s"}
             </div>
           )}
+          {skill.detail && (
+            <div className={styles.unavailable}>
+              {skill.detail.errors_per_hundred} per 100 words, over {skill.detail.words_checked} you typed
+            </div>
+          )}
         </>
       )}
     </div>
+  );
+}
+
+export function SpellingWords({ detail }: { detail: SpellingSkillDetail }) {
+  if (detail.misspelled_words.length === 0) {
+    return null;
+  }
+  return (
+    <>
+      <h2>Words to check</h2>
+      <p className={styles.heroText}>
+        Each word you misspelled, once, with what it looked like you meant. Spelling counts in Write
+        from Dictation, the listening blanks and the writing tasks.
+      </p>
+      <ul className={styles.spellingList}>
+        {detail.misspelled_words.map((word) => (
+          <li key={word.typed}>
+            <span className={styles.misspelled}>{word.typed}</span>
+            {word.intended ? <> &rarr; {word.intended}</> : null}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
@@ -82,6 +110,11 @@ export default function MockReportPage() {
           <SkillCard key={skill.key} skill={skill} />
         ))}
       </div>
+
+      {(() => {
+        const spelling = data.enabling_skills.find((skill) => skill.key === "spelling");
+        return spelling?.detail ? <SpellingWords detail={spelling.detail} /> : null;
+      })()}
 
       <h2>Parts</h2>
       <table className={styles.sectionTable}>

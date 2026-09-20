@@ -99,8 +99,17 @@ How it behaves like the real test:
 - The **score report** gives an overall practice estimate, the four communicative skills, the enabling
   skills and a per-part breakdown, and every answer can be reviewed with the correct answer shown.
 
-Spelling is not scored, because the app has no dictionary check; the report says so rather than
-showing a zero. `MOCK_TIME_SCALE` shortens every clock for end-to-end tests and should stay at 1.
+**Spelling** is checked against an offline dictionary that accepts British, Australian and American
+spelling, plus the words of the question a student is answering. The report scores it as errors per
+100 typed words, says how many words that was measured over, and lists each misspelled word with
+what it looked like you meant. A misspelling costs a student once: in the writing tasks it lowers
+that item's Spelling trait, and in Write from Dictation and the listening blanks the word was already
+marked wrong by the answer key, so it is recorded there rather than deducted twice. The British and
+Australian forms are generated from the American word list by rule (see `app/spelling/variants.py`),
+so a rare word may be accepted that a full Hunspell dictionary would flag - deliberately, because
+wrongly telling a student that "organise" is a mistake is the worse failure.
+
+`MOCK_TIME_SCALE` shortens every clock for end-to-end tests and should stay at 1.
 
 ## The question bank
 

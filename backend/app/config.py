@@ -47,6 +47,12 @@ class Settings(BaseSettings):
     mock_time_scale: float = 1.0
     min_active_per_type: int = 30
     recent_sets_excluded: int = 3
+
+    # Spelling, as errors per 100 typed words. At or below the first, the trait scores 2; at or
+    # below the second, 1; above it, 0. A skill percentage of zero is reached at the third.
+    spelling_good_per_hundred: float = 2.0
+    spelling_fair_per_hundred: float = 6.0
+    spelling_zero_per_hundred: float = 12.0
     report_retire_threshold: int = 3
 
     log_level: str = "INFO"

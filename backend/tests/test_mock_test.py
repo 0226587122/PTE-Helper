@@ -353,9 +353,11 @@ class TestReport:
             assert skill["item_count"] > 0
         grammar = next(s for s in report["enabling_skills"] if s["key"] == "grammar")
         assert grammar["score"] == 50  # 1 out of 2 is 50%
+        # Nothing in this test was typed, so there is no spelling sample to score.
         spelling = next(s for s in report["enabling_skills"] if s["key"] == "spelling")
         assert spelling["available"] is False
-        assert spelling["note"] == "Not scored in practice"
+        assert spelling["note"] == "You did not type anything to check"
+        assert spelling["detail"]["words_checked"] == 0
 
     def test_unanswered_and_late_items_count_as_zero(self, bank, db):
         user = make_user(db)

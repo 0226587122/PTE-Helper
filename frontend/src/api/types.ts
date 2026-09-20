@@ -315,6 +315,14 @@ export interface SkillScore {
   item_count?: number;
   available?: boolean;
   note?: string | null;
+  detail?: SpellingSkillDetail;
+}
+
+export interface SpellingSkillDetail {
+  error_count: number;
+  words_checked: number;
+  errors_per_hundred: number | null;
+  misspelled_words: { typed: string; intended: string | null }[];
 }
 
 export interface MockReport {
