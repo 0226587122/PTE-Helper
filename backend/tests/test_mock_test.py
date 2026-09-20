@@ -8,7 +8,15 @@ from sqlalchemy import select
 from app.config import get_settings
 from app.exam import clock
 from app.exam.assembler import assemble
-from app.exam.blueprint import PARTS, PARTS_BY_SECTION, item_count_range, part_minutes, skills_for, total_minutes
+from app.exam.blueprint import (
+    PARTS,
+    PARTS_BY_SECTION,
+    item_count_range,
+    part_minutes,
+    reading_seconds,
+    skills_for,
+    total_minutes,
+)
 from app.models import PracticeSet, SetQuestion, utc_now
 from app.scoring.aggregate import build_report
 from tests.conftest import make_user, signed_in_client
@@ -25,21 +33,22 @@ class TestBlueprint:
 
     def test_item_counts_match_the_score_guide(self):
         low, high = item_count_range()
-        # The real test has 65 to 75 questions, plus the unscored introduction. Every type's range
-        # comes from the score guide, so the lowest total matches and the highest is only reached if
-        # every type happened to sit at its maximum.
-        assert low == 65
-        assert high <= 90
+        # A mock test is 52 to 64 scored questions, drawn as a total and then shared across the
+        # parts, plus the unscored introduction. The parts' own windows have to be able to hold it.
+        assert (low, high) == (52, 64)
+        assert sum(part.item_window[0] for part in PARTS) <= high
+        assert sum(part.item_window[1] for part in PARTS) >= low
 
     def test_part_lengths_sit_in_the_published_ranges(self):
         # Score guide: Speaking and Writing 76 to 84 minutes, Reading 23 to 30, Listening 31 to 39.
         minutes = {part.section: part_minutes(part) for part in PARTS}
         assert 70 <= minutes["speaking_writing"][0] <= 84
-        assert minutes["reading"] == (30, 30)
+        assert minutes["reading"] == (22, 30)  # the reading clock follows the questions drawn
         assert 31 <= minutes["listening"][0] <= 45
-        low, _ = total_minutes()
+        low, high = total_minutes()
         # The whole test runs about two and a quarter hours.
-        assert 130 <= low <= 150
+        assert 125 <= low <= 150
+        assert high <= 160
 
     def test_every_type_scores_at_least_one_skill(self):
         for code in ALL_CODES:
@@ -47,7 +56,8 @@ class TestBlueprint:
 
     def test_only_reading_lets_students_go_back(self):
         assert [part.section for part in PARTS if part.allow_back] == ["reading"]
-        assert PARTS_BY_SECTION["reading"].section_seconds == 30 * 60
+        # Going back is only safe on one pooled clock for the whole part.
+        assert [part.section for part in PARTS if part.pooled_clock] == ["reading"]
 
 
 def _seed_bank(db, per_type: int = 13):
@@ -108,9 +118,11 @@ class TestAssembly:
         assert sections == sorted(sections, key=lambda s: ["speaking_writing", "reading", "listening"].index(s))
         codes_in_order = [item.task_type_code for item in mock.questions]
         assert codes_in_order == sorted(codes_in_order, key=ALL_CODES.index)
+        # Every type appears, and none above its published maximum. A shorter test than the sum of
+        # the published minimums means some types sit below their usual count; the mix decides which.
         for spec in (s for part in PARTS for s in part.items):
             count = codes_in_order.count(spec.code)
-            assert spec.count[0] <= count <= spec.count[1], spec.code
+            assert 1 <= count <= spec.count[1], spec.code
 
     def test_items_carry_a_rendered_variant_with_answers_hidden(self, bank, db):
         user = make_user(db)
@@ -148,7 +160,9 @@ class TestClock:
         now = utc_now()
         first = clock.serve(mock, reading[0], now)
         later = clock.serve(mock, reading[1], now + timedelta(seconds=90))
-        assert first == later == now + timedelta(seconds=30 * 60)
+        assert first == later
+        # The part's clock was drawn with the mix, so it scales with the reading questions in it.
+        assert first == now + timedelta(seconds=reading_seconds(len(reading)))
 
     def test_deadlines_survive_being_served_again(self, bank, db):
         user = make_user(db)
@@ -295,7 +309,7 @@ class TestRunningAMockTest:
         blueprint = client.get("/api/mock-tests/blueprint").json()
         assert len(blueprint["parts"]) == 3
         assert sum(len(part["task_types"]) for part in blueprint["parts"]) == 22
-        assert blueprint["minutes"]["min"] >= 130
+        assert blueprint["minutes"]["min"] >= 125
         assert blueprint["personal_introduction"]["record_seconds"] == 30
 
     def test_mock_test_appears_in_progress_and_review(self, client, bank, db):

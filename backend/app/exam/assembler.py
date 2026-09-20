@@ -7,7 +7,8 @@ import secrets
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.exam.blueprint import BLUEPRINT_VERSION, PARTS
+from app.exam.blueprint import BLUEPRINT_VERSION
+from app.exam.mix import MockMix, build_mix
 from app.models import PracticeSet, Question, SetQuestion, User
 from app.services.draw import pick_question_ids, source_data
 from app.variants import render
@@ -19,20 +20,30 @@ class NotEnoughQuestionsError(Exception):
     pass
 
 
-def assemble(db: Session, user: User, rng: random.Random | None = None) -> PracticeSet:
-    """Create a mock test: every task type in exam order, with counts drawn from the blueprint ranges."""
+def assemble(db: Session, user: User, rng: random.Random | None = None, mix: MockMix | None = None) -> PracticeSet:
+    """Create a mock test: the drawn mix of task types, in exam order, with no source text repeated."""
     rng = rng or random.Random()
+    mix = mix or build_mix(rng)
+
+    # No lecture, passage or discussion appears twice in one test, so nothing is given away by a
+    # question the student has already seen earlier in the same sitting.
+    used_sources: set[int] = set()
     picks: list[tuple[str, str, int, bool]] = []  # (code, section, question_id, from_backup)
 
-    for part in PARTS:
-        for spec in part.items:
-            count = rng.randint(*spec.count)
-            chosen = pick_question_ids(db, user.id, spec.code, count)
-            if not chosen:
-                raise NotEnoughQuestionsError(spec.code)
-            if len(chosen) < count:
-                log.warning("Mock test for user %s has only %s of %s %s items", user.id, len(chosen), count, spec.code)
-            picks += [(spec.code, part.section, qid, backup) for qid, backup in chosen]
+    for code, section in mix.ordered_items():
+        chosen = pick_question_ids(db, user.id, code, 1, exclude_sources=used_sources)
+        if not chosen:
+            # Everything of this type shares a source already used, so allow a repeat rather than
+            # dropping a task type out of the test.
+            chosen = pick_question_ids(db, user.id, code, 1)
+        if not chosen:
+            raise NotEnoughQuestionsError(code)
+        question_id, from_backup = chosen[0]
+        picks.append((code, section, question_id, from_backup))
+
+        source_id = db.scalar(select(Question.source_id).where(Question.id == question_id))
+        if source_id:
+            used_sources.add(source_id)
 
     questions = {q.id: q for q in db.scalars(select(Question).where(Question.id.in_({p[2] for p in picks})))}
     practice_set = PracticeSet(
@@ -43,6 +54,9 @@ def assemble(db: Session, user: User, rng: random.Random | None = None) -> Pract
         blueprint_version=BLUEPRINT_VERSION,
         current_position=1,
         section_deadlines={},
+        # Parts that run on one clock get their length from the mix, so a shorter reading part
+        # gets proportionally less time, as in the real test.
+        section_seconds=mix.pooled_seconds(),
     )
     db.add(practice_set)
 

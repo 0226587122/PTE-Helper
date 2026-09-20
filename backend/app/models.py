@@ -110,6 +110,8 @@ class PracticeSet(Base):
     blueprint_version: Mapped[str | None] = mapped_column(String(40), nullable=True)
     # When each part's clock runs out, as {"reading": "2026-09-18T01:02:03"}. Set when a part starts.
     section_deadlines: Mapped[dict[str, str] | None] = mapped_column(JSON, nullable=True)
+    # How long each pooled-clock part lasts for this attempt, as {"reading": 1700}. Drawn with the mix.
+    section_seconds: Mapped[dict[str, int] | None] = mapped_column(JSON, nullable=True)
     # The furthest item the student has reached, so a refresh resumes in the right place.
     current_position: Mapped[int] = mapped_column(Integer, default=1)
     started_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())

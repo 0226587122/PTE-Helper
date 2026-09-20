@@ -4,6 +4,7 @@ from fastapi import FastAPI
 
 from app.api import admin, auth, general, mock, sets
 from app.config import get_settings
+from app.exam.mix import validate_blueprint
 
 settings = get_settings()
 logging.basicConfig(level=settings.log_level, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -13,6 +14,9 @@ if settings.is_production:
         raise RuntimeError("Set JWT_SECRET to a long random value (at least 32 characters) in production.")
     if not settings.cookie_secure:
         raise RuntimeError("COOKIE_SECURE must be true in production.")
+
+# Refuse to start if the mock test blueprint has drifted away from the published test format.
+validate_blueprint()
 
 app = FastAPI(
     title="PTE Practice API",

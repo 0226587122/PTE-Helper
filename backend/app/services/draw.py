@@ -4,7 +4,7 @@ import logging
 import random
 import secrets
 
-from sqlalchemy import func, select
+from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from app.config import get_settings
@@ -52,7 +52,14 @@ def recent_question_ids(db: Session, user_id: int, code: str, set_limit: int) ->
     )
 
 
-def _random_ids(db: Session, code: str, status: str, exclude: set[int], limit: int) -> list[int]:
+def _random_ids(
+    db: Session,
+    code: str,
+    status: str,
+    exclude: set[int],
+    limit: int,
+    exclude_sources: set[int] | None = None,
+) -> list[int]:
     """Random ids from a filtered id list. ORDER BY RAND() only ever runs over this type's matching ids."""
     if limit <= 0:
         return []
@@ -67,19 +74,28 @@ def _random_ids(db: Session, code: str, status: str, exclude: set[int], limit: i
     )
     if exclude:
         query = query.where(Question.id.not_in(exclude))
+    if exclude_sources:
+        # Keeps one lecture or passage from turning up twice in the same mock test.
+        query = query.where(or_(Question.source_id.is_(None), Question.source_id.not_in(exclude_sources)))
     query = query.order_by(func.rand()).limit(limit)
     return list(db.scalars(query))
 
 
-def pick_question_ids(db: Session, user_id: int, code: str, count: int) -> list[tuple[int, bool]]:
+def pick_question_ids(
+    db: Session, user_id: int, code: str, count: int, exclude_sources: set[int] | None = None
+) -> list[tuple[int, bool]]:
     """Returns (question_id, drew_from_backup) pairs."""
     settings = get_settings()
     recent = recent_question_ids(db, user_id, code, settings.recent_sets_excluded)
 
-    picked: list[tuple[int, bool]] = [(qid, False) for qid in _random_ids(db, code, "active", recent, count)]
+    picked: list[tuple[int, bool]] = [
+        (qid, False) for qid in _random_ids(db, code, "active", recent, count, exclude_sources)
+    ]
     if len(picked) < count:
         chosen = recent | {qid for qid, _ in picked}
-        picked += [(qid, True) for qid in _random_ids(db, code, "backup", chosen, count - len(picked))]
+        picked += [
+            (qid, True) for qid in _random_ids(db, code, "backup", chosen, count - len(picked), exclude_sources)
+        ]
 
     if len(picked) < count:
         log.warning(
@@ -88,7 +104,7 @@ def pick_question_ids(db: Session, user_id: int, code: str, count: int) -> list[
         )
         chosen = {qid for qid, _ in picked}
         for status, from_backup in (("active", False), ("backup", True)):
-            extra = _random_ids(db, code, status, chosen, count - len(picked))
+            extra = _random_ids(db, code, status, chosen, count - len(picked), exclude_sources)
             picked += [(qid, from_backup) for qid in extra]
             chosen |= set(extra)
         if picked and len(picked) < count:

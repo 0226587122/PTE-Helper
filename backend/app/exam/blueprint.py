@@ -27,8 +27,17 @@ WRITING = "writing"
 # the audio lead-in, the student pressing Next, and normal network delay.
 ITEM_GRACE_SECONDS = 20
 
-# The reading part runs on one pooled clock, as in the real test, rather than per-item timing.
-READING_SECTION_SECONDS = 30 * 60
+# Moving between questions costs time in the real test too: instructions, loading and the student
+# pressing Next. Counted per item when estimating how long a part takes.
+TRANSITION_SECONDS = 8
+
+# How many scored questions a real test has in total. The mix is drawn to fit this, rather than
+# being whatever the task type ranges happen to add up to.
+TOTAL_ITEM_WINDOW = (52, 64)
+
+# The reading part runs on one pooled clock. Its length follows the number of questions drawn,
+# then is clamped to the published window for the part.
+READING_SECONDS_PER_ITEM = 100
 
 
 @dataclass(frozen=True)
@@ -72,8 +81,12 @@ class PartSpec:
     title: str
     instructions: str
     items: tuple[ItemSpec, ...]
-    # A pooled clock for the whole part (reading), instead of a clock per item.
-    section_seconds: int | None = None
+    # How many questions this part may contain, from the published test format.
+    item_window: tuple[int, int] = (1, 99)
+    # How many minutes this part may take, from the published test format.
+    minutes_window: tuple[int, int] = (1, 999)
+    # True when the part runs on one clock for the whole part (reading) instead of a clock per item.
+    pooled_clock: bool = False
     # Students may move back and change answers inside this part.
     allow_back: bool = False
 
@@ -97,6 +110,11 @@ PARTS: tuple[PartSpec, ...] = (
             ItemSpec("SWT", (2, 2), (READING, WRITING)),
             ItemSpec("WE", (1, 1), (WRITING,)),
         ),
+        # The task type ranges published in the score guide add up to at least 33 questions once a
+        # part has to fill 76 minutes, so the bottom of this window is higher than the headline
+        # "30 questions" figure.
+        item_window=(33, 36),
+        minutes_window=(76, 84),
     ),
     PartSpec(
         section="reading",
@@ -112,7 +130,9 @@ PARTS: tuple[PartSpec, ...] = (
             ItemSpec("RFIB", (4, 5), (READING,)),
             ItemSpec("MCSA", (2, 3), (READING,)),
         ),
-        section_seconds=READING_SECTION_SECONDS,
+        item_window=(14, 18),
+        minutes_window=(22, 30),
+        pooled_clock=True,
         allow_back=True,
     ),
     PartSpec(
@@ -132,6 +152,10 @@ PARTS: tuple[PartSpec, ...] = (
             ItemSpec("HIW", (2, 3), (LISTENING, READING), audio_seconds=30),
             ItemSpec("WFD", (3, 4), (LISTENING, WRITING), audio_seconds=6),
         ),
+        # Summarize Spoken Text alone takes ten minutes, so this part cannot hold as many questions
+        # as the other two and still finish inside its published window.
+        item_window=(13, 16),
+        minutes_window=(31, 39),
     ),
 )
 
@@ -154,25 +178,35 @@ PERSONAL_INTRODUCTION = {
 }
 
 
+def reading_seconds(item_count: int) -> int:
+    """The pooled reading clock for a test with this many reading questions."""
+    part = PARTS_BY_SECTION["reading"]
+    low, high = part.minutes_window
+    return max(low * 60, min(high * 60, item_count * READING_SECONDS_PER_ITEM))
+
+
+def counts_seconds(part: PartSpec, counts: dict[str, int]) -> int:
+    """How long a part takes with this mix of questions, including moving between them."""
+    if part.pooled_clock:
+        return reading_seconds(sum(counts.values()))
+    spec_seconds = sum(SPECS_BY_CODE[code].item_seconds() * n for code, n in counts.items())
+    return spec_seconds + TRANSITION_SECONDS * sum(counts.values())
+
+
 def part_minutes(part: PartSpec) -> tuple[int, int]:
-    """The shortest and longest this part can take, in whole minutes."""
-    if part.section_seconds is not None:
-        return (part.section_seconds // 60, part.section_seconds // 60)
-    low = sum(spec.item_seconds() * spec.count[0] for spec in part.items)
-    high = sum(spec.item_seconds() * spec.count[1] for spec in part.items)
-    return (low // 60, high // 60)
+    """The published length of this part, in whole minutes."""
+    return part.minutes_window
 
 
 def total_minutes() -> tuple[int, int]:
-    low = sum(part_minutes(part)[0] for part in PARTS)
-    high = sum(part_minutes(part)[1] for part in PARTS)
+    low = sum(part.minutes_window[0] for part in PARTS)
+    high = sum(part.minutes_window[1] for part in PARTS)
     return (low, high)
 
 
 def item_count_range() -> tuple[int, int]:
-    low = sum(spec.count[0] for part in PARTS for spec in part.items)
-    high = sum(spec.count[1] for part in PARTS for spec in part.items)
-    return (low, high)
+    """How many questions a mock test has, which is drawn first and then shared across the parts."""
+    return TOTAL_ITEM_WINDOW
 
 
 def skills_for(code: str) -> tuple[str, ...]:

@@ -30,13 +30,15 @@ def section_deadline(practice_set: PracticeSet, section: str) -> datetime | None
 
 def start_section(practice_set: PracticeSet, section: str, now: datetime | None = None) -> datetime | None:
     """Start a part's pooled clock the first time the student reaches it (reading only)."""
-    part = PARTS_BY_SECTION[section]
-    if part.section_seconds is None:
+    part = PARTS_BY_SECTION.get(section)
+    if part is None or not part.pooled_clock:
         return None
     existing = section_deadline(practice_set, section)
     if existing:
         return existing
-    deadline = (now or utc_now()) + timedelta(seconds=scaled(part.section_seconds))
+    # The length was drawn with the mix; fall back to the published maximum for older attempts.
+    seconds = (practice_set.section_seconds or {}).get(section) or part.minutes_window[1] * 60
+    deadline = (now or utc_now()) + timedelta(seconds=scaled(seconds))
     deadlines = dict(practice_set.section_deadlines or {})
     deadlines[section] = deadline.isoformat()
     practice_set.section_deadlines = deadlines
