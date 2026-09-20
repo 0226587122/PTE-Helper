@@ -31,9 +31,10 @@ ITEM_GRACE_SECONDS = 20
 # pressing Next. Counted per item when estimating how long a part takes.
 TRANSITION_SECONDS = 8
 
-# How many scored questions a real test has in total. The mix is drawn to fit this, rather than
-# being whatever the task type ranges happen to add up to.
-TOTAL_ITEM_WINDOW = (52, 64)
+# How many scored questions a real test has in total. Pearson's Test Taker and Institution Score
+# Guides both say 65 to 75 questions across the 22 task types. The mix is drawn to fit this, rather
+# than being whatever the task type ranges happen to add up to.
+TOTAL_ITEM_WINDOW = (65, 75)
 
 # The reading part runs on one pooled clock. Its length follows the number of questions drawn,
 # then is clamped to the published window for the part.
@@ -113,7 +114,7 @@ PARTS: tuple[PartSpec, ...] = (
         # The task type ranges published in the score guide add up to at least 33 questions once a
         # part has to fill 76 minutes, so the bottom of this window is higher than the headline
         # "30 questions" figure.
-        item_window=(33, 36),
+        item_window=(35, 41),
         minutes_window=(76, 84),
     ),
     PartSpec(
@@ -130,7 +131,7 @@ PARTS: tuple[PartSpec, ...] = (
             ItemSpec("RFIB", (4, 5), (READING,)),
             ItemSpec("MCSA", (2, 3), (READING,)),
         ),
-        item_window=(14, 18),
+        item_window=(15, 20),
         minutes_window=(22, 30),
         pooled_clock=True,
         allow_back=True,
@@ -154,7 +155,7 @@ PARTS: tuple[PartSpec, ...] = (
         ),
         # Summarize Spoken Text alone takes ten minutes, so this part cannot hold as many questions
         # as the other two and still finish inside its published window.
-        item_window=(13, 16),
+        item_window=(15, 15),
         minutes_window=(31, 39),
     ),
 )

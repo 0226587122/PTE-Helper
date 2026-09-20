@@ -164,8 +164,11 @@ def build_report(practice_set: PracticeSet, items: list[SetQuestion]) -> dict[st
         "task_types": [
             {"code": code, "percent": _average(values), "item_count": len(values)} for code, values in by_type.items()
         ],
+        "overall_label": "Estimated overall",
         "disclaimer": (
-            "These scores are a practice estimate produced by this app, not official Pearson PTE Academic "
-            "results. Use them to see where to focus, not to predict your exam score."
+            "Estimated overall, derived from your skill scores. Pearson does not calculate the overall "
+            "score as an average, so treat this as an approximation. These scores are a practice estimate "
+            "produced by this app, not official Pearson PTE Academic results. Use them to see where to "
+            "focus, not to predict your exam score."
         ),
     }

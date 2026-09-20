@@ -50,7 +50,7 @@ export default function MockReportPage() {
     <div>
       <section className={styles.reportHero}>
         <div>
-          <div className={styles.heroText}>Practice estimate</div>
+          <div className={styles.heroText}>{data.overall_label ?? "Estimated overall"}</div>
           <div className={styles.overall}>
             {data.overall_score}
             <span style={{ fontSize: "1.2rem", fontWeight: 600 }}> / 90</span>

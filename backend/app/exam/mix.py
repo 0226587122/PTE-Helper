@@ -1,7 +1,8 @@
 """Decides how many questions of each task type a mock test contains.
 
-The real test has 52 to 64 scored questions, and each part has its own published window for both
-questions and minutes. So the mix is drawn from the top down:
+The real test has 65 to 75 scored questions across the 22 task types, and each part has its own
+published window for both questions and minutes. Each part's floor is the sum of its task types'
+published minimums, so every type reaches its published minimum in every test. So the mix is drawn from the top down:
 
 1. Draw the total number of questions for the whole test.
 2. Share that total across the three parts, inside each part's published window.
@@ -154,7 +155,8 @@ def _repair_time(part: PartSpec, counts: dict[str, int], rng: random.Random) -> 
             break
         too_long = minutes > high
         # Give away an item from the longest type and take one for the shortest, or the reverse.
-        givers = [c for c in counts if counts[c] > 1]  # never take a type out of the test
+        # Never take a type below the count Pearson publishes for it.
+        givers = [c for c in counts if counts[c] > SPECS_BY_CODE[c].count[0]]
         takers = [c for c in counts if counts[c] < SPECS_BY_CODE[c].count[1]]
         if not givers or not takers:
             break
@@ -223,7 +225,14 @@ def validate_blueprint(samples: int = 50) -> None:
             problems.append(f"{part.section}: task types allow at most {type_high} questions, below its window {part.item_window}.")
         if len(part.items) > part.item_window[1]:
             problems.append(f"{part.section}: {len(part.items)} task types can't fit in {part.item_window[1]} questions.")
-        if type_low > part.item_window[1] and len(part.items) > part.item_window[1]:
+        # The floor is the sum of the published per-type minimums. Anything lower and a drawn test
+        # would have to push some task type below the count Pearson publishes for it.
+        if part.item_window[0] < type_low:
+            problems.append(
+                f"{part.section}: its floor of {part.item_window[0]} questions is below the "
+                f"{type_low} its task types need to each reach their published minimum."
+            )
+        if type_low > part.item_window[1]:
             problems.append(f"{part.section}: minimum counts total {type_low}, above its window {part.item_window}.")
 
     if not problems:
@@ -243,8 +252,12 @@ def validate_blueprint(samples: int = 50) -> None:
                         f"{part_spec.section}: a drawn mix lasts {part_mix.minutes} minutes, outside "
                         f"{part_spec.minutes_window}."
                     )
-                if any(count < 1 for count in part_mix.counts.values()):
-                    problems.append(f"{part_spec.section}: a task type was left out of a test.")
+                for code, count in part_mix.counts.items():
+                    if count < SPECS_BY_CODE[code].count[0]:
+                        problems.append(
+                            f"{part_spec.section}: a drawn test had {count} {code}, below its "
+                            f"published minimum of {SPECS_BY_CODE[code].count[0]}."
+                        )
             if problems:
                 break
 

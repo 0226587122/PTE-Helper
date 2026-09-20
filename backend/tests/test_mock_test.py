@@ -33,9 +33,9 @@ class TestBlueprint:
 
     def test_item_counts_match_the_score_guide(self):
         low, high = item_count_range()
-        # A mock test is 52 to 64 scored questions, drawn as a total and then shared across the
-        # parts, plus the unscored introduction. The parts' own windows have to be able to hold it.
-        assert (low, high) == (52, 64)
+        # Pearson publishes 65 to 75 questions across the 22 task types. The total is drawn first
+        # and then shared across the parts, plus the unscored introduction.
+        assert (low, high) == (65, 75)
         assert sum(part.item_window[0] for part in PARTS) <= high
         assert sum(part.item_window[1] for part in PARTS) >= low
 
@@ -278,6 +278,10 @@ class TestRunningAMockTest:
         assert {skill["key"] for skill in report["communicative_skills"]} == {"listening", "reading", "speaking", "writing"}
         assert len(report["sections"]) == 3
         assert "not official Pearson" in report["disclaimer"]
+        # Pearson's Score Guide says the overall score is not an average of the skills, so the
+        # report has to say that this one is.
+        assert report["overall_label"] == "Estimated overall"
+        assert "does not calculate the overall score as an average" in report["disclaimer"]
 
         # The test is closed afterwards.
         assert client.get(f"/api/mock-tests/{set_id}/questions/2").status_code == 409

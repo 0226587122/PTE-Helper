@@ -331,5 +331,6 @@ export interface MockReport {
   enabling_skills: SkillScore[];
   sections: { section: Section; label: string; score: number | null; percent: number | null; item_count: number; answered_count: number }[];
   task_types: { code: string; percent: number | null; item_count: number }[];
+  overall_label?: string;
   disclaimer: string;
 }
