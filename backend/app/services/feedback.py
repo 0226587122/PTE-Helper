@@ -53,7 +53,10 @@ class ExaminerFeedback(BaseModel):
 
 
 class FeedbackError(Exception):
-    def __init__(self, message: str, status_code: int = 503):
+    """A problem the student should see. Never uses a 5xx code, because hosting platforms
+    replace 5xx responses with their own error page and the message would be lost."""
+
+    def __init__(self, message: str, status_code: int = 424):
         super().__init__(message)
         self.message = message
         self.status_code = status_code
@@ -120,9 +123,12 @@ def get_or_create_feedback(db: Session, user: User, set_question: SetQuestion) -
             429,
         )
     if not settings.anthropic_api_key:
-        raise FeedbackError("Examiner feedback isn't set up on this server yet.", 503)
+        raise FeedbackError("Examiner feedback isn't set up on this server yet.", 424)
 
-    client = anthropic.Anthropic(api_key=settings.anthropic_api_key, timeout=120.0)
+    headers = (
+        {"anthropic-workspace-id": settings.anthropic_workspace_id} if settings.anthropic_workspace_id else None
+    )
+    client = anthropic.Anthropic(api_key=settings.anthropic_api_key, timeout=120.0, default_headers=headers)
     try:
         message = client.messages.parse(
             model=settings.anthropic_model,
@@ -142,7 +148,7 @@ def get_or_create_feedback(db: Session, user: User, set_question: SetQuestion) -
 
     if message.stop_reason == "refusal" or message.parsed_output is None:
         log.warning("No parsed feedback (stop_reason=%s) for set question %s", message.stop_reason, set_question.id)
-        raise FeedbackError("We couldn't produce feedback for this answer. Please try again.", 502)
+        raise FeedbackError("We couldn't produce feedback for this answer. Please try again.", 424)
 
     result = message.parsed_output
     feedback = AIFeedback(

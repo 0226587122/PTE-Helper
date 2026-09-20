@@ -11,3 +11,4 @@ cryptography==44.0.3
 argon2-cffi==23.1.0
 pyjwt==2.10.1
 anthropic>=1.6,<2
+pyspellchecker==0.9.0

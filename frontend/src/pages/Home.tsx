@@ -128,6 +128,27 @@ export default function Home() {
         <ReadinessScale estimate={progress.data?.overall_estimate ?? null} />
       </section>
 
+      <section className={styles.section}>
+        <div className={styles.mockCard}>
+          <div>
+            <h2 style={{ marginTop: 0 }}>Full mock test</h2>
+            <p className={styles.heroText} style={{ color: "var(--ink-soft)" }}>
+              All three parts of the exam, back to back, with real timing and no feedback until the end. You get an
+              overall practice estimate, the four communicative skills and a breakdown of every answer.
+            </p>
+            {progress.data && progress.data.mock_tests_completed > 0 && (
+              <p className={styles.scores}>
+                {progress.data.mock_tests_completed} completed · Best <strong>{progress.data.best_mock_score}</strong> ·
+                Last <strong>{progress.data.last_mock_score}</strong>
+              </p>
+            )}
+          </div>
+          <Link to="/mock" className={styles.mockButton}>
+            Take a full mock test
+          </Link>
+        </div>
+      </section>
+
       {SECTIONS.map((section) => (
         <section key={section.id} className={styles.section}>
           <h2 className={styles.sectionTitle}>
@@ -166,7 +187,7 @@ export default function Home() {
                     <td>{Math.round(r.average_pct)}%</td>
                     <td>{r.estimated_score}</td>
                     <td>
-                      <Link to={`/results/${r.set_id}`}>Review</Link>
+                      <Link to={r.mode === "mock" ? `/mock/${r.set_id}/report` : `/results/${r.set_id}`}>Review</Link>
                     </td>
                   </tr>
                 ))}

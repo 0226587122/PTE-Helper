@@ -60,7 +60,8 @@ def score_answer(code: str, rendered: dict[str, Any], response: dict[str, Any]) 
     if code in ("RWFIB", "RFIB", "LFIB"):
         given = response.get("answers")
         given = [g if isinstance(g, str) else None for g in given] if isinstance(given, list) else []
-        return objective.score_blanks(answer["blanks"], given)
+        # Listening blanks are typed from the audio; the reading ones are chosen from a list.
+        return objective.score_blanks(answer["blanks"], given, typed=code == "LFIB")
     if code in ("MCMA", "LMCMA"):
         return objective.score_multiple_answers(answer["correct"], _int_list(response.get("selected")))
     if code in ("MCSA", "LMCSA", "HCS", "SMW"):

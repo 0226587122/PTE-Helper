@@ -107,7 +107,7 @@ def _question_out(db: DB, sq: SetQuestion) -> QuestionOut:
         position=sq.position,
         set_question_id=sq.id,
         question_id=sq.question_id,
-        task_type=sq.practice_set.task_type_code,
+        task_type=sq.task_type_code or sq.practice_set.task_type_code or "",
         display=sq.rendered_payload["display"],
         answered=sq.response is not None,
     )
@@ -166,7 +166,7 @@ def answer_question(set_id: int, position: int, body: AnswerIn, user: CurrentUse
     sq = _set_question(practice_set, position)
     if sq.response is not None:
         raise HTTPException(status.HTTP_409_CONFLICT, "You've already answered this question.")
-    result = score_answer(practice_set.task_type_code, sq.rendered_payload, body.response)
+    result = score_answer(sq.task_type_code or practice_set.task_type_code or "", sq.rendered_payload, body.response)
     sq.response = body.response
     sq.score_pct = result.pct
     sq.score_detail = result.to_dict()

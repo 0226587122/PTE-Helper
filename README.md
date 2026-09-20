@@ -6,6 +6,7 @@ A practice web app for the PTE Academic test. Students practise all 22 task type
 
 ## What's inside
 
+- **A full mock test**: all three parts back to back with real exam timing, no feedback until the end, then a full score report. See "The full mock test" below.
 - **All 22 task types**: speaking and writing, reading, and listening, each with its own screen.
 - **15 random questions per set.** Questions a student saw in their last 3 sets of that type are left out where possible.
 - **A question bank in MySQL with a backup pool.** Every type ships with 45 original questions: 30 active and 15 backup. Retiring a question (or 3 reports from students) promotes the oldest backup automatically.
@@ -70,6 +71,45 @@ Local MySQL runs with `sql_require_primary_key=ON`, the same as DigitalOcean.
 | `make export-bank` | Write the whole bank, including retired questions, to `bank-export.json` |
 | `make test` | Backend tests (against MySQL) and frontend tests |
 | `make e2e` | Playwright smoke test: sign up, answer a Write from Dictation question, see a score |
+
+## The full mock test
+
+A mock test copies the shape of the real exam. Everything about it comes from one file,
+`backend/app/exam/blueprint.py`: the order of the parts, how many questions of each type, how long
+each one allows, and which skills each type counts towards. The item counts and the skill mapping
+follow the PTE Academic Score Guide.
+
+| Part | Timing | Questions |
+| --- | --- | --- |
+| Part 1: Speaking and Writing | about 73 to 84 minutes, each question timed on its own | Read Aloud, Repeat Sentence, Describe Image, Retell Lecture, Answer Short Question, Summarize Group Discussion, Respond to a Situation, Summarize Written Text, Write Essay |
+| Part 2: Reading | 30 minutes for the whole part | Reading & Writing FIB, Multiple Choice (multiple), Reorder Paragraphs, Reading FIB, Multiple Choice (single) |
+| Part 3: Listening | about 36 to 49 minutes | Summarize Spoken Text, Multiple Choice (multiple), FIB, Highlight Correct Summary, Multiple Choice (single), Select Missing Word, Highlight Incorrect Words, Write from Dictation |
+
+How it behaves like the real test:
+
+- It opens with the **unscored spoken introduction**, then shows instructions before each part.
+- **The server owns the clock.** Every deadline is set when a question is first shown, so refreshing,
+  opening a new tab or changing your computer's clock can't buy extra time. An answer sent after the
+  deadline is kept but scores zero, like a missed question.
+- **Reading runs on one 30 minute clock** and lets you move back and change answers. Everything else
+  is one way: once you move on, you can't return.
+- **No scores during the test.** The answer is marked and stored, but nothing is shown until the end.
+- **Leaving and coming back** resumes at the right question, with whatever time is left. If every
+  remaining question has timed out, the test submits itself.
+- The **score report** gives an overall practice estimate, the four communicative skills, the enabling
+  skills and a per-part breakdown, and every answer can be reviewed with the correct answer shown.
+
+**Spelling** is checked against an offline dictionary that accepts British, Australian and American
+spelling, plus the words of the question a student is answering. The report scores it as errors per
+100 typed words, says how many words that was measured over, and lists each misspelled word with
+what it looked like you meant. A misspelling costs a student once: in the writing tasks it lowers
+that item's Spelling trait, and in Write from Dictation and the listening blanks the word was already
+marked wrong by the answer key, so it is recorded there rather than deducted twice. The British and
+Australian forms are generated from the American word list by rule (see `app/spelling/variants.py`),
+so a rare word may be accepted that a full Hunspell dictionary would flag - deliberately, because
+wrongly telling a student that "organise" is a mistake is the worse failure.
+
+`MOCK_TIME_SCALE` shortens every clock for end-to-end tests and should stay at 1.
 
 ## The question bank
 
@@ -138,7 +178,7 @@ While signed in to your **personal** account in the control panel, open **Apps �
 **2. Create the MySQL database** (Sydney is the closest region to New Zealand)
 
 ```bash
-doctl databases create pte-mysql --engine mysql --version 8 --region syd1 --size db-s-1vcpu-1gb --num-nodes 1 --context personal
+doctl databases create pte-mysql --engine mysql --version 8.4 --region syd1 --size db-s-1vcpu-1gb --num-nodes 1 --context personal
 doctl databases list --context personal   # copy the cluster ID
 doctl databases db create <cluster-id> pte --context personal
 doctl databases user create <cluster-id> pte --context personal
@@ -150,7 +190,7 @@ doctl databases user create <cluster-id> pte --context personal
 cp .do/app.yaml .do/app.local.yaml                     # ignored by git
 ```
 
-In `.do/app.local.yaml`, replace `YOUR_GITHUB_USER/PTE-Helper` with your repository (3 places) and put real values in place of the two `REPLACE_ME` secrets:
+In `.do/app.local.yaml`, put real values in place of the two `REPLACE_ME` secrets:
 
 ```bash
 openssl rand -hex 32                                   # use this for JWT_SECRET
@@ -165,6 +205,8 @@ doctl apps list --context personal   # copy the app ID
 ```
 
 Each deploy first runs `alembic upgrade head` as a pre-deploy job.
+
+> **"No components detected" in the control panel?** That's expected. The app lives in `backend/` and `frontend/` rather than the repository root, so DigitalOcean's automatic detection can't find it. Create the app from the spec instead, with the `doctl apps create` command above. If you'd rather use the control panel: set **Source directory** to `frontend` so it detects the website, create the app, then go to **Settings → App Spec → Edit**, paste the whole of `.do/app.local.yaml` and save.
 
 **5. Load the questions and create your admin account** (once, after the first deploy succeeds)
 

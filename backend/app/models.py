@@ -26,6 +26,7 @@ USER_ROLES = ("student", "admin")
 SECTIONS = ("speaking_writing", "reading", "listening")
 SOURCE_KINDS = ("lecture", "passage", "discussion")
 QUESTION_STATUSES = ("active", "backup", "retired")
+SET_MODES = ("drill", "mock")
 
 
 def utc_now() -> datetime:
@@ -102,8 +103,17 @@ class PracticeSet(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
-    task_type_code: Mapped[str] = mapped_column(ForeignKey("task_types.code"))
+    mode: Mapped[str] = mapped_column(Enum(*SET_MODES, name="set_mode"), default="drill")
+    # Null for a full mock test, which covers every task type.
+    task_type_code: Mapped[str | None] = mapped_column(ForeignKey("task_types.code"), nullable=True)
     question_count: Mapped[int] = mapped_column(Integer)
+    blueprint_version: Mapped[str | None] = mapped_column(String(40), nullable=True)
+    # When each part's clock runs out, as {"reading": "2026-09-18T01:02:03"}. Set when a part starts.
+    section_deadlines: Mapped[dict[str, str] | None] = mapped_column(JSON, nullable=True)
+    # How long each pooled-clock part lasts for this attempt, as {"reading": 1700}. Drawn with the mix.
+    section_seconds: Mapped[dict[str, int] | None] = mapped_column(JSON, nullable=True)
+    # The furthest item the student has reached, so a refresh resumes in the right place.
+    current_position: Mapped[int] = mapped_column(Integer, default=1)
     started_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
     finished_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
     average_pct: Mapped[float | None] = mapped_column(Float, nullable=True)
@@ -122,6 +132,8 @@ class SetQuestion(Base):
     set_id: Mapped[int] = mapped_column(ForeignKey("practice_sets.id", ondelete="CASCADE"))
     question_id: Mapped[int] = mapped_column(ForeignKey("questions.id"))
     position: Mapped[int] = mapped_column(Integer)
+    task_type_code: Mapped[str | None] = mapped_column(ForeignKey("task_types.code"), nullable=True)
+    section: Mapped[str | None] = mapped_column(Enum(*SECTIONS, name="section"), nullable=True)
     variant_seed: Mapped[int] = mapped_column(BigInteger)
     rendered_payload: Mapped[dict[str, Any]] = mapped_column(JSON)
     response: Mapped[dict[str, Any] | None] = mapped_column(JSON, nullable=True)
@@ -129,6 +141,10 @@ class SetQuestion(Base):
     score_detail: Mapped[dict[str, Any] | None] = mapped_column(JSON, nullable=True)
     drew_from_backup: Mapped[bool] = mapped_column(Boolean, default=False)
     answered_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    served_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    deadline_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    # True when the answer arrived after the deadline, which scores zero like an unanswered item.
+    late: Mapped[bool] = mapped_column(Boolean, default=False)
 
     practice_set: Mapped[PracticeSet] = relationship(back_populates="questions")
     question: Mapped[Question] = relationship()

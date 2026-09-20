@@ -38,11 +38,21 @@ class Settings(BaseSettings):
 
     anthropic_api_key: str | None = None
     anthropic_model: str = "claude-sonnet-5"
+    # Only needed when the API key belongs to the whole account instead of one workspace.
+    anthropic_workspace_id: str | None = None
     feedback_daily_limit: int = 30
 
     questions_per_set: int = 15
+    # Speeds up mock test clocks for end-to-end tests. Keep at 1.0 in real use.
+    mock_time_scale: float = 1.0
     min_active_per_type: int = 30
     recent_sets_excluded: int = 3
+
+    # Spelling, as errors per 100 typed words. At or below the first, the trait scores 2; at or
+    # below the second, 1; above it, 0. A skill percentage of zero is reached at the third.
+    spelling_good_per_hundred: float = 2.0
+    spelling_fair_per_hundred: float = 6.0
+    spelling_zero_per_hundred: float = 12.0
     report_retire_threshold: int = 3
 
     log_level: str = "INFO"

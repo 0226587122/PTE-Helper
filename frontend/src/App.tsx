@@ -6,6 +6,9 @@ import { AdminLayout } from "./admin/AdminLayout";
 import AdminSummary from "./admin/AdminSummary";
 import { RequireAdmin, RequireAuth } from "./components/Guards";
 import { Layout } from "./components/Layout";
+import MockReportPage from "./mock/MockReportPage";
+import MockRunner from "./mock/MockRunner";
+import MockStart from "./mock/MockStart";
 import Home from "./pages/Home";
 import Practice from "./pages/Practice";
 import Results from "./pages/Results";
@@ -42,6 +45,30 @@ export default function App() {
           element={
             <RequireAuth>
               <Practice />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="mock"
+          element={
+            <RequireAuth>
+              <MockStart />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="mock/:setId"
+          element={
+            <RequireAuth>
+              <MockRunner />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="mock/:setId/report"
+          element={
+            <RequireAuth>
+              <MockReportPage />
             </RequireAuth>
           }
         />
